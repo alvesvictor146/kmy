@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KMY Prime | Ativos Imobiliários de Alto Padrão</title>
+  <meta name="description" content="KMY Prime Planejamento Imobiliário — Especialista em compra, venda e arrendamento de Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas, Aptos MCMV e Shoppings com atuação nacional e internacional. Decoração de Interiores exclusiva.">
+  <meta name="keywords" content="KMY Prime, Ativos Imobiliários, Hotéis para Venda, Pousadas Arrendamento, Lajes Corporativas Faria Lima, Hospitais, Shoppings, Marta A. Soriano, Decoradora & CEO Novos Negócios">
+  <link rel="icon" type="image/png" sizes="128x128" href="./assets/images/favicon_kmy.png?v=2" id="site-favicon">
+  <link rel="shortcut icon" type="image/png" href="./favicon.png?v=2">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="KMY Prime | Ativos Imobiliários de Alto Padrão">
+  <meta property="og:description" content="Portfólio exclusivo de ativos imobiliários comerciais e corporativos com atuação nacional e internacional.">
+  <meta property="og:image" content="./assets/images/logo_clean.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- Import Map para funcionamento direto via index.html / Live Server sem necessidade de bundler -->
+
+
+  <!-- Resolução automática de imagens para abertura direta do index.html na raiz ou via GitHub Pages -->
+  <script>
+    (function() {
+      var isRawRoot = !!document.querySelector('link[href*="src/styles/main.css"]') && !document.querySelector('script[src*="@vite"]');
+      if (isRawRoot) {
+        var fav = document.getElementById('site-favicon');
+        if (fav) fav.href = './public/assets/images/favicon_kmy.png?v=2';
+      }
+      window.addEventListener('error', function(e) {
+        var t = e.target;
+        if (t && t.tagName === 'IMG') {
+          var src = t.getAttribute('src') || '';
+          if (src.indexOf('assets/images/') !== -1 && src.indexOf('public/assets/images/') === -1) {
+            var file = src.split('assets/images/').pop();
+            t.src = './public/assets/images/' + file;
+          }
+        }
+      }, true);
+    })();
+  </script>
+
+  <!-- JSON-LD Structured Data for Real Estate Agent & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "KMY Prime Planejamento Imobiliário",
+    "description": "Compra, venda e arrendamento de Ativos Imobiliários de alto valor e decoração de interiores com atuação nacional e internacional.",
+    "telephone": "+55-11-94197-8333",
+    "email": "kmyprime@kmyprime.com.br",
+    "url": "https://www.kmyprime.com.br",
+    "founder": {
+      "@type": "Person",
+      "name": "Marta A. Soriano",
+      "jobTitle": "Decoradora & CEO Novos Negócios"
+    }
+  }
+  </script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.mjs"
+    }
+  }
+  </script>
+  <script type="module" crossorigin src="/kmy/assets/index-FfHtlK90.js"></script>
+  <link rel="stylesheet" crossorigin href="/kmy/assets/index-8ujsqF2L.css">
+</head>
+<body>
+
+  <!-- HEADER NAVEGAÇÃO -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo-wrapper" title="KMY Prime - Página Inicial">
+        <img src="./assets/images/logo_clean.png?v=2" alt="KMY Prime Logotipo" class="logo-img" />
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#imoveis" class="nav-link">Segmentos</a></li>
+          <li><a href="#jornada" class="nav-link">Track Record</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#decoracao" class="nav-link">Decoração</a></li>
+          <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20oportunidades%20de%20investimento%20na%20KMY%20Prime." target="_blank" rel="noopener noreferrer" class="btn btn-gold" id="header-cta-whatsapp">
+          <span>(11) 94197-8333</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION COM VÍDEO DE FUNDO INSTITUCIONAL -->
+    <section class="hero-section" id="hero">
+      <div class="hero-video-wrapper" aria-hidden="true">
+        <video class="hero-bg-video" autoplay loop muted playsinline preload="auto">
+          <source src="./assets/videos/hero_bg.mp4" type="video/mp4" />
+          <source src="/kmy/assets/hero_bg-D3MuE_sC.mp4" type="video/mp4" />
+          <source src="/kmy/assets/hero_bg-D3MuE_sC.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="subtitle-badge">Planejamento Imobiliário & Ativos</div>
+          <h1 class="hero-title">
+            Aquisição & Gestão de <span class="text-gold-gradient">Ativos de Alto Valor</span>
+          </h1>
+          <p class="hero-desc">
+            Intermediação qualificada, sigilosa e estratégica em Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.
+          </p>
+
+          <!-- Barra de Busca Rápida Estilo Private Banking -->
+          <div class="search-bar-luxury">
+            <div class="search-input-group">
+              <label for="hero-search-category">Segmento de Interesse</label>
+              <select id="hero-search-category" aria-label="Selecione o segmento">
+                <option value="todos">Todos os Ativos (10)</option>
+                <option value="hoteis">Hotéis & Resorts (2)</option>
+                <option value="pousadas">Pousadas (2)</option>
+                <option value="hospitais">Hospitais & Clínicas (1)</option>
+                <option value="lajes">Lajes Corporativas (2)</option>
+                <option value="lojas">Lojas & Varejo (1)</option>
+                <option value="mcmv">Aptos MCMV (1)</option>
+                <option value="shopping">Shoppings & Malls (1)</option>
+              </select>
+            </div>
+            <div class="search-divider"></div>
+            <button class="btn btn-gold" id="hero-search-btn" style="padding: 12px 24px;">
+              <span>Explorar Portfólio</span>
+            </button>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-val">Prime</div>
+              <div class="metric-lbl">Governança Sólida</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">Global</div>
+              <div class="metric-lbl">Atuação Nacional e Internacional</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">Executivo</div>
+              <div class="metric-lbl">Head de Novos Negócios</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS EM GRID ELEGANTE -->
+    <section class="categories-section" id="imoveis">
+      <div class="container">
+        <div class="section-head">
+          <div class="subtitle-badge">Especialidades & Portfólio</div>
+          <h2 class="section-title">Segmentos de Atuação Especializada</h2>
+          <p class="section-sub">Soluções imobiliárias sob medida para investidores institucionais, redes hoteleiras e family offices.</p>
+        </div>
+
+        <div class="categories-carousel" id="categories-container">
+          <!-- Injetado dinamicamente via main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CANVAS SCROLL SCRUBBING: TRACK RECORD KMY PRIME -->
+    <section class="scrubbing-section" id="jornada">
+      <div class="scrubbing-canvas-container">
+        <canvas id="scrubbing-canvas"></canvas>
+      </div>
+
+      <div class="scrubbing-content-layer">
+        <div class="scrub-step-block">
+          <div class="scrub-card">
+            <div class="scrub-badge">Fase 01 · Prospecção</div>
+            <h3 class="scrub-title">Curadoria Rigorosa & Off-Market</h3>
+            <p class="scrub-text">Acesso a ativos estratégicos que não chegam ao mercado aberto. Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.</p>
+          </div>
+        </div>
+
+        <div class="scrub-step-block">
+          <div class="scrub-card">
+            <div class="scrub-badge">Fase 02 · Due Diligence</div>
+            <h3 class="scrub-title">Auditoria Jurídica & Valoração</h3>
+            <p class="scrub-text">Análise minuciosa de certidões, regularidade fundiária, laudos de engenharia, capacidade de cap rate e mitigação integral de riscos.</p>
+          </div>
+        </div>
+
+        <div class="scrub-step-block">
+          <div class="scrub-card">
+            <div class="scrub-badge">Fase 03 · Estruturação</div>
+            <h3 class="scrub-title">Engenharia Financeira & Contratual</h3>
+            <p class="scrub-text">Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).</p>
+          </div>
+        </div>
+
+        <div class="scrub-step-block">
+          <div class="scrub-card">
+            <div class="scrub-badge">Fase 04 · Concretização</div>
+            <h3 class="scrub-title">Governança, Entrega & Sucesso</h3>
+            <p class="scrub-text">Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DE ATIVOS COM FILTROS FLIP & 10 ANÚNCIOS -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-head">
+          <div class="subtitle-badge">Catálogo Exclusivo</div>
+          <h2 class="section-title">Ativos Imobiliários Disponíveis</h2>
+          <p class="section-sub">Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.</p>
+        </div>
+
+        <!-- Filtros do Catálogo -->
+        <div class="catalog-filter-bar">
+          <div class="filter-pills" id="catalog-filter-pills">
+            <!-- Injetado dinamicamente -->
+          </div>
+        </div>
+
+        <!-- Grid de Anúncios -->
+        <div class="catalog-grid" id="catalog-grid">
+          <!-- Injetado dinamicamente via main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DECORAÇÃO DE INTERIORES (7 ETAPAS DO PDF) -->
+    <section class="decor-section" id="decoracao">
+      <div class="container">
+        <div class="decor-grid-main">
+          <div class="decor-banner-box">
+            <img src="./assets/images/decoracao_hero.jpg" alt="Decoração de Interiores de Alto Padrão KMY Prime" />
+          </div>
+          <div>
+            <div class="subtitle-badge">Design & Sofisticação</div>
+            <h2 class="section-title">Decoração de Interiores KMY Prime</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1.05rem;">
+              Além da compra e venda de ativos, a KMY Prime desenvolve projetos completos de arquitetura de interiores para hotéis, pousadas de charme, lajes executivas e residências de alto padrão em todo o Brasil e no exterior.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
+              Do primeiro briefing à pós-entrega, coordenamos cada detalhe com rigor estético, fornecedores nobres e gestão técnica total do cronograma.
+            </p>
+            <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20briefing%20de%20decora%C3%A7%C3%A3o%20de%20interiores%20para%20meu%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+              <span>Agendar Briefing de Decoração</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-bottom: 40px;">
+          <h3 style="font-size: 2rem;">Metodologia em 7 Etapas</h3>
+          <p class="section-sub">Processo estruturado que garante previsibilidade, conformidade orçamentária e acabamento impecável.</p>
+        </div>
+
+        <div class="decor-steps-grid" id="decor-steps-container">
+          <!-- Injetado dinamicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO QUEM SOMOS / INSTITUCIONAL -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-card-luxury">
+          <div>
+            <div class="subtitle-badge">História & Propósito</div>
+            <h2 class="section-title">KMY Prime Planejamento Imobiliário</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+              A <strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> atua com excelência na estruturação, compra e venda de Ativos de alto valor no mercado imobiliário, locação estratégica e arrendamento comercial com presença nacional e internacional.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
+              Com governança corporativa de alto padrão, a KMY consolidou uma sólida rede de relacionamento que inclui proprietários de grandes ativos, grupos de hospitalidade, incorporadores e fundos imobiliários, assegurando transações ágeis, sigilosas e respaldadas juridicamente.
+            </p>
+
+            <div class="about-badge-creci">
+              <div class="creci-icon">✓</div>
+              <div>
+                <strong style="color: var(--text-primary); display: block;">Marta A. Soriano</strong>
+                <span style="font-size: 0.85rem; color: var(--gold-700); font-weight: 700;">Decoradora &amp; CEO Novos Negócios</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div class="step-card">
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);">Atuação Nacional e Internacional</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">Estrutura ágil para negociações em capitais financeiras, polos litorâneos turísticos, eixos de agronegócio e mercados internacionais.</p>
+            </div>
+            <div class="step-card">
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);">Especialização em Hospitalidade & Varejo</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">Expertise comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.</p>
+            </div>
+            <div class="step-card">
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);">Segurança & Confidencialidade</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">Termos de sigilo (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CAPTAÇÃO & CONTATO DIRETO -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <div class="subtitle-badge">Atendimento Personalizado</div>
+            <h2 class="section-title">Inicie Sua Próxima Operação</h2>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px;">
+              Deseja adquirir um ativo, colocar seu hotel/imóvel à venda com discrição, ou solicitar um projeto de interiores? Envie sua mensagem e receba retorno direto da nossa diretoria.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">📞</div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">WhatsApp Direto</div>
+                  <strong style="font-size: 1.05rem;">(11) 94197-8333</strong>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">✉️</div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">E-mails Oficiais</div>
+                  <strong style="font-size: 0.95rem;">kmyprime@kmyprime.com.br</strong><br>
+                  <span style="font-size: 0.85rem; color: var(--text-secondary);">marta.kmyprime@gmail.com</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">🌐</div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Portal & Redes</div>
+                  <strong style="font-size: 0.95rem;">www.kmyprime.com.br</strong> · Instagram @kmyprime
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <form id="lead-contact-form">
+            <div class="form-group">
+              <label for="lead-nome">Seu Nome / Razão Social *</label>
+              <input type="text" id="lead-nome" class="form-control" placeholder="Ex: Roberto Silveira / Grupo Hotelier" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lead-telefone">WhatsApp com DDD *</label>
+              <input type="tel" id="lead-telefone" class="form-control" placeholder="Ex: (11) 99999-9999" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lead-interesse">Principal Interesse *</label>
+              <select id="lead-interesse" class="form-control" required>
+                <option value="Comprar Ativo Imobiliário">Comprar Ativo Imobiliário</option>
+                <option value="Vender Imóvel / Hotel">Vender Imóvel / Hotel (Off-Market)</option>
+                <option value="Arrendamento de Pousada / Hotel">Arrendamento de Pousada ou Hotel</option>
+                <option value="Locação de Laje / Loja">Locação de Laje Corporativa ou Loja</option>
+                <option value="Lote Residencial MCMV">Investir em Lote MCMV</option>
+                <option value="Decoração de Interiores">Projeto de Decoração de Interiores</option>
+                <option value="Outro assunto">Outro assunto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-mensagem">Mensagem / Observações</label>
+              <textarea id="lead-mensagem" rows="3" class="form-control" placeholder="Descreva brevemente sua demanda ou o código do imóvel de interesse..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px;">
+              <span>Enviar via WhatsApp Oficial</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE DETALHES DO IMÓVEL -->
+  <div class="property-modal-overlay" id="property-modal-overlay">
+    <div class="property-modal-container" id="property-modal-container">
+      <!-- Injetado dinamicamente via openPropertyModal() -->
+    </div>
+  </div>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP COM ANEL DE PULSO DOURADO -->
+  <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20KMY%20Prime%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Fale conosco no WhatsApp">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-coin-logo" title="KMY Prime - Topo">
+            <img src="./assets/images/kmy_coin_3d.png?v=2" alt="KMY Prime Emblema K" class="footer-coin-img" />
+          </a>
+          <p>
+            KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>
+            Intermediação de compra, venda, locação e arrendamento de Ativos Imobiliários com atuação nacional e internacional e Decoração de Interiores de alto luxo.
+          </p>
+          <div style="margin-top: 14px; font-weight: 700; color: var(--gold-300); line-height: 1.5;">
+            Marta A. Soriano<br>
+            <span style="font-size: 0.9rem; font-weight: 600;">Decoradora &amp; CEO Novos Negócios</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Segmentos</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogo">Hotéis & Resorts</a></li>
+            <li><a href="#catalogo">Pousadas</a></li>
+            <li><a href="#catalogo">Hospitais & Clínicas</a></li>
+            <li><a href="#catalogo">Lajes Corporativas</a></li>
+            <li><a href="#catalogo">Lojas & Varejo</a></li>
+            <li><a href="#catalogo">Aptos MCMV</a></li>
+            <li><a href="#catalogo">Shoppings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#jornada">Track Record</a></li>
+            <li><a href="#decoracao">Decoração de Interiores</a></li>
+            <li><a href="#contato">Fale com a Diretoria</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-links">
+            <li><a href="tel:5511941978333">(11) 94197-8333</a></li>
+            <li><a href="mailto:kmyprime@kmyprime.com.br">kmyprime@kmyprime.com.br</a></li>
+            <li><a href="mailto:marta.kmyprime@gmail.com">marta.kmyprime@gmail.com</a></li>
+            <li><a href="https://instagram.com/kmyprime" target="_blank" rel="noopener noreferrer">Instagram @kmyprime</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-corp-col">
+          <h4 class="footer-corp-heading">INFORMAÇÕES CORPORATIVAS</h4>
+          <div class="footer-corp-card">
+            <div class="footer-corp-title">KMY Prime Planejamento Imobiliária</div>
+            <div class="footer-corp-detail">CNPJ: 42.443.449/0001-74</div>
+            <div class="footer-corp-detail">CRECI: 198.893-F</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. Todos os direitos reservados.
+        </div>
+        <div>
+          Desenvolvido por <a href="https://www.zionsite.com.br" target="_blank" rel="noopener noreferrer" class="zion-credit">Zion Site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      function loadStandaloneFallback() {
+        if (window.__KMY_INITIALIZED__ || window.__KMY_FALLBACK_LOADING__) return;
+        window.__KMY_FALLBACK_LOADING__ = true;
+        var s = document.createElement('script');
+        s.src = './public/assets/kmy-standalone.js';
+        s.onerror = function() {
+          var s2 = document.createElement('script');
+          s2.src = './assets/kmy-standalone.js';
+          document.body.appendChild(s2);
+        };
+        document.body.appendChild(s);
+      }
+
+      if (window.location.protocol === 'file:') {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', loadStandaloneFallback);
+        } else {
+          loadStandaloneFallback();
+        }
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            if (!window.__KMY_INITIALIZED__) loadStandaloneFallback();
+          }, 400);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
