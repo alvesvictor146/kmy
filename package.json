@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:standalone": "node -e \"import('esbuild').then(e => e.buildSync({ entryPoints: ['src/main.js'], bundle: true, format: 'iife', target: 'es2020', minify: true, outfile: 'public/assets/kmy-standalone.js' }))\"",
+    "build": "npm run build:standalone && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

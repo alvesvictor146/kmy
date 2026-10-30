@@ -1,4 +1,8 @@
-const BASE = import.meta.env.BASE_URL || '/';
+const isRawRepoIndex = typeof document !== 'undefined'
+  && !!document.querySelector('link[href*="src/styles/main.css"]')
+  && !document.querySelector('script[src*="@vite"]');
+
+const BASE = isRawRepoIndex ? './public/' : './';
 
 export const imoveis = [
   {
@@ -350,8 +354,8 @@ export const decoracaoEtapas = [
 
 export const institucionalDados = {
   razaoSocial: "KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA",
-  fundacao: "21 de junho de 2021",
-  responsavel: "Marta Soriano",
+  cargo: "Head de Novos Negócios",
+  responsavel: "Madalena Papp Lopes",
   creci: "198893-F",
   telefoneWhatsApp: "5511941978333",
   telefoneFormatado: "(11) 94197-8333",

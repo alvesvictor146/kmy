@@ -3,18 +3,47 @@ import { initHeroWebGL } from './gl/heroRaymarch.js';
 import { initScrollScrubbing } from './gl/scrollScrubbing.js';
 import Lenis from 'lenis';
 
-// 1. Inicializar Smooth Scroll com Lenis
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smoothWheel: true
-});
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
+// Fallback automático de caminho de imagem quando aberto diretamente pelo index.html na raiz (sem Vite build)
+function attachImageFallback(root = document) {
+  root.querySelectorAll('img').forEach(img => {
+    if (img.dataset.fallbackBound) return;
+    img.dataset.fallbackBound = '1';
+    img.addEventListener('error', function onImgErr() {
+      const src = img.getAttribute('src') || '';
+      if (src.includes('assets/images/') && !src.includes('public/assets/images/')) {
+        const fileName = src.split('assets/images/').pop();
+        img.src = `./public/assets/images/${fileName}`;
+      }
+    }, { once: true });
+  });
 }
-requestAnimationFrame(raf);
+
+// 1. Inicializar Smooth Scroll com Lenis
+let lenis = null;
+try {
+  lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+} catch (err) {
+  console.warn('Lenis smooth scroll fallback:', err);
+}
+
+function smoothScrollTo(targetEl) {
+  if (!targetEl) return;
+  if (lenis) {
+    lenis.scrollTo(targetEl, { offset: -60 });
+  } else {
+    targetEl.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 // 2. Renderizar Categorias no Grid Superior
 function renderCategories() {
@@ -35,9 +64,8 @@ function renderCategories() {
     card.addEventListener('click', () => {
       const catId = card.getAttribute('data-cat-id');
       setActiveFilter(catId);
-      // Smooth scroll to catalog
       const catalogEl = document.getElementById('catalogo');
-      if (catalogEl) lenis.scrollTo(catalogEl, { offset: -60 });
+      smoothScrollTo(catalogEl);
     });
   });
 }
@@ -126,7 +154,7 @@ function setActiveFilter(catId) {
 function buildWhatsAppUrl(imovel) {
   const currentUrl = window.location.origin + window.location.pathname + '#imovel-' + imovel.id;
   const texto = 
-`Olá, Marta / KMY Prime!
+`Olá, KMY Prime!
 Tenho interesse no seguinte ativo do portfólio:
 
 🏷️ *Código:* ${imovel.id}
@@ -202,6 +230,8 @@ function renderProperties(filter = 'todos') {
     `;
   }).join('');
 
+  attachImageFallback(grid);
+
   // Anexar ouvintes de modal
   grid.querySelectorAll('.open-modal-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -212,10 +242,12 @@ function renderProperties(filter = 'todos') {
 }
 
 // 7. Modal de Detalhes com Efeito de Expansão
-const modalOverlay = document.getElementById('property-modal-overlay');
-const modalContainer = document.getElementById('property-modal-container');
+let modalOverlay = null;
+let modalContainer = null;
 
 function openPropertyModal(id) {
+  modalOverlay = document.getElementById('property-modal-overlay');
+  modalContainer = document.getElementById('property-modal-container');
   const imovel = imoveis.find(item => item.id === id);
   if (!imovel || !modalOverlay || !modalContainer) return;
 
@@ -260,7 +292,7 @@ function openPropertyModal(id) {
 
       <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
         <div>
-          <div style="font-weight: 700; color: var(--text-primary);">Marta Soriano — CRECI 198893-F</div>
+          <div style="font-weight: 700; color: var(--text-primary);">Head de Novos Negócios — KMY Prime</div>
           <div style="font-size: 0.85rem; color: var(--text-muted);">Atendimento Executivo Exclusivo KMY Prime</div>
         </div>
         <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding: 16px 36px; font-size: 1rem;">
@@ -271,6 +303,8 @@ function openPropertyModal(id) {
     </div>
   `;
 
+  attachImageFallback(modalContainer);
+
   modalOverlay.classList.add('active');
   document.body.style.overflow = 'hidden';
 
@@ -279,15 +313,10 @@ function openPropertyModal(id) {
 }
 
 function closePropertyModal() {
+  modalOverlay = document.getElementById('property-modal-overlay');
   if (!modalOverlay) return;
   modalOverlay.classList.remove('active');
   document.body.style.overflow = '';
-}
-
-if (modalOverlay) {
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) closePropertyModal();
-  });
 }
 
 window.addEventListener('keydown', (e) => {
@@ -330,7 +359,7 @@ function setupContactForm() {
     const mensagem = document.getElementById('lead-mensagem').value.trim();
 
     const texto = 
-`Olá, Marta / KMY Prime!
+`Olá, KMY Prime!
 Preenchi o formulário de captação no site com interesse em ativos:
 
 👤 *Nome:* ${nome}
@@ -355,7 +384,7 @@ function setupHeroSearch() {
     const selected = catSelect.value;
     setActiveFilter(selected);
     const catalogEl = document.getElementById('catalogo');
-    if (catalogEl) lenis.scrollTo(catalogEl, { offset: -60 });
+    smoothScrollTo(catalogEl);
   });
 }
 
@@ -373,8 +402,20 @@ function setupHeaderScroll() {
   }, { passive: true });
 }
 
-// Inicialização completa ao carregar
-window.addEventListener('DOMContentLoaded', () => {
+// Inicialização completa (compatível com Vite, GitHub Pages, Live Server e index.html direto)
+function initApp() {
+  if (window.__KMY_INITIALIZED__) return;
+  window.__KMY_INITIALIZED__ = true;
+
+  attachImageFallback(document);
+
+  const overlay = document.getElementById('property-modal-overlay');
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closePropertyModal();
+    });
+  }
+
   renderCategories();
   renderCatalogFilters();
   renderProperties();
@@ -387,4 +428,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // Iniciar WebGL Hero & Scroll Scrubbing
   initHeroWebGL('hero-webgl-canvas');
   initScrollScrubbing('scrubbing-canvas');
-});
+}
+
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
