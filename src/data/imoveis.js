@@ -354,8 +354,8 @@ export const decoracaoEtapas = [
 
 export const institucionalDados = {
   razaoSocial: "KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA",
-  cargo: "Head de Novos Negócios",
-  responsavel: "Madalena Papp Lopes",
+  cargo: "Decoradora & CEO Novos Negócios",
+  responsavel: "Marta A. Soriano",
   creci: "198893-F",
   telefoneWhatsApp: "5511941978333",
   telefoneFormatado: "(11) 94197-8333",
