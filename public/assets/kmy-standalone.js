@@ -3876,7 +3876,7 @@ Gostaria de agendar uma reuni\xE3o de apresenta\xE7\xE3o e receber o memorando e
 
       <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
         <div>
-          <div style="font-weight: 700; color: var(--text-primary);">Head de Novos Neg\xF3cios \u2014 KMY Prime</div>
+          <div style="font-weight: 700; color: var(--text-primary);">Marta A. Soriano \u2014 Decoradora &amp; CEO Novos Neg\xF3cios</div>
           <div style="font-size: 0.85rem; color: var(--text-muted);">Atendimento Executivo Exclusivo KMY Prime</div>
         </div>
         <a href="${t}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding: 16px 36px; font-size: 1rem;">

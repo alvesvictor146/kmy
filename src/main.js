@@ -292,7 +292,7 @@ function openPropertyModal(id) {
 
       <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
         <div>
-          <div style="font-weight: 700; color: var(--text-primary);">Head de Novos Negócios — KMY Prime</div>
+          <div style="font-weight: 700; color: var(--text-primary);">Marta A. Soriano — Decoradora &amp; CEO Novos Negócios</div>
           <div style="font-size: 0.85rem; color: var(--text-muted);">Atendimento Executivo Exclusivo KMY Prime</div>
         </div>
         <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding: 16px 36px; font-size: 1rem;">
