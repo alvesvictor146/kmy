@@ -100,9 +100,16 @@
   </header>
 
   <main>
-    <!-- HERO SECTION COM RAYMARCHING 3D + SIMULAÇÃO DE PARTÍCULAS INTERATIVAS -->
+    <!-- HERO SECTION COM VÍDEO DE FUNDO INSTITUCIONAL -->
     <section class="hero-section" id="hero">
-      <canvas id="hero-webgl-canvas"></canvas>
+      <div class="hero-video-wrapper" aria-hidden="true">
+        <video class="hero-bg-video" autoplay loop muted playsinline preload="auto">
+          <source src="./assets/videos/hero_bg.mp4" type="video/mp4" />
+          <source src="./Asset_acquisition_and_management_5008b400_1080p.mp4" type="video/mp4" />
+          <source src="./public/assets/videos/hero_bg.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
 
       <div class="container">
         <div class="hero-content">

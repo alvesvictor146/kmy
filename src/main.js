@@ -1,5 +1,4 @@
 import { imoveis, categoriasList, decoracaoEtapas, institucionalDados } from './data/imoveis.js';
-import { initHeroWebGL } from './gl/heroRaymarch.js';
 import { initScrollScrubbing } from './gl/scrollScrubbing.js';
 import Lenis from 'lenis';
 
@@ -425,8 +424,12 @@ function initApp() {
   setupHeaderScroll();
   checkUrlHash();
 
-  // Iniciar WebGL Hero & Scroll Scrubbing
-  initHeroWebGL('hero-webgl-canvas');
+  // Garantir reprodução contínua do vídeo de fundo no Hero e iniciar Scroll Scrubbing
+  const heroVideo = document.querySelector('.hero-bg-video');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.play().catch(() => {});
+  }
   initScrollScrubbing('scrubbing-canvas');
 }
 
