@@ -1343,3 +1343,68 @@ h1, h2, h3, h4, .font-serif {
     padding: 20px;
   }
 }
+
+
+/* Botão Seletor de Idioma (PT-BR / EN) */
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 6px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1.5px solid var(--border-gold);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 10px rgba(193, 150, 50, 0.12);
+}
+
+.lang-switch-btn:hover {
+  border-color: var(--gold-500);
+  background: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(193, 150, 50, 0.24);
+}
+
+.lang-switch-btn .lang-opt {
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.lang-switch-btn .lang-opt.active {
+  background: var(--grad-gold);
+  color: #1A1305;
+  box-shadow: 0 2px 8px rgba(193, 150, 50, 0.3);
+}
+
+.lang-switch-btn .lang-sep {
+  color: var(--border-gold);
+  opacity: 0.45;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .header-actions {
+    gap: 8px;
+  }
+  .lang-switch-btn {
+    padding: 4px 5px;
+    font-size: 0.7rem;
+  }
+  .lang-switch-btn .lang-opt {
+    padding: 4px 7px;
+  }
+  #header-cta-whatsapp {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
+}

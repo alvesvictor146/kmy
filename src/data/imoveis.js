@@ -363,3 +363,352 @@ export const institucionalDados = {
   website: "www.kmyprime.com.br",
   instagram: "@kmyprime"
 };
+
+
+export const imoveisEn = [
+  {
+    id: "KMY-001",
+    titulo: "Oceanfront Boutique Hotel — 48 Luxury Suites",
+    subtitulo: "Established hotel operation with high profitability",
+    categoria: "hoteis",
+    categoriaNome: "Hotels & Resorts",
+    finalidade: "venda",
+    finalidadeNome: "Asset Sale",
+    cidade: "São Sebastião",
+    uf: "SP",
+    localizacao: "Juquehy Beach, North Coast — SP, Brazil",
+    preco: 38500000,
+    precoFormatado: "R$ 38,500,000",
+    areaTotal: "6,200 m²",
+    areaConstruida: "3,800 m²",
+    suites: 48,
+    vagas: 60,
+    destaques: [
+      "Infinity pool overlooking the ocean",
+      "Contemporary fine dining restaurant and beach bar",
+      "Full-service spa with dry and steam saunas",
+      "Average annual occupancy rate: 78%",
+      "Audited annual EBITDA and structured corporate governance"
+    ],
+    descricao: "Exceptional luxury hospitality investment opportunity on the most prestigious coastline of São Paulo. The hotel complex features 48 suites designed to international standards, signature gastronomy, and full infrastructure for corporate destination events and high-net-worth tourism.",
+    imagem: `${BASE}assets/images/imovel_1_hotel.jpg`,
+    status: "KMY Prime Exclusive",
+    tags: ["Beachfront", "Boutique", "High Yield", "Spa"]
+  },
+  {
+    id: "KMY-002",
+    titulo: "Oceanfront Eco-Luxury Resort — 110 Private Bungalows",
+    subtitulo: "Paradise complex integrated into nature with private helipad",
+    categoria: "hoteis",
+    categoriaNome: "Hotels & Resorts",
+    finalidade: "venda",
+    finalidadeNome: "Sale or Commercial Lease",
+    cidade: "Porto Seguro / Trancoso",
+    uf: "BA",
+    localizacao: "Discovery Coast — Trancoso / BA, Brazil",
+    preco: 95000000,
+    precoFormatado: "R$ 95,000,000",
+    areaTotal: "85,000 m²",
+    areaConstruida: "14,200 m²",
+    suites: 110,
+    vagas: 150,
+    destaques: [
+      "400m stretch of semi-private beach",
+      "Water park with interconnected organic pools",
+      "Certified helipad for day and night landings",
+      "Convention and events center for up to 500 guests",
+      "Commercial lease available subject to hotel group approval"
+    ],
+    descricao: "One of Brazil's most iconic hospitality assets. Eco-friendly structure with green certification, partial water self-sufficiency, internationally renowned spa, and an established clientele of ultra-high-net-worth domestic and international guests.",
+    imagem: `${BASE}assets/images/imovel_2_resort.jpg`,
+    status: "Triple A Asset",
+    tags: ["Helipad", "Trancoso", "Eco-Luxury", "Lease Available"]
+  },
+  {
+    id: "KMY-003",
+    titulo: "Exclusive Alpine Boutique Inn — 18 Swiss Chalets with Fireplace",
+    subtitulo: "Mountain charm surrounded by native Araucaria forest",
+    categoria: "pousadas",
+    categoriaNome: "Boutique Inns",
+    finalidade: "arrendamento",
+    finalidadeNome: "Commercial Lease",
+    cidade: "Campos do Jordão",
+    uf: "SP",
+    localizacao: "Alto do Capivari — Campos do Jordão / SP, Brazil",
+    preco: 65000,
+    precoFormatado: "R$ 65,000 / month",
+    precoInfo: "10-year commercial lease agreement",
+    areaTotal: "12,000 m²",
+    areaConstruida: "1,950 m²",
+    suites: 18,
+    vagas: 25,
+    destaques: [
+      "Thermal chalets with heated floors and whirlpool tubs",
+      "Climate-controlled underground wine cellar for 1,500 bottles",
+      "Award-winning fondue restaurant and mountain bistro",
+      "Fully furnished and operating at full capacity",
+      "9.8 guest rating across major booking platforms"
+    ],
+    descricao: "Commercial lease of a traditional boutique inn in the prime district of Campos do Jordão. 100% equipped turnkey operation with high net margins during winter peak seasons and year-round romantic tourism.",
+    imagem: `${BASE}assets/images/imovel_3_pousada.jpg`,
+    status: "Lease Opportunity",
+    tags: ["Mantiqueira Mountains", "Fireplace & Spa", "Wine Cellar"]
+  },
+  {
+    id: "KMY-004",
+    titulo: "Historic Colonial Boutique Inn — Downtown Paraty",
+    subtitulo: "Restored architectural heritage with spa and natural stone pool",
+    categoria: "pousadas",
+    categoriaNome: "Boutique Inns",
+    finalidade: "venda",
+    finalidadeNome: "Asset Sale",
+    cidade: "Paraty",
+    uf: "RJ",
+    localizacao: "Historic Landmark Center — Paraty / RJ, Brazil",
+    preco: 22000000,
+    precoFormatado: "R$ 22,000,000",
+    areaTotal: "2,400 m²",
+    areaConstruida: "1,750 m²",
+    suites: 22,
+    vagas: 0,
+    destaques: [
+      "Centuries-old mansion restored with historical rigor and modern comfort",
+      "Landscaped inner courtyard with illuminated natural stone pool",
+      "Collection of period furniture and integrated fine artworks",
+      "Steady stream of international tourists from FLIP and cultural festivals",
+      "Expansion potential with adjacent property"
+    ],
+    descricao: "A true gem in the UNESCO historic center of Paraty. Combines Baroque charm and colonial elegance with air-conditioned international-standard suites. Ideal for investors seeking enduring cultural heritage assets.",
+    imagem: `${BASE}assets/images/imovel_4_pousada.jpg`,
+    status: "Heritage Asset",
+    tags: ["Historic Center", "Colonial Gem", "High Visibility"]
+  },
+  {
+    id: "KMY-005",
+    titulo: "General Hospital & Specialized Surgical Center",
+    subtitulo: "Triple A healthcare facility with 12 smart operating rooms",
+    categoria: "hospitais",
+    categoriaNome: "Hospitals & Clinics",
+    finalidade: "venda",
+    finalidadeNome: "Healthcare Asset Sale",
+    cidade: "Campinas / Valinhos",
+    uf: "SP",
+    localizacao: "D. Pedro / Anhanguera Highway Corridor — SP, Brazil",
+    preco: 145000000,
+    precoFormatado: "R$ 145,000,000",
+    areaTotal: "18,500 m²",
+    areaConstruida: "16,800 m²",
+    suites: 90,
+    vagas: 220,
+    destaques: [
+      "12 smart operating rooms with laminar airflow",
+      "90 inpatient beds including 24 general and coronary ICU beds",
+      "Complete diagnostic imaging center (MRI, CT, Hemodynamics)",
+      "Certified aeromedical transport helipad",
+      "100% compliant with ANVISA RDC-50 healthcare standards"
+    ],
+    descricao: "Modern hospital complex designed for healthcare operators, diagnostic medicine networks, or real estate investment trusts via Sale & Leaseback (SLB) contracts. Turnkey and ready for immediate operation.",
+    imagem: `${BASE}assets/images/imovel_5_hospital.jpg`,
+    status: "Institutional Healthcare Asset",
+    tags: ["Surgical Center", "Full ICU", "ANVISA RDC-50", "Sale & Leaseback"]
+  },
+  {
+    id: "KMY-006",
+    titulo: "Triple A Corporate Floor — 1,250 m² on Faria Lima Ave.",
+    subtitulo: "Full-floor trophy office in the heart of the financial district",
+    categoria: "lajes",
+    categoriaNome: "Corporate Floors",
+    finalidade: "venda",
+    finalidadeNome: "Sale or Lease",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "Brigadeiro Faria Lima Ave., Itaim Bibi — São Paulo / SP",
+    preco: 52000000,
+    precoFormatado: "R$ 52,000,000",
+    precoInfo: "Lease option available: R$ 380/m²",
+    areaTotal: "1,250 m² private area",
+    areaConstruida: "1,250 m²",
+    suites: 0,
+    vagas: 38,
+    destaques: [
+      "LEED Platinum and WELL Health-Safety certifications",
+      "3.10m clear ceiling height with heavy-duty raised flooring",
+      "Unitized curtain wall with thermal and acoustic solar control glass",
+      "Full backup power generator covering 100% of private area",
+      "Smart destination-dispatch elevator system"
+    ],
+    descricao: "Prestigious corporate space at Latin America's most sought-after business address. Open-plan layout ideal for investment banks, private equity firms, fintechs, and multinationals demanding top institutional representation.",
+    imagem: `${BASE}assets/images/imovel_6_laje.jpg`,
+    status: "Triple A — Faria Lima",
+    tags: ["LEED Platinum", "Faria Lima", "Open Plan", "Trophy Building"]
+  },
+  {
+    id: "KMY-007",
+    titulo: "Panoramic Corporate Floor — 720 m² in Alphaville",
+    subtitulo: "Turnkey office space overlooking preserved green area",
+    categoria: "lajes",
+    categoriaNome: "Corporate Floors",
+    finalidade: "locacao",
+    finalidadeNome: "Corporate Lease",
+    cidade: "Barueri / Alphaville",
+    uf: "SP",
+    localizacao: "Alameda Rio Negro, Alphaville — Barueri / SP, Brazil",
+    preco: 68000,
+    precoFormatado: "R$ 68,000 / month",
+    precoInfo: "Condo fee and property tax upon request",
+    areaTotal: "720 m²",
+    areaConstruida: "720 m²",
+    suites: 0,
+    vagas: 24,
+    destaques: [
+      "Fully cabled with VRF inverter air conditioning",
+      "4 private acoustic glass meeting rooms and ground-floor auditorium",
+      "Furnished executive pantry and breakout lounge",
+      "Adjacent to Iguatemi Alphaville Mall and business hub",
+      "Direct access via Castello Branco Highway"
+    ],
+    descricao: "Plug & play corporate floor ready for immediate occupancy. Contemporary design featuring wooden acoustic ceilings, high-density vinyl flooring, and panoramic views of the Alphaville skyline.",
+    imagem: `${BASE}assets/images/imovel_7_laje.jpg`,
+    status: "Ready for Occupancy (Plug & Play)",
+    tags: ["Alphaville", "Plug & Play", "VRF Inverter", "Panoramic View"]
+  },
+  {
+    id: "KMY-008",
+    titulo: "Luxury Flagship Store — 380 m² on Oscar Freire St.",
+    subtitulo: "Most coveted corner retail property in Jardins",
+    categoria: "lojas",
+    categoriaNome: "Retail Stores",
+    finalidade: "venda",
+    finalidadeNome: "Property / Retail Sale",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "Rua Oscar Freire, Jardins — São Paulo / SP, Brazil",
+    preco: 28000000,
+    precoFormatado: "R$ 28,000,000",
+    precoInfo: "Also available for lease: R$ 130,000/month",
+    areaTotal: "380 m²",
+    areaConstruida: "380 m² across 2 levels",
+    suites: 0,
+    vagas: 4,
+    destaques: [
+      "14-meter storefront window in tempered glass and gold framing",
+      "Roman travertine marble flooring and integrated architectural lighting",
+      "High-ticket pedestrian foot traffic in the heart of Jardins",
+      "Lower level equipped for secure vault storage and VIP lounge",
+      "Vacant property ready for luxury brand flagship deployment"
+    ],
+    descricao: "Legendary address in São Paulo's luxury district. Ideal for fine jewelry houses, haute couture labels, art galleries, or global brands looking to establish a flagship presence on Brazil's most iconic street.",
+    imagem: `${BASE}assets/images/imovel_8_loja.jpg`,
+    status: "Iconic Retail Corner",
+    tags: ["Oscar Freire", "Jardins", "14m Storefront", "Roman Travertine"]
+  },
+  {
+    id: "KMY-009",
+    titulo: "Parque das Acácias Residential — Block of 48 MCMV Units",
+    subtitulo: "Portfolio of turnkey residential apartments for rental income",
+    categoria: "mcmv",
+    categoriaNome: "Residential Lots (MCMV)",
+    finalidade: "venda",
+    finalidadeNome: "Block Sale (Investor)",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "São Mateus / Itaquera, East Zone — São Paulo / SP",
+    preco: 10800000,
+    precoFormatado: "R$ 10,800,000",
+    precoInfo: "Equivalent to R$ 225,000 per unit",
+    areaTotal: "2,800 m² total private area",
+    areaConstruida: "3,400 m²",
+    suites: 0,
+    vagas: 48,
+    destaques: [
+      "48 two-bedroom apartments (48 m² to 52 m²) with balcony",
+      "Gated community with 24/7 security, sports court, playground & gourmet lounge",
+      "Estimated rental yield: 0.68% p.m. net of vacancy",
+      "Located 800m from future monorail station",
+      "100% approved documentation and occupancy permit (CEF)"
+    ],
+    descricao: "Outstanding opportunity for residential income funds, developers, or patrimonial investors. Block acquisition of ready-to-rent units under the MCMV housing program, ensuring high liquidity and steady rental cash flow.",
+    imagem: `${BASE}assets/images/imovel_9_mcmv.jpg`,
+    status: "Investor Block Sale",
+    tags: ["MCMV Tier 3", "High Liquidity", "Rental Income", "Turnkey"]
+  },
+  {
+    id: "KMY-010",
+    titulo: "Regional Shopping Mall — 85 Stores & Multiplex Cinema",
+    subtitulo: "Consolidated retail asset with 100% leased GLA",
+    categoria: "shopping",
+    categoriaNome: "Shopping Malls",
+    finalidade: "venda",
+    finalidadeNome: "Retail Asset Sale",
+    cidade: "Ribeirão Preto",
+    uf: "SP",
+    localizacao: "Greater Ribeirão Preto Metropolitan Area / SP, Brazil",
+    preco: 185000000,
+    precoFormatado: "R$ 185,000,000",
+    precoInfo: "Projected Cap Rate: 8.7% p.a.",
+    areaTotal: "42,000 m² land plot",
+    areaConstruida: "26,500 m² (18,200 m² GLA)",
+    suites: 0,
+    vagas: 980,
+    destaques: [
+      "85 satellite stores, 4 anchor stores, and food court with 24 operations",
+      "Cinema complex with 5 stadium theaters (2 in 3D)",
+      "Automated parking garage with 980 covered spaces",
+      "Audited monthly footfall exceeding 380,000 visitors",
+      "Solid lease agreements with full common area maintenance pass-through"
+    ],
+    descricao: "Prime income-generating asset in the economic hub of São Paulo's agribusiness region. Regional shopping center with dominant market share in its primary catchment area, delivering stable dividend yields and real estate expansion potential.",
+    imagem: `${BASE}assets/images/imovel_10_shopping.jpg`,
+    status: "Institutional Income Asset",
+    tags: ["Cap Rate 8.7%", "85 Stores", "Multiplex Cinema", "Ribeirão Preto"]
+  }
+];
+
+export const categoriasListEn = [
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 10 },
+  { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
+  { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
+  { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },
+  { id: "lajes", nome: "Corporate Floors", icone: "building-2", total: 2 },
+  { id: "lojas", nome: "Retail Stores", icone: "store", total: 1 },
+  { id: "mcmv", nome: "Residential Lots", icone: "home", total: 1 },
+  { id: "shopping", nome: "Shopping Malls", icone: "shopping-bag", total: 1 }
+];
+
+export const decoracaoEtapasEn = [
+  {
+    num: "01",
+    titulo: "Project Briefing",
+    desc: "In-depth alignment of the client's desires, routine, lifestyle, and investment goals."
+  },
+  {
+    num: "02",
+    titulo: "Conceptual Study",
+    desc: "Creation of initial sketches, sensory moodboard, color palette, and spatial layout."
+  },
+  {
+    num: "03",
+    titulo: "Preliminary & Executive Design",
+    desc: "Detailed plans for construction, electrical, architectural lighting, ceiling, plumbing, and custom millwork."
+  },
+  {
+    num: "04",
+    titulo: "Budgeting & Specifications",
+    desc: "Rigorous cost planning and technical specification of premium finishes, marbles, and fixtures."
+  },
+  {
+    num: "05",
+    titulo: "Site Supervision",
+    desc: "Continuous technical oversight on site, ensuring strict schedule compliance and flawless finishes."
+  },
+  {
+    num: "06",
+    titulo: "Styling & Assembly",
+    desc: "Fine art curation, selection of designer furniture, rugs, drapery, lighting, and exclusive decor pieces."
+  },
+  {
+    num: "07",
+    titulo: "Handover & Warranty",
+    desc: "Final inspection checklist and celebratory key handover with dedicated post-occupancy technical support."
+  }
+];

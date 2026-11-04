@@ -82,16 +82,22 @@
 
       <nav aria-label="Navegação Principal">
         <ul class="nav-links">
-          <li><a href="#imoveis" class="nav-link">Segmentos</a></li>
-          <li><a href="#jornada" class="nav-link">Track Record</a></li>
-          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
-          <li><a href="#decoracao" class="nav-link">Decoração</a></li>
-          <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
-          <li><a href="#contato" class="nav-link">Contato</a></li>
+          <li><a href="#imoveis" class="nav-link" data-i18n="navSegmentos">Segmentos</a></li>
+          <li><a href="#jornada" class="nav-link" data-i18n="navJornada">Track Record</a></li>
+          <li><a href="#catalogo" class="nav-link" data-i18n="navCatalogo">Catálogo</a></li>
+          <li><a href="#decoracao" class="nav-link" data-i18n="navDecoracao">Decoração</a></li>
+          <li><a href="#sobre" class="nav-link" data-i18n="navSobre">Quem Somos</a></li>
+          <li><a href="#contato" class="nav-link" data-i18n="navContato">Contato</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
+        <button type="button" class="lang-switch-btn" id="lang-switch-btn" aria-label="Alternar idioma / Switch language" title="Português (BR) / English">
+          <span class="lang-opt active" data-lang="pt">PT-BR</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </button>
+
         <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20oportunidades%20de%20investimento%20na%20KMY%20Prime." target="_blank" rel="noopener noreferrer" class="btn btn-gold" id="header-cta-whatsapp">
           <span>(11) 94197-8333</span>
         </a>
@@ -103,57 +109,57 @@
     <!-- HERO SECTION COM VÍDEO DE FUNDO INSTITUCIONAL -->
     <section class="hero-section" id="hero">
       <div class="hero-video-wrapper" aria-hidden="true">
-        <video class="hero-bg-video" autoplay loop muted playsinline preload="auto">
-          <source src="./assets/videos/hero_bg.mp4" type="video/mp4" />
-          <source src="./Asset_acquisition_and_management_5008b400_1080p.mp4" type="video/mp4" />
+        <video class="hero-bg-video" id="hero-bg-video" autoplay loop muted playsinline preload="auto">
+          <source src="./Asset_acquisition_and_management_5008b400_t0-7.1_1080p.mp4" type="video/mp4" />
           <source src="./public/assets/videos/hero_bg.mp4" type="video/mp4" />
+          <source src="./assets/videos/hero_bg.mp4" type="video/mp4" />
         </video>
         <div class="hero-video-overlay"></div>
       </div>
 
       <div class="container">
         <div class="hero-content">
-          <div class="subtitle-badge">Planejamento Imobiliário & Ativos</div>
-          <h1 class="hero-title">
+          <div class="subtitle-badge" data-i18n="heroBadge">Planejamento Imobiliário & Ativos</div>
+          <h1 class="hero-title" data-i18n-html="heroTitleHtml">
             Aquisição & Gestão de <span class="text-gold-gradient">Ativos de Alto Valor</span>
           </h1>
-          <p class="hero-desc">
+          <p class="hero-desc" data-i18n="heroDesc">
             Intermediação qualificada, sigilosa e estratégica em Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.
           </p>
 
           <!-- Barra de Busca Rápida Estilo Private Banking -->
           <div class="search-bar-luxury">
             <div class="search-input-group">
-              <label for="hero-search-category">Segmento de Interesse</label>
+              <label for="hero-search-category" data-i18n="heroSearchLabel">Segmento de Interesse</label>
               <select id="hero-search-category" aria-label="Selecione o segmento">
-                <option value="todos">Todos os Ativos (10)</option>
-                <option value="hoteis">Hotéis & Resorts (2)</option>
-                <option value="pousadas">Pousadas (2)</option>
-                <option value="hospitais">Hospitais & Clínicas (1)</option>
-                <option value="lajes">Lajes Corporativas (2)</option>
-                <option value="lojas">Lojas & Varejo (1)</option>
-                <option value="mcmv">Aptos MCMV (1)</option>
-                <option value="shopping">Shoppings & Malls (1)</option>
+                <option value="todos" data-i18n="heroOptTodos">Todos os Ativos (10)</option>
+                <option value="hoteis" data-i18n="heroOptHoteis">Hotéis & Resorts (2)</option>
+                <option value="pousadas" data-i18n="heroOptPousadas">Pousadas (2)</option>
+                <option value="hospitais" data-i18n="heroOptHospitais">Hospitais & Clínicas (1)</option>
+                <option value="lajes" data-i18n="heroOptLajes">Lajes Corporativas (2)</option>
+                <option value="lojas" data-i18n="heroOptLojas">Lojas & Varejo (1)</option>
+                <option value="mcmv" data-i18n="heroOptMcmv">Aptos MCMV (1)</option>
+                <option value="shopping" data-i18n="heroOptShopping">Shoppings & Malls (1)</option>
               </select>
             </div>
             <div class="search-divider"></div>
             <button class="btn btn-gold" id="hero-search-btn" style="padding: 12px 24px;">
-              <span>Explorar Portfólio</span>
+              <span data-i18n="heroSearchBtn">Explorar Portfólio</span>
             </button>
           </div>
 
           <div class="hero-metrics">
             <div class="metric-item">
-              <div class="metric-val">Prime</div>
-              <div class="metric-lbl">Governança Sólida</div>
+              <div class="metric-val" data-i18n="metricVal1">Prime</div>
+              <div class="metric-lbl" data-i18n="metricLbl1">Governança Sólida</div>
             </div>
             <div class="metric-item">
-              <div class="metric-val">Global</div>
-              <div class="metric-lbl">Atuação Nacional e Internacional</div>
+              <div class="metric-val" data-i18n="metricVal2">Global</div>
+              <div class="metric-lbl" data-i18n="metricLbl2">Atuação Nacional e Internacional</div>
             </div>
             <div class="metric-item">
-              <div class="metric-val">Executivo</div>
-              <div class="metric-lbl">Head de Novos Negócios</div>
+              <div class="metric-val" data-i18n="metricVal3">Executivo</div>
+              <div class="metric-lbl" data-i18n="metricLbl3">Head de Novos Negócios</div>
             </div>
           </div>
         </div>
@@ -164,9 +170,9 @@
     <section class="categories-section" id="imoveis">
       <div class="container">
         <div class="section-head">
-          <div class="subtitle-badge">Especialidades & Portfólio</div>
-          <h2 class="section-title">Segmentos de Atuação Especializada</h2>
-          <p class="section-sub">Soluções imobiliárias sob medida para investidores institucionais, redes hoteleiras e family offices.</p>
+          <div class="subtitle-badge" data-i18n="catBadge">Especialidades & Portfólio</div>
+          <h2 class="section-title" data-i18n="catTitle">Segmentos de Atuação Especializada</h2>
+          <p class="section-sub" data-i18n="catSub">Soluções imobiliárias sob medida para investidores institucionais, redes hoteleiras e family offices.</p>
         </div>
 
         <div class="categories-carousel" id="categories-container">
@@ -184,33 +190,33 @@
       <div class="scrubbing-content-layer">
         <div class="scrub-step-block">
           <div class="scrub-card">
-            <div class="scrub-badge">Fase 01 · Prospecção</div>
-            <h3 class="scrub-title">Curadoria Rigorosa & Off-Market</h3>
-            <p class="scrub-text">Acesso a ativos estratégicos que não chegam ao mercado aberto. Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.</p>
+            <div class="scrub-badge" data-i18n="scrubBadge1">Fase 01 · Prospecção</div>
+            <h3 class="scrub-title" data-i18n="scrubTitle1">Curadoria Rigorosa & Off-Market</h3>
+            <p class="scrub-text" data-i18n="scrubText1">Acesso a ativos estratégicos que não chegam ao mercado aberto. Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.</p>
           </div>
         </div>
 
         <div class="scrub-step-block">
           <div class="scrub-card">
-            <div class="scrub-badge">Fase 02 · Due Diligence</div>
-            <h3 class="scrub-title">Auditoria Jurídica & Valoração</h3>
-            <p class="scrub-text">Análise minuciosa de certidões, regularidade fundiária, laudos de engenharia, capacidade de cap rate e mitigação integral de riscos.</p>
+            <div class="scrub-badge" data-i18n="scrubBadge2">Fase 02 · Due Diligence</div>
+            <h3 class="scrub-title" data-i18n="scrubTitle2">Auditoria Jurídica & Valoração</h3>
+            <p class="scrub-text" data-i18n="scrubText2">Análise minuciosa de certidões, regularidade fundiária, laudos de engenharia, capacidade de cap rate e mitigação integral de riscos.</p>
           </div>
         </div>
 
         <div class="scrub-step-block">
           <div class="scrub-card">
-            <div class="scrub-badge">Fase 03 · Estruturação</div>
-            <h3 class="scrub-title">Engenharia Financeira & Contratual</h3>
-            <p class="scrub-text">Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).</p>
+            <div class="scrub-badge" data-i18n="scrubBadge3">Fase 03 · Estruturação</div>
+            <h3 class="scrub-title" data-i18n="scrubTitle3">Engenharia Financeira & Contratual</h3>
+            <p class="scrub-text" data-i18n="scrubText3">Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).</p>
           </div>
         </div>
 
         <div class="scrub-step-block">
           <div class="scrub-card">
-            <div class="scrub-badge">Fase 04 · Concretização</div>
-            <h3 class="scrub-title">Governança, Entrega & Sucesso</h3>
-            <p class="scrub-text">Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.</p>
+            <div class="scrub-badge" data-i18n="scrubBadge4">Fase 04 · Concretização</div>
+            <h3 class="scrub-title" data-i18n="scrubTitle4">Governança, Entrega & Sucesso</h3>
+            <p class="scrub-text" data-i18n="scrubText4">Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.</p>
           </div>
         </div>
       </div>
@@ -220,9 +226,9 @@
     <section class="catalog-section" id="catalogo">
       <div class="container">
         <div class="section-head">
-          <div class="subtitle-badge">Catálogo Exclusivo</div>
-          <h2 class="section-title">Ativos Imobiliários Disponíveis</h2>
-          <p class="section-sub">Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.</p>
+          <div class="subtitle-badge" data-i18n="catalogBadge">Catálogo Exclusivo</div>
+          <h2 class="section-title" data-i18n="catalogTitle">Ativos Imobiliários Disponíveis</h2>
+          <p class="section-sub" data-i18n="catalogSub">Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.</p>
         </div>
 
         <!-- Filtros do Catálogo -->
@@ -247,23 +253,23 @@
             <img src="./assets/images/decoracao_hero.jpg" alt="Decoração de Interiores de Alto Padrão KMY Prime" />
           </div>
           <div>
-            <div class="subtitle-badge">Design & Sofisticação</div>
-            <h2 class="section-title">Decoração de Interiores KMY Prime</h2>
-            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1.05rem;">
+            <div class="subtitle-badge" data-i18n="decorBadge">Design & Sofisticação</div>
+            <h2 class="section-title" data-i18n="decorTitle">Decoração de Interiores KMY Prime</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1.05rem;" data-i18n="decorP1">
               Além da compra e venda de ativos, a KMY Prime desenvolve projetos completos de arquitetura de interiores para hotéis, pousadas de charme, lajes executivas e residências de alto padrão em todo o Brasil e no exterior.
             </p>
-            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;" data-i18n="decorP2">
               Do primeiro briefing à pós-entrega, coordenamos cada detalhe com rigor estético, fornecedores nobres e gestão técnica total do cronograma.
             </p>
             <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20briefing%20de%20decora%C3%A7%C3%A3o%20de%20interiores%20para%20meu%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" class="btn btn-gold">
-              <span>Agendar Briefing de Decoração</span>
+              <span data-i18n="decorCta">Agendar Briefing de Decoração</span>
             </a>
           </div>
         </div>
 
         <div class="section-head" style="margin-bottom: 40px;">
-          <h3 style="font-size: 2rem;">Metodologia em 7 Etapas</h3>
-          <p class="section-sub">Processo estruturado que garante previsibilidade, conformidade orçamentária e acabamento impecável.</p>
+          <h3 style="font-size: 2rem;" data-i18n="decorMethodTitle">Metodologia em 7 Etapas</h3>
+          <p class="section-sub" data-i18n="decorMethodSub">Processo estruturado que garante previsibilidade, conformidade orçamentária e acabamento impecável.</p>
         </div>
 
         <div class="decor-steps-grid" id="decor-steps-container">
@@ -277,12 +283,12 @@
       <div class="container">
         <div class="about-card-luxury">
           <div>
-            <div class="subtitle-badge">História & Propósito</div>
-            <h2 class="section-title">KMY Prime Planejamento Imobiliário</h2>
-            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+            <div class="subtitle-badge" data-i18n="aboutBadge">História & Propósito</div>
+            <h2 class="section-title" data-i18n="aboutTitle">KMY Prime Planejamento Imobiliário</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;" data-i18n-html="aboutP1Html">
               A <strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> atua com excelência na estruturação, compra e venda de Ativos de alto valor no mercado imobiliário, locação estratégica e arrendamento comercial com presença nacional e internacional.
             </p>
-            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;" data-i18n="aboutP2">
               Com governança corporativa de alto padrão, a KMY consolidou uma sólida rede de relacionamento que inclui proprietários de grandes ativos, grupos de hospitalidade, incorporadores e fundos imobiliários, assegurando transações ágeis, sigilosas e respaldadas juridicamente.
             </p>
 
@@ -290,23 +296,23 @@
               <div class="creci-icon">✓</div>
               <div>
                 <strong style="color: var(--text-primary); display: block;">Marta A. Soriano</strong>
-                <span style="font-size: 0.85rem; color: var(--gold-700); font-weight: 700;">Decoradora &amp; CEO Novos Negócios</span>
+                <span style="font-size: 0.85rem; color: var(--gold-700); font-weight: 700;" data-i18n="aboutRole">Decoradora &amp; CEO Novos Negócios</span>
               </div>
             </div>
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 20px;">
             <div class="step-card">
-              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);">Atuação Nacional e Internacional</h4>
-              <p style="font-size: 0.92rem; color: var(--text-secondary);">Estrutura ágil para negociações em capitais financeiras, polos litorâneos turísticos, eixos de agronegócio e mercados internacionais.</p>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard1Title">Atuação Nacional e Internacional</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard1Text">Estrutura ágil para negociações em capitais financeiras, polos litorâneos turísticos, eixos de agronegócio e mercados internacionais.</p>
             </div>
             <div class="step-card">
-              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);">Especialização em Hospitalidade & Varejo</h4>
-              <p style="font-size: 0.92rem; color: var(--text-secondary);">Expertise comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.</p>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard2Title">Especialização em Hospitalidade & Varejo</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard2Text">Expertise comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.</p>
             </div>
             <div class="step-card">
-              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);">Segurança & Confidencialidade</h4>
-              <p style="font-size: 0.92rem; color: var(--text-secondary);">Termos de sigilo (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.</p>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard3Title">Segurança & Confidencialidade</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard3Text">Termos de sigilo (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.</p>
             </div>
           </div>
         </div>
@@ -318,9 +324,9 @@
       <div class="container">
         <div class="contact-box">
           <div>
-            <div class="subtitle-badge">Atendimento Personalizado</div>
-            <h2 class="section-title">Inicie Sua Próxima Operação</h2>
-            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px;">
+            <div class="subtitle-badge" data-i18n="contactBadge">Atendimento Personalizado</div>
+            <h2 class="section-title" data-i18n="contactTitle">Inicie Sua Próxima Operação</h2>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px;" data-i18n="contactDesc">
               Deseja adquirir um ativo, colocar seu hotel/imóvel à venda com discrição, ou solicitar um projeto de interiores? Envie sua mensagem e receba retorno direto da nossa diretoria.
             </p>
 
@@ -328,7 +334,7 @@
               <div style="display: flex; align-items: center; gap: 14px;">
                 <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">📞</div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">WhatsApp Direto</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contactWaLabel">WhatsApp Direto</div>
                   <strong style="font-size: 1.05rem;">(11) 94197-8333</strong>
                 </div>
               </div>
@@ -336,7 +342,7 @@
               <div style="display: flex; align-items: center; gap: 14px;">
                 <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">✉️</div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">E-mails Oficiais</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contactEmailLabel">E-mails Oficiais</div>
                   <strong style="font-size: 0.95rem;">kmyprime@kmyprime.com.br</strong><br>
                   <span style="font-size: 0.85rem; color: var(--text-secondary);">marta.kmyprime@gmail.com</span>
                 </div>
@@ -345,7 +351,7 @@
               <div style="display: flex; align-items: center; gap: 14px;">
                 <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">🌐</div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Portal & Redes</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contactPortalLabel">Portal & Redes</div>
                   <strong style="font-size: 0.95rem;">www.kmyprime.com.br</strong> · Instagram @kmyprime
                 </div>
               </div>
@@ -355,35 +361,35 @@
           <!-- Formulário -->
           <form id="lead-contact-form">
             <div class="form-group">
-              <label for="lead-nome">Seu Nome / Razão Social *</label>
-              <input type="text" id="lead-nome" class="form-control" placeholder="Ex: Roberto Silveira / Grupo Hotelier" required />
+              <label for="lead-nome" data-i18n="formNameLabel">Seu Nome / Razão Social *</label>
+              <input type="text" id="lead-nome" class="form-control" placeholder="Ex: Roberto Silveira / Grupo Hotelier" data-i18n-placeholder="formNamePlaceholder" required />
             </div>
 
             <div class="form-group">
-              <label for="lead-telefone">WhatsApp com DDD *</label>
-              <input type="tel" id="lead-telefone" class="form-control" placeholder="Ex: (11) 99999-9999" required />
+              <label for="lead-telefone" data-i18n="formPhoneLabel">WhatsApp com DDD *</label>
+              <input type="tel" id="lead-telefone" class="form-control" placeholder="Ex: (11) 99999-9999" data-i18n-placeholder="formPhonePlaceholder" required />
             </div>
 
             <div class="form-group">
-              <label for="lead-interesse">Principal Interesse *</label>
+              <label for="lead-interesse" data-i18n="formInterestLabel">Principal Interesse *</label>
               <select id="lead-interesse" class="form-control" required>
-                <option value="Comprar Ativo Imobiliário">Comprar Ativo Imobiliário</option>
-                <option value="Vender Imóvel / Hotel">Vender Imóvel / Hotel (Off-Market)</option>
-                <option value="Arrendamento de Pousada / Hotel">Arrendamento de Pousada ou Hotel</option>
-                <option value="Locação de Laje / Loja">Locação de Laje Corporativa ou Loja</option>
-                <option value="Lote Residencial MCMV">Investir em Lote MCMV</option>
-                <option value="Decoração de Interiores">Projeto de Decoração de Interiores</option>
-                <option value="Outro assunto">Outro assunto</option>
+                <option value="Comprar Ativo Imobiliário" data-i18n="formOpt1">Comprar Ativo Imobiliário</option>
+                <option value="Vender Imóvel / Hotel" data-i18n="formOpt2">Vender Imóvel / Hotel (Off-Market)</option>
+                <option value="Arrendamento de Pousada / Hotel" data-i18n="formOpt3">Arrendamento de Pousada ou Hotel</option>
+                <option value="Locação de Laje / Loja" data-i18n="formOpt4">Locação de Laje Corporativa ou Loja</option>
+                <option value="Lote Residencial MCMV" data-i18n="formOpt5">Investir em Lote MCMV</option>
+                <option value="Decoração de Interiores" data-i18n="formOpt6">Projeto de Decoração de Interiores</option>
+                <option value="Outro assunto" data-i18n="formOpt7">Outro assunto</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="lead-mensagem">Mensagem / Observações</label>
-              <textarea id="lead-mensagem" rows="3" class="form-control" placeholder="Descreva brevemente sua demanda ou o código do imóvel de interesse..."></textarea>
+              <label for="lead-mensagem" data-i18n="formMsgLabel">Mensagem / Observações</label>
+              <textarea id="lead-mensagem" rows="3" class="form-control" placeholder="Descreva brevemente sua demanda ou o código do imóvel de interesse..." data-i18n-placeholder="formMsgPlaceholder"></textarea>
             </div>
 
             <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px;">
-              <span>Enviar via WhatsApp Oficial</span>
+              <span data-i18n="formSubmitBtn">Enviar via WhatsApp Oficial</span>
             </button>
           </form>
         </div>
@@ -411,41 +417,41 @@
           <a href="#" class="footer-coin-logo" title="KMY Prime - Topo">
             <img src="./assets/images/kmy_coin_3d.png?v=2" alt="KMY Prime Emblema K" class="footer-coin-img" />
           </a>
-          <p>
+          <p data-i18n-html="footerBrandDescHtml">
             KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>
             Intermediação de compra, venda, locação e arrendamento de Ativos Imobiliários com atuação nacional e internacional e Decoração de Interiores de alto luxo.
           </p>
           <div style="margin-top: 14px; font-weight: 700; color: var(--gold-300); line-height: 1.5;">
             Marta A. Soriano<br>
-            <span style="font-size: 0.9rem; font-weight: 600;">Decoradora &amp; CEO Novos Negócios</span>
+            <span style="font-size: 0.9rem; font-weight: 600;" data-i18n="footerRole">Decoradora &amp; CEO Novos Negócios</span>
           </div>
         </div>
 
         <div>
-          <h4 class="footer-title">Segmentos</h4>
+          <h4 class="footer-title" data-i18n="footerColSegments">Segmentos</h4>
           <ul class="footer-links">
-            <li><a href="#catalogo">Hotéis & Resorts</a></li>
-            <li><a href="#catalogo">Pousadas</a></li>
-            <li><a href="#catalogo">Hospitais & Clínicas</a></li>
-            <li><a href="#catalogo">Lajes Corporativas</a></li>
-            <li><a href="#catalogo">Lojas & Varejo</a></li>
-            <li><a href="#catalogo">Aptos MCMV</a></li>
-            <li><a href="#catalogo">Shoppings</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg1">Hotéis & Resorts</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg2">Pousadas</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg3">Hospitais & Clínicas</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg4">Lajes Corporativas</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg5">Lojas & Varejo</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg6">Aptos MCMV</a></li>
+            <li><a href="#catalogo" data-i18n="footerSeg7">Shoppings</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Institucional</h4>
+          <h4 class="footer-title" data-i18n="footerColInst">Institucional</h4>
           <ul class="footer-links">
-            <li><a href="#sobre">Quem Somos</a></li>
-            <li><a href="#jornada">Track Record</a></li>
-            <li><a href="#decoracao">Decoração de Interiores</a></li>
-            <li><a href="#contato">Fale com a Diretoria</a></li>
+            <li><a href="#sobre" data-i18n="footerInst1">Quem Somos</a></li>
+            <li><a href="#jornada" data-i18n="footerInst2">Track Record</a></li>
+            <li><a href="#decoracao" data-i18n="footerInst3">Decoração de Interiores</a></li>
+            <li><a href="#contato" data-i18n="footerInst4">Fale com a Diretoria</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-title">Contato</h4>
+          <h4 class="footer-title" data-i18n="footerColContact">Contato</h4>
           <ul class="footer-links">
             <li><a href="tel:5511941978333">(11) 94197-8333</a></li>
             <li><a href="mailto:kmyprime@kmyprime.com.br">kmyprime@kmyprime.com.br</a></li>
@@ -455,7 +461,7 @@
         </div>
 
         <div class="footer-corp-col">
-          <h4 class="footer-corp-heading">INFORMAÇÕES CORPORATIVAS</h4>
+          <h4 class="footer-corp-heading" data-i18n="footerCorpHeading">INFORMAÇÕES CORPORATIVAS</h4>
           <div class="footer-corp-card">
             <div class="footer-corp-title">KMY Prime Planejamento Imobiliária</div>
             <div class="footer-corp-detail">CNPJ: 42.443.449/0001-74</div>
@@ -465,11 +471,11 @@
       </div>
 
       <div class="footer-bottom">
-        <div>
+        <div data-i18n="footerRights">
           © 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. Todos os direitos reservados.
         </div>
         <div>
-          Desenvolvido por <a href="https://www.zionsite.com.br" target="_blank" rel="noopener noreferrer" class="zion-credit">Zion Site</a>
+          <span data-i18n="footerDevBy">Desenvolvido por</span> <a href="https://www.zionsite.com.br" target="_blank" rel="noopener noreferrer" class="zion-credit">Zion Site</a>
         </div>
       </div>
     </div>
