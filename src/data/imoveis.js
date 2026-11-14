@@ -402,6 +402,40 @@ export const institucionalDados = {
 
 export const imoveisEn = [
   {
+    id: "KMY-011",
+    titulo: "Aratu — Triple A Logistics Park",
+    subtitulo: "First logistics warehouse in Brazil awarded EDGE green certification by IFC",
+    categoria: "galpoes",
+    categoriaNome: "Logistic Warehouses",
+    finalidade: "venda",
+    finalidadeNome: "Executive Portfolio",
+    cidade: "Simões Filho",
+    uf: "BA",
+    localizacao: "Via Centro, CIA Sul — Simões Filho, Bahia - BA (Greater Salvador Metropolitan Area)",
+    preco: 0,
+    precoFormatado: "Upon Request",
+    precoInfo: "AAA Rating · 12 m Clear Height · 6 T/m² Floor Load",
+    areaTotal: "102,530 m²",
+    areaConstruida: "102,530 m² GLA",
+    abl: "102,530 m²",
+    classificacao: "AAA",
+    peDireito: "12 m",
+    capacidadePiso: "6 T/m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Gross Leasable Area (GLA): 102,530 m² across two modular warehouses",
+      "AAA Classification · 12 m Clear Ceiling Height · 6 T/m² Floor Load Capacity",
+      "First logistics warehouse in Brazil to receive EDGE green building certification granted by IFC",
+      "Full corporate infrastructure including restaurant, cafeteria, auditorium, and meeting rooms",
+      "Located in Simões Filho (Via Centro, CIA Sul) with direct highway access and only 20 km from downtown Salvador"
+    ],
+    descricao: "Acquired in June 2021, this logistics park comprises two modular warehouses with over 100,000 m² of GLA (102,530 m²). It features a restaurant, cafeteria, auditorium, and meeting rooms. Located in Simões Filho (Via Centro, CIA Sul) in the Greater Salvador Metropolitan Area, the asset offers direct access to major regional highways and is just 20 km from downtown Salvador. Aratu is the first logistics warehouse in Brazil to receive EDGE green building certification from the IFC.",
+    imagem: `${BASE}assets/images/imovel_11_aratu.webp`,
+    status: "Executive Portfolio · AAA",
+    tags: ["GLA 102,530 m²", "AAA Rating", "12 m Height", "6 T/m² Floor", "EDGE Certified (IFC)"]
+  },
+  {
     id: "KMY-001",
     titulo: "Oceanfront Boutique Hotel — 48 Luxury Suites",
     subtitulo: "Established hotel operation with high profitability",
@@ -700,7 +734,8 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 10 },
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 11 },
+  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 1 },
   { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },

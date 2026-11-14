@@ -22,10 +22,11 @@ const i18nStrings = {
     navContato: 'Contato',
     heroBadge: 'Planejamento Imobiliário & Ativos',
     heroTitleHtml: 'Aquisição & Gestão de <span class="text-gold-gradient">Ativos de Alto Valor</span>',
-    heroDesc: 'Intermediação qualificada, sigilosa e estratégica em Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.',
+    heroDesc: 'Intermediação qualificada, sigilosa e estratégica em Galpões Logísticos, Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.',
     heroSearchLabel: 'Segmento de Interesse',
     heroSearchBtn: 'Explorar Portfólio',
-    heroOptTodos: 'Todos os Ativos (10)',
+    heroOptTodos: 'Todos os Ativos (11)',
+    heroOptGalpoes: 'Galpões Logísticos (1)',
     heroOptHoteis: 'Hotéis & Resorts (2)',
     heroOptPousadas: 'Pousadas (2)',
     heroOptHospitais: 'Hospitais & Clínicas (1)',
@@ -56,18 +57,25 @@ const i18nStrings = {
     scrubBadge4: 'Fase 04 · Concretização',
     scrubTitle4: 'Governança, Entrega & Sucesso',
     scrubText4: 'Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.',
-    catalogBadge: 'Catálogo Exclusivo',
+    catalogBadge: 'Catálogo Executivo',
     catalogTitle: 'Ativos Imobiliários Disponíveis',
     catalogSub: 'Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.',
     noAssetsFound: 'Nenhum ativo encontrado nesta categoria no momento.',
     suitesLabel: 'suítes',
     vagasLabel: 'vagas',
+    cardClassLabel: 'Classificação',
+    cardHeightLabel: 'Pé-direito',
+    cardFloorLabel: 'Piso',
     btnDetail: 'Ficha Técnica',
     waCardTitle: 'Conversar no WhatsApp',
     modalCloseAria: 'Fechar modal',
     modalInvestLabel: 'Valor do Investimento',
     modalTotalArea: 'Área Total:',
     modalBuiltArea: 'Área Construída:',
+    modalAbl: 'Área Bruta Locável:',
+    modalClass: 'Classificação:',
+    modalHeight: 'Pé-direito:',
+    modalFloor: 'Capacidade do Piso:',
     modalSuites: 'Suítes:',
     modalParking: 'Vagas:',
     modalDescHeading: 'Descrição do Empreendimento',
@@ -104,6 +112,7 @@ const i18nStrings = {
     formPhoneLabel: 'WhatsApp com DDD *',
     formPhonePlaceholder: 'Ex: (11) 99999-9999',
     formInterestLabel: 'Principal Interesse *',
+    formOptGalpoes: 'Galpões Logísticos (Venda / Locação)',
     formOpt1: 'Comprar Ativo Imobiliário',
     formOpt2: 'Vender Imóvel / Hotel (Off-Market)',
     formOpt3: 'Arrendamento de Pousada ou Hotel',
@@ -117,6 +126,7 @@ const i18nStrings = {
     footerBrandDescHtml: 'KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>Intermediação de compra, venda, locação e arrendamento de Ativos Imobiliários com atuação nacional e internacional e Decoração de Interiores de alto luxo.',
     footerRole: 'Decoradora & CEO Novos Negócios',
     footerColSegments: 'Segmentos',
+    footerSegGalpoes: 'Galpões Logísticos',
     footerSeg1: 'Hotéis & Resorts',
     footerSeg2: 'Pousadas',
     footerSeg3: 'Hospitais & Clínicas',
@@ -144,10 +154,11 @@ const i18nStrings = {
     navContato: 'Contact',
     heroBadge: 'Real Estate Planning & Assets',
     heroTitleHtml: 'Acquisition & Management of <span class="text-gold-gradient">High-Value Assets</span>',
-    heroDesc: 'Qualified, confidential, and strategic intermediation in Hotels, Boutique Inns, Hospitals, Corporate Floors, Retail Stores, Residential Lots, and Shopping Malls with national and international reach.',
+    heroDesc: 'Qualified, confidential, and strategic intermediation in Logistic Warehouses, Hotels, Boutique Inns, Hospitals, Corporate Floors, Retail Stores, Residential Lots, and Shopping Malls with national and international reach.',
     heroSearchLabel: 'Segment of Interest',
     heroSearchBtn: 'Explore Portfolio',
-    heroOptTodos: 'All Assets (10)',
+    heroOptTodos: 'All Assets (11)',
+    heroOptGalpoes: 'Logistic Warehouses (1)',
     heroOptHoteis: 'Hotels & Resorts (2)',
     heroOptPousadas: 'Boutique Inns (2)',
     heroOptHospitais: 'Hospitals & Clinics (1)',
@@ -178,18 +189,25 @@ const i18nStrings = {
     scrubBadge4: 'Phase 04 · Closing',
     scrubTitle4: 'Governance, Delivery & Success',
     scrubText4: 'Closing under specialized executive advisory, ensuring legal security, satisfaction, and long-term asset preservation in every transaction.',
-    catalogBadge: 'Exclusive Portfolio',
+    catalogBadge: 'Executive Portfolio',
     catalogTitle: 'Available Real Estate Assets',
     catalogSub: 'Review the technical fact sheet of each opportunity and contact us directly via WhatsApp with the linked listing.',
     noAssetsFound: 'No assets found in this category at the moment.',
     suitesLabel: 'suites',
     vagasLabel: 'parking spaces',
+    cardClassLabel: 'Class',
+    cardHeightLabel: 'Clear Height',
+    cardFloorLabel: 'Floor Load',
     btnDetail: 'Fact Sheet',
     waCardTitle: 'Chat on WhatsApp',
     modalCloseAria: 'Close modal',
     modalInvestLabel: 'Investment Value',
     modalTotalArea: 'Total Area:',
     modalBuiltArea: 'Built Area:',
+    modalAbl: 'Gross Leasable Area:',
+    modalClass: 'Classification:',
+    modalHeight: 'Clear Height:',
+    modalFloor: 'Floor Load Capacity:',
     modalSuites: 'Suites:',
     modalParking: 'Parking Spaces:',
     modalDescHeading: 'Property Description',
@@ -226,6 +244,7 @@ const i18nStrings = {
     formPhoneLabel: 'WhatsApp / Phone Number *',
     formPhonePlaceholder: 'E.g.: +55 (11) 99999-9999',
     formInterestLabel: 'Primary Interest *',
+    formOptGalpoes: 'Logistic Warehouses (Sale / Lease)',
     formOpt1: 'Acquire Real Estate Asset',
     formOpt2: 'Sell Property / Hotel (Off-Market)',
     formOpt3: 'Lease Boutique Inn or Hotel',
@@ -239,6 +258,7 @@ const i18nStrings = {
     footerBrandDescHtml: 'KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>Intermediation of purchase, sale, leasing, and management of High-Value Real Estate Assets nationally and internationally, plus Luxury Interior Design.',
     footerRole: 'Interior Designer & CEO of New Business',
     footerColSegments: 'Segments',
+    footerSegGalpoes: 'Logistic Warehouses',
     footerSeg1: 'Hotels & Resorts',
     footerSeg2: 'Boutique Inns',
     footerSeg3: 'Hospitals & Clinics',
@@ -498,6 +518,9 @@ function renderProperties(filter = 'todos') {
           
           <div class="prop-features" style="flex-wrap: wrap;">
             <div class="feature-item">📐 <span>${item.areaConstruida || item.areaTotal}</span></div>
+            ${item.classificacao ? `<div class="feature-item">🏅 <span>${t('cardClassLabel')} ${item.classificacao}</span></div>` : ''}
+            ${item.peDireito ? `<div class="feature-item">⬆️ <span>${t('cardHeightLabel')} ${item.peDireito}</span></div>` : ''}
+            ${item.capacidadePiso ? `<div class="feature-item">🏗️ <span>${t('cardFloorLabel')} ${item.capacidadePiso}</span></div>` : ''}
             ${item.suites ? `<div class="feature-item">🛏️ <span>${item.suites} ${t('suitesLabel')}</span></div>` : ''}
             ${item.vagas ? `<div class="feature-item">🚗 <span>${item.vagas} ${t('vagasLabel')}</span></div>` : ''}
           </div>
@@ -563,9 +586,11 @@ function openPropertyModal(id) {
         </div>
       </div>
 
-      <div style="display: flex; gap: 20px; padding: 18px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); margin-bottom: 24px; font-weight: 600;">
-        <div>${t('modalTotalArea')} <span style="color: var(--gold-700);">${imovel.areaTotal}</span></div>
-        <div>${t('modalBuiltArea')} <span style="color: var(--gold-700);">${imovel.areaConstruida}</span></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; padding: 18px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); margin-bottom: 24px; font-weight: 600;">
+        ${imovel.abl ? `<div>${t('modalAbl')} <span style="color: var(--gold-700);">${imovel.abl}</span></div>` : `<div>${t('modalTotalArea')} <span style="color: var(--gold-700);">${imovel.areaTotal}</span></div>`}
+        ${imovel.classificacao ? `<div>${t('modalClass')} <span style="color: var(--gold-700);">${imovel.classificacao}</span></div>` : `<div>${t('modalBuiltArea')} <span style="color: var(--gold-700);">${imovel.areaConstruida}</span></div>`}
+        ${imovel.peDireito ? `<div>${t('modalHeight')} <span style="color: var(--gold-700);">${imovel.peDireito}</span></div>` : ''}
+        ${imovel.capacidadePiso ? `<div>${t('modalFloor')} <span style="color: var(--gold-700);">${imovel.capacidadePiso}</span></div>` : ''}
         ${imovel.suites ? `<div>${t('modalSuites')} <span style="color: var(--gold-700);">${imovel.suites}</span></div>` : ''}
         ${imovel.vagas ? `<div>${t('modalParking')} <span style="color: var(--gold-700);">${imovel.vagas}</span></div>` : ''}
       </div>
