@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+
 
   <!-- Import Map para funcionamento direto via index.html / Live Server sem necessidade de bundler -->
 
@@ -70,7 +70,7 @@
     }
   }
   </script>
-  <script type="module" crossorigin src="/kmy/assets/index-usxVIarh.js"></script>
+  <script type="module" crossorigin src="/kmy/assets/index-Dd1cC-Ag.js"></script>
   <link rel="stylesheet" crossorigin href="/kmy/assets/index-DTgC7fMj.css">
 </head>
 <body>
@@ -125,7 +125,7 @@
             Aquisição & Gestão de <span class="text-gold-gradient">Ativos de Alto Valor</span>
           </h1>
           <p class="hero-desc" data-i18n="heroDesc">
-            Intermediação qualificada, sigilosa e estratégica em Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.
+            Intermediação qualificada, sigilosa e estratégica em Galpões Logísticos, Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.
           </p>
 
           <!-- Barra de Busca Rápida Estilo Private Banking -->
@@ -133,7 +133,8 @@
             <div class="search-input-group">
               <label for="hero-search-category" data-i18n="heroSearchLabel">Segmento de Interesse</label>
               <select id="hero-search-category" aria-label="Selecione o segmento">
-                <option value="todos" data-i18n="heroOptTodos">Todos os Ativos (10)</option>
+                <option value="todos" data-i18n="heroOptTodos">Todos os Ativos (11)</option>
+                <option value="galpoes" data-i18n="heroOptGalpoes">Galpões Logísticos (1)</option>
                 <option value="hoteis" data-i18n="heroOptHoteis">Hotéis & Resorts (2)</option>
                 <option value="pousadas" data-i18n="heroOptPousadas">Pousadas (2)</option>
                 <option value="hospitais" data-i18n="heroOptHospitais">Hospitais & Clínicas (1)</option>
@@ -223,11 +224,11 @@
       </div>
     </section>
 
-    <!-- CATÁLOGO DE ATIVOS COM FILTROS FLIP & 10 ANÚNCIOS -->
+    <!-- CATÁLOGO DE ATIVOS COM FILTROS FLIP & 11 ANÚNCIOS -->
     <section class="catalog-section" id="catalogo">
       <div class="container">
         <div class="section-head">
-          <div class="subtitle-badge" data-i18n="catalogBadge">Catálogo Exclusivo</div>
+          <div class="subtitle-badge" data-i18n="catalogBadge">Catálogo Executivo</div>
           <h2 class="section-title" data-i18n="catalogTitle">Ativos Imobiliários Disponíveis</h2>
           <p class="section-sub" data-i18n="catalogSub">Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.</p>
         </div>
@@ -374,6 +375,7 @@
             <div class="form-group">
               <label for="lead-interesse" data-i18n="formInterestLabel">Principal Interesse *</label>
               <select id="lead-interesse" class="form-control" required>
+                <option value="Galpões Logísticos" data-i18n="formOptGalpoes">Galpões Logísticos (Venda / Locação)</option>
                 <option value="Comprar Ativo Imobiliário" data-i18n="formOpt1">Comprar Ativo Imobiliário</option>
                 <option value="Vender Imóvel / Hotel" data-i18n="formOpt2">Vender Imóvel / Hotel (Off-Market)</option>
                 <option value="Arrendamento de Pousada / Hotel" data-i18n="formOpt3">Arrendamento de Pousada ou Hotel</option>
@@ -431,6 +433,7 @@
         <div>
           <h4 class="footer-title" data-i18n="footerColSegments">Segmentos</h4>
           <ul class="footer-links">
+            <li><a href="#catalogo" data-i18n="footerSegGalpoes">Galpões Logísticos</a></li>
             <li><a href="#catalogo" data-i18n="footerSeg1">Hotéis & Resorts</a></li>
             <li><a href="#catalogo" data-i18n="footerSeg2">Pousadas</a></li>
             <li><a href="#catalogo" data-i18n="footerSeg3">Hospitais & Clínicas</a></li>
@@ -481,7 +484,7 @@
       </div>
     </div>
   </footer>
-
+
   <script>
     (function() {
       function loadStandaloneFallback() {
