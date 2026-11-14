@@ -3814,7 +3814,148 @@ Preenchi o formul\xE1rio de capta\xE7\xE3o no site com interesse em ativos:
 \u{1F4BC} *Interesse Principal:* ${s}
 \u{1F4DD} *Mensagem:* ${r||"Gostaria de conhecer o portf\xF3lio dispon\xEDvel para meu perfil de investimento."}
 
-Aguardo contato para agendamento.`,a=`https://wa.me/${Js.telefoneWhatsApp}?text=${encodeURIComponent(o)}`;window.open(a,"_blank")})}function _m(){let i=document.getElementById("hero-search-btn"),t=document.getElementById("hero-search-category");!i||!t||i.addEventListener("click",()=>{let e=t.value;ba(e);let n=document.getElementById("catalogo");Hl(n)})}function vm(){let i=document.querySelector(".site-header");i&&window.addEventListener("scroll",()=>{window.scrollY>40?i.classList.add("scrolled"):i.classList.remove("scrolled")},{passive:!0})}function kl(){if(window.__KMY_INITIALIZED__)return;window.__KMY_INITIALIZED__=!0,Sa(document);let i=document.getElementById("property-modal-overlay");i&&i.addEventListener("click",e=>{e.target===i&&Ea()}),um(),dm(),Gl(),mm(),gm(),_m(),vm(),pm();let t=document.querySelector(".hero-bg-video");t&&(t.muted=!0,t.play().catch(()=>{})),Dl("scrubbing-canvas")}document.readyState==="loading"?window.addEventListener("DOMContentLoaded",kl):kl();})();
+Aguardo contato para agendamento.`,a=`https://wa.me/${Js.telefoneWhatsApp}?text=${encodeURIComponent(o)}`;window.open(a,"_blank")})}function _m(){let i=document.getElementById("hero-search-btn"),t=document.getElementById("hero-search-category");!i||!t||i.addEventListener("click",()=>{let e=t.value;ba(e);let n=document.getElementById("catalogo");Hl(n)})}function vm(){let i=document.querySelector(".site-header");i&&window.addEventListener("scroll",()=>{window.scrollY>40?i.classList.add("scrolled"):i.classList.remove("scrolled")},{passive:!0})}
+var currentLang="pt";
+var i18nDict={
+  pt:{
+    navSegmentos:"Segmentos",navJornada:"Track Record",navCatalogo:"Catálogo",navDecoracao:"Decoração",navSobre:"Quem Somos",navContato:"Contato",
+    heroBadge:"Planejamento Imobiliário & Ativos",heroTitleHtml:'Aquisição & Gestão de <span class="text-gold-gradient">Ativos de Alto Valor</span>',
+    heroDesc:"Intermediação qualificada, sigilosa e estratégica em Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.",
+    heroSearchLabel:"Segmento de Interesse",heroSearchBtn:"Explorar Portfólio",
+    heroOptTodos:"Todos os Ativos (10)",heroOptHoteis:"Hotéis & Resorts (2)",heroOptPousadas:"Pousadas (2)",heroOptHospitais:"Hospitais & Clínicas (1)",heroOptLajes:"Lajes Corporativas (2)",heroOptLojas:"Lojas & Varejo (1)",heroOptMcmv:"Aptos MCMV (1)",heroOptShopping:"Shoppings & Malls (1)",
+    metricVal1:"Prime",metricLbl1:"Governança Sólida",metricVal2:"Global",metricLbl2:"Atuação Nacional e Internacional",metricVal3:"Executivo",metricLbl3:"Head de Novos Negócios",
+    catBadge:"Especialidades & Portfólio",catTitle:"Segmentos de Atuação Especializada",catSub:"Soluções imobiliárias sob medida para investidores institucionais, redes hoteleiras e family offices.",
+    scrubBadge1:"Fase 01 · Prospecção",scrubTitle1:"Curadoria Rigorosa & Off-Market",scrubText1:"Acesso a ativos estratégicos que não chegam ao mercado aberto. Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.",
+    scrubBadge2:"Fase 02 · Due Diligence",scrubTitle2:"Auditoria Jurídica & Valoração",scrubText2:"Análise minuciosa de certidões, regularidade fundiária, laudos de engenharia, capacidade de cap rate e mitigação integral de riscos.",
+    scrubBadge3:"Fase 03 · Estruturação",scrubTitle3:"Engenharia Financeira & Contratual",scrubText3:"Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).",
+    scrubBadge4:"Fase 04 · Concretização",scrubTitle4:"Governança, Entrega & Sucesso",scrubText4:"Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.",
+    catalogBadge:"Catálogo Exclusivo",catalogTitle:"Ativos Imobiliários Disponíveis",catalogSub:"Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.",
+    decorBadge:"Design & Sofisticação",decorTitle:"Decoração de Interiores KMY Prime",
+    decorP1:"Além da compra e venda de ativos, a KMY Prime desenvolve projetos completos de arquitetura de interiores para hotéis, pousadas de charme, lajes executivas e residências de alto padrão em todo o Brasil e no exterior.",
+    decorP2:"Do primeiro briefing à pós-entrega, coordenamos cada detalhe com rigor estético, fornecedores nobres e gestão técnica total do cronograma.",
+    decorCta:"Agendar Briefing de Decoração",decorMethodTitle:"Metodologia em 7 Etapas",decorMethodSub:"Processo estruturado que garante previsibilidade, conformidade orçamentária e acabamento impecável.",
+    aboutBadge:"História & Propósito",aboutTitle:"KMY Prime Planejamento Imobiliário",
+    aboutP1Html:'A <strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> atua com excelência na estruturação, compra e venda de Ativos de alto valor no mercado imobiliário, locação estratégica e arrendamento comercial com presença nacional e internacional.',
+    aboutP2:"Com governança corporativa de alto padrão, a KMY consolidou uma sólida rede de relacionamento que inclui proprietários de grandes ativos, grupos de hospitalidade, incorporadores e fundos imobiliários, assegurando transações ágeis, sigilosas e respaldadas juridicamente.",
+    aboutRole:"Decoradora & CEO Novos Negócios",
+    aboutCard1Title:"Atuação Nacional e Internacional",aboutCard1Text:"Estrutura ágil para negociações em capitais financeiras, polos litorâneos turísticos, eixos de agronegócio e mercados internacionais.",
+    aboutCard2Title:"Especialização em Hospitalidade & Varejo",aboutCard2Text:"Expertise comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.",
+    aboutCard3Title:"Segurança & Confidencialidade",aboutCard3Text:"Termos de sigilo (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.",
+    contactBadge:"Atendimento Personalizado",contactTitle:"Inicie Sua Próxima Operação",
+    contactDesc:"Deseja adquirir um ativo, colocar seu hotel/imóvel à venda com discrição, ou solicitar um projeto de interiores? Envie sua mensagem e receba retorno direto da nossa diretoria.",
+    contactWaLabel:"WhatsApp Direto",contactEmailLabel:"E-mails Oficiais",contactPortalLabel:"Portal & Redes",
+    formNameLabel:"Seu Nome / Razão Social *",formNamePlaceholder:"Ex: Roberto Silveira / Grupo Hotelier",
+    formPhoneLabel:"WhatsApp com DDD *",formPhonePlaceholder:"Ex: (11) 99999-9999",formInterestLabel:"Principal Interesse *",
+    formOpt1:"Comprar Ativo Imobiliário",formOpt2:"Vender Imóvel / Hotel (Off-Market)",formOpt3:"Arrendamento de Pousada ou Hotel",formOpt4:"Locação de Laje Corporativa ou Loja",formOpt5:"Investir em Lote MCMV",formOpt6:"Projeto de Decoração de Interiores",formOpt7:"Outro assunto",
+    formMsgLabel:"Mensagem / Observações",formMsgPlaceholder:"Descreva brevemente sua demanda ou o código do imóvel de interesse...",formSubmitBtn:"Enviar via WhatsApp Oficial",
+    footerBrandDescHtml:"KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>Intermediação de compra, venda, locação e arrendamento de Ativos Imobiliários com atuação nacional e internacional e Decoração de Interiores de alto luxo.",
+    footerRole:"Decoradora & CEO Novos Negócios",footerColSegments:"Segmentos",footerSeg1:"Hotéis & Resorts",footerSeg2:"Pousadas",footerSeg3:"Hospitais & Clínicas",footerSeg4:"Lajes Corporativas",footerSeg5:"Lojas & Varejo",footerSeg6:"Aptos MCMV",footerSeg7:"Shoppings",
+    footerColInst:"Institucional",footerInst1:"Quem Somos",footerInst2:"Track Record",footerInst3:"Decoração de Interiores",footerInst4:"Fale com a Diretoria",footerColContact:"Contato",
+    footerCorpHeading:"INFORMAÇÕES CORPORATIVAS",footerRights:"© 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. Todos os direitos reservados.",footerDevBy:"Desenvolvido por"
+  },
+  en:{
+    navSegmentos:"Segments",navJornada:"Track Record",navCatalogo:"Portfolio",navDecoracao:"Interior Design",navSobre:"About Us",navContato:"Contact",
+    heroBadge:"Real Estate Planning & Assets",heroTitleHtml:'Acquisition & Management of <span class="text-gold-gradient">High-Value Assets</span>',
+    heroDesc:"Qualified, confidential, and strategic intermediation in Hotels, Boutique Inns, Hospitals, Corporate Floors, Retail Stores, Residential Lots, and Shopping Malls with national and international reach.",
+    heroSearchLabel:"Segment of Interest",heroSearchBtn:"Explore Portfolio",
+    heroOptTodos:"All Assets (10)",heroOptHoteis:"Hotels & Resorts (2)",heroOptPousadas:"Boutique Inns (2)",heroOptHospitais:"Hospitals & Clinics (1)",heroOptLajes:"Corporate Floors (2)",heroOptLojas:"Retail Stores (1)",heroOptMcmv:"Residential Lots (1)",heroOptShopping:"Shopping Malls (1)",
+    metricVal1:"Prime",metricLbl1:"Solid Governance",metricVal2:"Global",metricLbl2:"National & International Reach",metricVal3:"Executive",metricLbl3:"Head of New Business",
+    catBadge:"Specialties & Portfolio",catTitle:"Specialized Market Segments",catSub:"Tailor-made real estate solutions for institutional investors, hotel chains, and family offices.",
+    scrubBadge1:"Phase 01 · Sourcing",scrubTitle1:"Rigorous & Off-Market Curation",scrubText1:"Access to strategic assets that never reach the open market. Mapping high-yield opportunities under strict commercial confidentiality.",
+    scrubBadge2:"Phase 02 · Due Diligence",scrubTitle2:"Legal Audit & Valuation",scrubText2:"Thorough analysis of certificates, land compliance, engineering reports, cap rate capacity, and comprehensive risk mitigation.",
+    scrubBadge3:"Phase 03 · Structuring",scrubTitle3:"Financial & Contractual Engineering",scrubText3:"Modeling of atypical contracts, long-term commercial leases, Built to Suit (BTS), and Sale & Leaseback (SLB).",
+    scrubBadge4:"Phase 04 · Closing",scrubTitle4:"Governance, Delivery & Success",scrubText4:"Closing under specialized executive advisory, ensuring legal security, satisfaction, and long-term asset preservation in every transaction.",
+    catalogBadge:"Exclusive Portfolio",catalogTitle:"Available Real Estate Assets",catalogSub:"Review the technical fact sheet of each opportunity and contact us directly via WhatsApp with the linked listing.",
+    decorBadge:"Design & Sophistication",decorTitle:"KMY Prime Interior Design",
+    decorP1:"Beyond asset acquisition and sales, KMY Prime develops full-scale interior architecture projects for hotels, boutique inns, executive floors, and luxury residences across Brazil and internationally.",
+    decorP2:"From initial briefing to post-delivery, we coordinate every detail with aesthetic rigor, noble suppliers, and complete technical schedule management.",
+    decorCta:"Schedule a Design Briefing",decorMethodTitle:"7-Step Methodology",decorMethodSub:"Structured process ensuring predictability, budget compliance, and flawless finishing.",
+    aboutBadge:"History & Purpose",aboutTitle:"KMY Prime Real Estate Planning",
+    aboutP1Html:'<strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> excels in structuring, buying, and selling high-value real estate assets, strategic leasing, and commercial operations with national and international presence.',
+    aboutP2:"With top-tier corporate governance, KMY has built a solid relationship network including major asset owners, hospitality groups, developers, and real estate funds, ensuring agile, confidential, and legally backed transactions.",
+    aboutRole:"Interior Designer & CEO of New Business",
+    aboutCard1Title:"National & International Reach",aboutCard1Text:"Agile structure for negotiations in financial capitals, coastal tourist hubs, agribusiness corridors, and international markets.",
+    aboutCard2Title:"Hospitality & Retail Expertise",aboutCard2Text:"Proven track record in valuation, brokerage, and commercial leasing of Hotels, Boutique Inns, and Shopping Centers.",
+    aboutCard3Title:"Security & Confidentiality",aboutCard3Text:"Non-disclosure agreements (NDA) and dedicated executive oversight throughout every stage of the real estate transaction.",
+    contactBadge:"Personalized Advisory",contactTitle:"Start Your Next Transaction",
+    contactDesc:"Looking to acquire an asset, list your hotel or property confidentially, or request an interior design project? Send your message and receive direct feedback from our board.",
+    contactWaLabel:"Direct WhatsApp",contactEmailLabel:"Official E-mails",contactPortalLabel:"Website & Social",
+    formNameLabel:"Your Name / Company Name *",formNamePlaceholder:"E.g.: John Smith / Hotelier Group",
+    formPhoneLabel:"WhatsApp / Phone Number *",formPhonePlaceholder:"E.g.: +55 (11) 99999-9999",formInterestLabel:"Primary Interest *",
+    formOpt1:"Acquire Real Estate Asset",formOpt2:"Sell Property / Hotel (Off-Market)",formOpt3:"Lease Boutique Inn or Hotel",formOpt4:"Lease Corporate Floor or Retail Store",formOpt5:"Invest in Residential Lot (MCMV)",formOpt6:"Interior Design Project",formOpt7:"Other Inquiry",
+    formMsgLabel:"Message / Notes",formMsgPlaceholder:"Briefly describe your inquiry or the asset code of interest...",formSubmitBtn:"Send via Official WhatsApp",
+    footerBrandDescHtml:"KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>Intermediation of purchase, sale, leasing, and management of High-Value Real Estate Assets nationally and internationally, plus Luxury Interior Design.",
+    footerRole:"Interior Designer & CEO of New Business",footerColSegments:"Segments",footerSeg1:"Hotels & Resorts",footerSeg2:"Boutique Inns",footerSeg3:"Hospitals & Clinics",footerSeg4:"Corporate Floors",footerSeg5:"Retail Stores",footerSeg6:"Residential Lots",footerSeg7:"Shopping Malls",
+    footerColInst:"Corporate",footerInst1:"About Us",footerInst2:"Track Record",footerInst3:"Interior Design",footerInst4:"Speak with the Board",footerColContact:"Contact",
+    footerCorpHeading:"CORPORATE INFORMATION",footerRights:"© 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. All rights reserved.",footerDevBy:"Developed by"
+  }
+};
+var catTranslations={
+  en:{"todos":"All Assets","hoteis":"Hotels & Resorts","pousadas":"Boutique Inns","hospitais":"Hospitals & Clinics","lajes":"Corporate Floors","lojas":"Retail Stores","mcmv":"Residential Lots","shopping":"Shopping Malls"},
+  pt:{"todos":"Todos os Ativos","hoteis":"Hotéis & Resorts","pousadas":"Pousadas","hospitais":"Hospitais & Clínicas","lajes":"Lajes Corporativas","lojas":"Lojas & Varejo","mcmv":"Aptos MCMV","shopping":"Shoppings & Malls"}
+};
+var origPropTitles = null;
+function applyLangStandalone(lang){
+  currentLang=lang==="en"?"en":"pt";
+  try{localStorage.setItem("kmy_lang",currentLang)}catch(e){}
+  document.documentElement.lang=currentLang==="en"?"en":"pt-BR";
+  document.querySelectorAll(".lang-switch-btn .lang-opt").forEach(opt=>{
+    opt.classList.toggle("active",opt.getAttribute("data-lang")===currentLang);
+  });
+  let dict=i18nDict[currentLang]||i18nDict.pt;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    let k=el.getAttribute("data-i18n");
+    if(dict[k])el.textContent=dict[k];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach(el=>{
+    let k=el.getAttribute("data-i18n-html");
+    if(dict[k])el.innerHTML=dict[k];
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{
+    let k=el.getAttribute("data-i18n-placeholder");
+    if(dict[k])el.setAttribute("placeholder",dict[k]);
+  });
+  let catMap = catTranslations[currentLang] || catTranslations.pt;
+  Zs.forEach(c => { if (catMap[c.id]) c.nome = catMap[c.id]; });
+  if (typeof um === "function") um();
+  if (typeof dm === "function") dm();
+  if (typeof Gl === "function") Gl(typeof fm !== "undefined" ? fm : "todos");
+  if (typeof mm === "function") mm();
+}
+function setupLangBtnStandalone(){
+  let btn=document.getElementById("lang-switch-btn");
+  if(!btn)return;
+  btn.addEventListener("click",(e)=>{
+    let opt=e.target.closest(".lang-opt");
+    if(opt){
+      let l=opt.getAttribute("data-lang");
+      if(l&&l!==currentLang){applyLangStandalone(l);return;}
+    }
+    applyLangStandalone(currentLang==="pt"?"en":"pt");
+  });
+}
+function kl(){
+  if(window.__KMY_INITIALIZED__)return;
+  window.__KMY_INITIALIZED__=!0,Sa(document);
+  let i=document.getElementById("property-modal-overlay");
+  i&&i.addEventListener("click",e=>{e.target===i&&Ea()});
+  setupLangBtnStandalone();
+  try{
+    let saved=localStorage.getItem("kmy_lang");
+    if(saved==="en"||saved==="pt")applyLangStandalone(saved);
+  }catch(e){}
+  um(),dm(),Gl(),mm(),gm(),_m(),vm(),pm();
+  let t=document.querySelector(".hero-bg-video");
+  if(t){
+    t.muted=!0;
+    t.addEventListener("timeupdate",()=>{
+      if(t.currentTime>=7.1){t.currentTime=0;t.play().catch(()=>{});}
+    });
+    t.play().catch(()=>{});
+  }
+  Ul("scrubbing-canvas");
+}
+document.readyState==="loading"?window.addEventListener("DOMContentLoaded",kl):kl();})();
 /*! Bundled license information:
 
 three/build/three.module.js:
