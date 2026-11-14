@@ -496,7 +496,7 @@ function renderProperties(filter = 'todos') {
           </div>
           <h3 class="prop-title">${item.titulo}</h3>
           
-          <div class="prop-features">
+          <div class="prop-features" style="flex-wrap: wrap;">
             <div class="feature-item">📐 <span>${item.areaConstruida || item.areaTotal}</span></div>
             ${item.suites ? `<div class="feature-item">🛏️ <span>${item.suites} ${t('suitesLabel')}</span></div>` : ''}
             ${item.vagas ? `<div class="feature-item">🚗 <span>${item.vagas} ${t('vagasLabel')}</span></div>` : ''}

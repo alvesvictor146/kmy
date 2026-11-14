@@ -6,6 +6,40 @@ const BASE = isRawRepoIndex ? './public/' : './';
 
 export const imoveis = [
   {
+    id: "KMY-011",
+    titulo: "Aratu — Condomínio Logístico Triple A",
+    subtitulo: "Primeiro galpão logístico do Brasil com certificação EDGE concedida pelo IFC",
+    categoria: "galpoes",
+    categoriaNome: "Galpões Logísticos",
+    finalidade: "venda",
+    finalidadeNome: "Catálogo Executivo",
+    cidade: "Simões Filho",
+    uf: "BA",
+    localizacao: "Via Centro, CIA Sul — Simões Filho, Bahia - BA (Região Metropolitana de Salvador)",
+    preco: 0,
+    precoFormatado: "Sob Consulta",
+    precoInfo: "Classificação AAA · Pé-direito 12 m · Capacidade do Piso 6 T/m²",
+    areaTotal: "102.530 m²",
+    areaConstruida: "102.530 m² ABL",
+    abl: "102.530 m²",
+    classificacao: "AAA",
+    peDireito: "12 m",
+    capacidadePiso: "6 T/m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Área Bruta Locável (ABL): 102.530 m² composta por dois galpões modulares",
+      "Classificação AAA · Pé-direito de 12 m · Capacidade do Piso de 6 T/m²",
+      "Primeiro galpão logístico do Brasil a receber a certificação EDGE para empreendimentos verdes, concedida pelo IFC",
+      "Infraestrutura completa com restaurante, refeitório, auditório e salas de reunião",
+      "Localizado em Simões Filho (Via Centro, CIA Sul), com acesso direto às principais rodovias da região e distante apenas 20 km do centro de Salvador"
+    ],
+    descricao: "Adquirido em junho de 2021, o condomínio logístico é composto por dois galpões modulares e possui mais de 100 mil m² de ABL (102.530 m²). Possui restaurante, refeitório, auditório e salas de reunião. Localizado em Simões Filho (Via Centro, CIA Sul), na região metropolitana de Salvador, o ativo possui acesso direto às principais rodovias da região e distância de apenas 20 km do centro da cidade de Salvador. O ativo Aratu é o primeiro galpão logístico do Brasil a receber a certificação EDGE para empreendimentos verdes, concedida pelo IFC.",
+    imagem: `${BASE}assets/images/imovel_11_aratu.webp`,
+    status: "Catálogo Executivo · AAA",
+    tags: ["ABL 102.530 m²", "Classificação AAA", "Pé-direito 12 m", "Piso 6 T/m²", "Certificação EDGE (IFC)"]
+  },
+  {
     id: "KMY-001",
     titulo: "Hotel Boutique Frente ao Mar — 48 Suítes Luxo",
     subtitulo: "Operação hoteleira consolidada com alta rentabilidade",
@@ -304,7 +338,8 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 10 },
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 11 },
+  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 1 },
   { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
