@@ -391,6 +391,38 @@ export const imoveis = [
     tags: ["Centro Histórico", "Jóia Colonial", "Alta Visibilidade"]
   },
   {
+    id: "KMY-019",
+    titulo: "Hospital Madre de Dio (HMD) — 304 Leitos",
+    subtitulo: "Complexo hospitalar moderno com 16.000 m² e capacidade operacional de até 304 leitos às margens da BR-277",
+    categoria: "hospitais",
+    categoriaNome: "Hospitais & Clínicas",
+    finalidade: "venda",
+    finalidadeNome: "Catálogo Executivo",
+    cidade: "São Miguel do Iguaçu",
+    uf: "PR",
+    localizacao: "Às margens da BR-277 — São Miguel do Iguaçu, Paraná - PR",
+    preco: 0,
+    precoFormatado: "Sob Consulta",
+    precoInfo: "Capacidade de até 304 Leitos · 16.000 m² · Pronto-Socorro 24h & UTI",
+    areaTotal: "16.000 m²",
+    areaConstruida: "16.000 m²",
+    leitos: 304,
+    configuracao: "Até 304 Leitos · 22 Consultórios · Pronto-Socorro 24h",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Capacidade operacional de até 304 leitos em infraestrutura moderna de 16.000 m²",
+      "Centro Médico e Odontológico com 22 consultórios, Pronto-Socorro 24 horas, salas cirúrgicas e UTI pediátrica",
+      "Laboratório próprio de análises clínicas e parque de diagnóstico por imagem (Ressonância Magnética e Raio-X)",
+      "Abrangência regional: atende pacientes particulares, convênios e SUS no Oeste/Sudoeste do PR, SC, MS e tríplice fronteira (Paraguai e Argentina)",
+      "Administrado pelo Instituto Madre de Dio (IMADI), com localização estratégica às margens da BR-277 em São Miguel do Iguaçu (PR)"
+    ],
+    descricao: "O Hospital Madre de Dio (HMD) é um complexo hospitalar moderno localizado em São Miguel do Iguaçu (PR), às margens da BR-277. Construído em uma área de 16.000 m², possui infraestrutura completa com capacidade operacional para até 304 leitos. Conta com Centro Médico e Odontológico (22 consultórios), pronto-socorro 24 horas, salas cirúrgicas, UTI pediátrica, laboratório próprio de análises clínicas e parque de diagnóstico por imagem (incluindo ressonância magnética e raio-X). Administrado pelo Instituto Madre de Dio (IMADI), atende pacientes particulares, convênios e usuários do SUS de dezenas de municípios do Oeste e Sudoeste do Paraná, além de Santa Catarina, Mato Grosso do Sul e áreas de fronteira (Paraguai e Argentina).",
+    imagem: `${BASE}assets/images/imovel_19_hospital_madre_de_dio.jpg`,
+    status: "Catálogo Executivo · 304 Leitos",
+    tags: ["304 Leitos", "16.000 m²", "Pronto-Socorro 24h", "Centro Cirúrgico & UTI", "BR-277 / PR"]
+  },
+  {
     id: "KMY-005",
     titulo: "Hospital Geral e Centro Cirúrgico Especializado",
     subtitulo: "Edificação hospitalar Triple A com 12 salas cirúrgicas",
@@ -572,12 +604,12 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 18 },
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 19 },
   { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 4 },
   { id: "predios", nome: "Prédios Corporativos", icone: "building", total: 4 },
   { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 2 },
-  { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
+  { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 2 },
   { id: "lajes", nome: "Lajes Corporativas", icone: "building-2", total: 2 },
   { id: "lojas", nome: "Lojas & Varejo", icone: "store", total: 1 },
   { id: "mcmv", nome: "Aptos MCMV", icone: "home", total: 1 },
@@ -1022,6 +1054,38 @@ export const imoveisEn = [
     tags: ["Historic Center", "Colonial Gem", "High Visibility"]
   },
   {
+    id: "KMY-019",
+    titulo: "Hospital Madre de Dio (HMD) — 304 Beds",
+    subtitulo: "Modern 16,000 m² hospital complex with operational capacity for up to 304 beds along Highway BR-277",
+    categoria: "hospitais",
+    categoriaNome: "Hospitals & Clinics",
+    finalidade: "venda",
+    finalidadeNome: "Executive Portfolio",
+    cidade: "São Miguel do Iguaçu",
+    uf: "PR",
+    localizacao: "Along Highway BR-277 — São Miguel do Iguaçu, Paraná - PR, Brazil",
+    preco: 0,
+    precoFormatado: "Upon Request",
+    precoInfo: "Up to 304 Beds · 16,000 m² · 24/7 ER & ICU",
+    areaTotal: "16,000 m²",
+    areaConstruida: "16,000 m²",
+    leitos: 304,
+    configuracao: "Up to 304 Beds · 22 Medical Offices · 24/7 ER",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Operational capacity of up to 304 beds across a modern 16,000 m² facility",
+      "Medical and Dental Center with 22 offices, 24/7 Emergency Room, operating rooms, and pediatric ICU",
+      "In-house clinical analysis laboratory and diagnostic imaging center (MRI and X-Ray)",
+      "Regional reach serving private patients, health insurance plans, and SUS across Western/Southwestern Paraná, SC, MS, and the Tri-Border area (Paraguay & Argentina)",
+      "Managed by Instituto Madre de Dio (IMADI), strategically located along Highway BR-277 in São Miguel do Iguaçu (PR)"
+    ],
+    descricao: "Hospital Madre de Dio (HMD) is a modern hospital complex located in São Miguel do Iguaçu (PR), along Highway BR-277. Built across 16,000 m², it features modern infrastructure with an operational capacity of up to 304 beds. It includes a Medical & Dental Center (22 offices), 24-hour emergency room, operating rooms, pediatric ICU, in-house clinical laboratory, and diagnostic imaging center (MRI and X-ray). Managed by Instituto Madre de Dio (IMADI), it serves private, insured, and public healthcare (SUS) patients across dozens of municipalities in Paraná, Santa Catarina, Mato Grosso do Sul, and the Tri-Border region (Paraguay and Argentina).",
+    imagem: `${BASE}assets/images/imovel_19_hospital_madre_de_dio.jpg`,
+    status: "Executive Portfolio · 304 Beds",
+    tags: ["304 Beds", "16,000 m²", "24/7 Emergency", "Surgical Center & ICU", "BR-277 / PR"]
+  },
+  {
     id: "KMY-005",
     titulo: "General Hospital & Specialized Surgical Center",
     subtitulo: "Triple A healthcare facility with 12 smart operating rooms",
@@ -1203,12 +1267,12 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 18 },
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 19 },
   { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 4 },
   { id: "predios", nome: "Corporate Buildings", icone: "building", total: 4 },
   { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
-  { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },
+  { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 2 },
   { id: "lajes", nome: "Corporate Floors", icone: "building-2", total: 2 },
   { id: "lojas", nome: "Retail Stores", icone: "store", total: 1 },
   { id: "mcmv", nome: "Residential Lots", icone: "home", total: 1 },
