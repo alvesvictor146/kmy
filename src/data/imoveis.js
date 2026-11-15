@@ -176,6 +176,38 @@ export const imoveis = [
     tags: ["Área Locável 10.230 m²", "Entrega 2026", "9 Andares + Rooftop", "Lajes de 950 m²", "Itaim Bibi"]
   },
   {
+    id: "KMY-016",
+    titulo: "Citadel — Edifício Corporativo Paulista",
+    subtitulo: "Retrofit completo em conceito open space a 50 metros da Avenida Paulista",
+    categoria: "galpoes",
+    categoriaNome: "Galpões Logísticos",
+    finalidade: "venda",
+    finalidadeNome: "Catálogo Executivo",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "R. Bela Cintra, 986 - Consolação, São Paulo - SP, 01415-002, Brasil",
+    preco: 0,
+    precoFormatado: "Sob Consulta",
+    precoInfo: "15 pavimentos · Lajes de 852 m² · Retrofit Completo",
+    areaTotal: "12.780 m²",
+    areaConstruida: "12.780 m² Locável",
+    abl: "12.780 m²",
+    configuracao: "15 pavimentos. Lajes 852 m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Área Locável: 12.780 m² · Configuração: 15 pavimentos com lajes de 852 m²",
+      "Retrofit com lajes em conceito open space, novos banheiros, elevadores e ar-condicionado totalmente renovados",
+      "Lobby ampliado e modernizado e entrada com área de drop-off e paisagismo",
+      "Fachada com renovação completa e nova pele de vidro",
+      "Localizado na Rua Bela Cintra, 986, a 50 metros da Avenida Paulista e ao lado do metrô"
+    ],
+    descricao: "O retrofit contempla lajes em conceito open space com novos banheiros, além de elevadores e sistema de ar-condicionado totalmente renovados. O lobby será ampliado e modernizado, a entrada contará com uma área de drop-off com paisagismo, e a fachada passará por renovação completa com nova pele de vidro. Na Rua Bela Cintra (nº 986 - Consolação), a 50 metros da Avenida Paulista e ao lado do metrô, o Citadel está em uma das regiões corporativas mais dinâmicas de São Paulo.",
+    imagem: `${BASE}assets/images/imovel_16_citadel.jpg`,
+    status: "Catálogo Executivo · Retrofit",
+    tags: ["Área Locável 12.780 m²", "15 Pavimentos", "Lajes 852 m²", "Open Space", "Região Paulista"]
+  },
+  {
     id: "KMY-001",
     titulo: "Hotel Boutique Frente ao Mar — 48 Suítes Luxo",
     subtitulo: "Operação hoteleira consolidada com alta rentabilidade",
@@ -474,8 +506,8 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 15 },
-  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 5 },
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 16 },
+  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 6 },
   { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
@@ -706,6 +738,38 @@ export const imoveisEn = [
     imagem: `${BASE}assets/images/imovel_15_quantum.png`,
     status: "Executive Portfolio · 2026",
     tags: ["Leasable 10,230 m²", "Delivery 2026", "9 Floors + Rooftop", "950 m² Floors", "Itaim Bibi"]
+  },
+  {
+    id: "KMY-016",
+    titulo: "Citadel — Paulista Corporate Building",
+    subtitulo: "Full open-space retrofit located 50 meters from Paulista Avenue",
+    categoria: "galpoes",
+    categoriaNome: "Logistic Warehouses",
+    finalidade: "venda",
+    finalidadeNome: "Executive Portfolio",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "R. Bela Cintra, 986 - Consolação, São Paulo - SP, 01415-002, Brazil",
+    preco: 0,
+    precoFormatado: "Upon Request",
+    precoInfo: "15 Floors · 852 m² Floor Plates · Full Retrofit",
+    areaTotal: "12,780 m²",
+    areaConstruida: "12,780 m² Leasable",
+    abl: "12,780 m²",
+    configuracao: "15 floors. 852 m² floor plates",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Leasable Area: 12,780 m² · Configuration: 15 floors with 852 m² floor plates",
+      "Full retrofit featuring open-space floor plates, new restrooms, and fully upgraded elevators and HVAC systems",
+      "Expanded and modernized lobby with landscaped drop-off entrance",
+      "Complete facade renovation with a new glass curtain wall",
+      "Located on Rua Bela Cintra, 986, just 50 meters from Paulista Avenue and next to the subway station"
+    ],
+    descricao: "The retrofit features open-space floor plates with new restrooms, alongside fully upgraded elevators and air-conditioning systems. The lobby will be expanded and modernized, the entrance will include a landscaped drop-off area, and the facade will undergo a complete renovation with a new glass curtain wall. Situated on Rua Bela Cintra (No. 986 - Consolação), 50 meters from Paulista Avenue and right next to the subway, Citadel stands in one of São Paulo's most dynamic corporate districts.",
+    imagem: `${BASE}assets/images/imovel_16_citadel.jpg`,
+    status: "Executive Portfolio · Retrofit",
+    tags: ["Leasable 12,780 m²", "15 Floors", "852 m² Floors", "Open Space", "Paulista District"]
   },
   {
     id: "KMY-001",
@@ -1006,8 +1070,8 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 15 },
-  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 5 },
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 16 },
+  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 6 },
   { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },
