@@ -208,6 +208,39 @@ export const imoveis = [
     tags: ["Área Locável 12.780 m²", "15 Pavimentos", "Lajes 852 m²", "Open Space", "Região Paulista"]
   },
   {
+    id: "KMY-017",
+    titulo: "Pinheiros One — Complexo Corporativo",
+    subtitulo: "Estrutura de serviços e utilidades completa com vista panorâmica e acesso direto à Marginal Pinheiros",
+    categoria: "galpoes",
+    categoriaNome: "Galpões Logísticos",
+    finalidade: "venda",
+    finalidadeNome: "Catálogo Executivo",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "R. Lemos Monteiro, 120 - Butantã, São Paulo - SP, 05501-050, Brasil",
+    preco: 0,
+    precoFormatado: "Sob Consulta",
+    precoInfo: "Participação 50% · 18 andares · Lajes de até 1.710 m²",
+    areaTotal: "33.358 m²",
+    areaConstruida: "33.358 m² Locável",
+    abl: "33.358 m²",
+    participacao: "50%",
+    configuracao: "18 andares. Lajes de até 1.710 m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Área Locável: 33.358 m² · Participação: 50% · Configuração: 18 andares com lajes de até 1.710 m²",
+      "18 andares de escritórios com lajes amplas, vista panorâmica e dois andares de terraço preparado para eventos",
+      "Estrutura completa de serviços: restaurante, café, padaria, auditório, cabeleireiro e foodtrucks",
+      "Bicicletários com vestiários e estação lava-rápido",
+      "Acesso direto à Marginal Pinheiros e Avenida Francisco Morato (R. Lemos Monteiro, 120 - Butantã)"
+    ],
+    descricao: "São 18 andares de escritórios, com lajes de 1.600 m² a 1.710 m² e vista panorâmica, dois andares de terraço (preparado para eventos), restaurante, café, padaria, auditório, cabeleireiro, bicicletários com vestiários, estação lava-rápido, foodtrucks e mais. Com acesso direto à Marginal Pinheiros e Avenida Francisco Morato (R. Lemos Monteiro, 120 - Butantã), está localizado em uma região estratégica que vem se consolidando como um polo corporativo.",
+    imagem: `${BASE}assets/images/imovel_17_pinheiros_one.jpg`,
+    status: "Catálogo Executivo · Triple A",
+    tags: ["Área Locável 33.358 m²", "Participação 50%", "18 Andares", "Lajes até 1.710 m²", "Marginal Pinheiros"]
+  },
+  {
     id: "KMY-001",
     titulo: "Hotel Boutique Frente ao Mar — 48 Suítes Luxo",
     subtitulo: "Operação hoteleira consolidada com alta rentabilidade",
@@ -506,8 +539,8 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 16 },
-  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 6 },
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 17 },
+  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 7 },
   { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
@@ -770,6 +803,39 @@ export const imoveisEn = [
     imagem: `${BASE}assets/images/imovel_16_citadel.jpg`,
     status: "Executive Portfolio · Retrofit",
     tags: ["Leasable 12,780 m²", "15 Floors", "852 m² Floors", "Open Space", "Paulista District"]
+  },
+  {
+    id: "KMY-017",
+    titulo: "Pinheiros One — Corporate Complex",
+    subtitulo: "Complete amenities and utility infrastructure with panoramic views and direct access to Marginal Pinheiros",
+    categoria: "galpoes",
+    categoriaNome: "Logistic Warehouses",
+    finalidade: "venda",
+    finalidadeNome: "Executive Portfolio",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "R. Lemos Monteiro, 120 - Butantã, São Paulo - SP, 05501-050, Brazil",
+    preco: 0,
+    precoFormatado: "Upon Request",
+    precoInfo: "50% Ownership · 18 Floors · Floor Plates up to 1,710 m²",
+    areaTotal: "33,358 m²",
+    areaConstruida: "33,358 m² Leasable",
+    abl: "33,358 m²",
+    participacao: "50%",
+    configuracao: "18 floors. Floor plates up to 1,710 m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Leasable Area: 33,358 m² · Ownership: 50% · Configuration: 18 floors with floor plates up to 1,710 m²",
+      "18 office floors featuring panoramic views and a two-level event-ready terrace",
+      "Complete service infrastructure: restaurant, café, bakery, auditorium, hair salon, and food trucks",
+      "Bike racks with locker rooms and car wash station",
+      "Direct access to Marginal Pinheiros and Francisco Morato Ave. (R. Lemos Monteiro, 120 - Butantã)"
+    ],
+    descricao: "Featuring 18 office floors with 1,600 m² to 1,710 m² floor plates and panoramic views, two terrace levels (event-ready), restaurant, café, bakery, auditorium, hair salon, bike racks with locker rooms, car wash station, food trucks, and more. With direct access to Marginal Pinheiros and Francisco Morato Avenue (R. Lemos Monteiro, 120 - Butantã), it sits in a strategic district rapidly consolidating as a major corporate hub.",
+    imagem: `${BASE}assets/images/imovel_17_pinheiros_one.jpg`,
+    status: "Executive Portfolio · Triple A",
+    tags: ["Leasable 33,358 m²", "50% Ownership", "18 Floors", "Up to 1,710 m² Floors", "Marginal Pinheiros"]
   },
   {
     id: "KMY-001",
@@ -1070,8 +1136,8 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 16 },
-  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 6 },
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 17 },
+  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 7 },
   { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },
