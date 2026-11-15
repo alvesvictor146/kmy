@@ -241,6 +241,39 @@ export const imoveis = [
     tags: ["Área Locável 33.358 m²", "Participação 50%", "18 Andares", "Lajes até 1.710 m²", "Marginal Pinheiros"]
   },
   {
+    id: "KMY-018",
+    titulo: "Thera Corporate — Edifício Corporativo Berrini",
+    subtitulo: "Espaços que promovem conforto e equilíbrio no eixo Luís Carlos Berrini e Bandeirantes",
+    categoria: "galpoes",
+    categoriaNome: "Galpões Logísticos",
+    finalidade: "venda",
+    finalidadeNome: "Catálogo Executivo",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "Av. Engenheiro Luís Carlos Berrini, 105 - Brooklin, São Paulo - SP, 04571-010, Brasil",
+    preco: 0,
+    precoFormatado: "Sob Consulta",
+    precoInfo: "Participação 66% · 15 andares · Lajes a partir de 1.032 m²",
+    areaTotal: "21.047 m²",
+    areaConstruida: "21.047 m² Locável",
+    abl: "21.047 m²",
+    participacao: "66%",
+    configuracao: "15 andares. Lajes com unidades a partir de 1.032 m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Área Locável: 21.047 m² · Participação: 66% · Configuração: 15 andares com lajes a partir de 1.032 m²",
+      "Espaços que promovem conforto e equilíbrio com área externa, restaurante e café interno",
+      "Auditório, bicicletário para condôminos e visitantes, foodtrucks rotativos e serviços exclusivos",
+      "Acesso direto às avenidas Luís Carlos Berrini e Bandeirantes (Brooklin)",
+      "Localizado a poucos minutos do Aeroporto de Congonhas e cercado de opções de comércio e serviço"
+    ],
+    descricao: "O Thera possui área externa com restaurante, café interno, auditório, bicicletário para condôminos e visitantes, foodtrucks rotativos e mais serviços exclusivos em espaços que promovem conforto e equilíbrio. Conta com 21.047 m² de área locável distribuídos em 15 andares (lajes com unidades a partir de 1.032 m²). Possui acesso direto às avenidas Luís Carlos Berrini (nº 105 - Brooklin) e Bandeirantes, além de estar a poucos minutos do aeroporto de Congonhas e cercado de opções de comércio e serviço.",
+    imagem: `${BASE}assets/images/imovel_18_thera.png`,
+    status: "Catálogo Executivo · Triple A",
+    tags: ["Área Locável 21.047 m²", "Participação 66%", "15 Andares", "Lajes 1.032+ m²", "Eixo Berrini"]
+  },
+  {
     id: "KMY-001",
     titulo: "Hotel Boutique Frente ao Mar — 48 Suítes Luxo",
     subtitulo: "Operação hoteleira consolidada com alta rentabilidade",
@@ -539,8 +572,8 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 17 },
-  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 7 },
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 18 },
+  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 8 },
   { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
@@ -836,6 +869,39 @@ export const imoveisEn = [
     imagem: `${BASE}assets/images/imovel_17_pinheiros_one.jpg`,
     status: "Executive Portfolio · Triple A",
     tags: ["Leasable 33,358 m²", "50% Ownership", "18 Floors", "Up to 1,710 m² Floors", "Marginal Pinheiros"]
+  },
+  {
+    id: "KMY-018",
+    titulo: "Thera Corporate — Berrini Corporate Building",
+    subtitulo: "Spaces designed for comfort and balance along the Luís Carlos Berrini and Bandeirantes corridor",
+    categoria: "galpoes",
+    categoriaNome: "Logistic Warehouses",
+    finalidade: "venda",
+    finalidadeNome: "Executive Portfolio",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "Av. Engenheiro Luís Carlos Berrini, 105 - Brooklin, São Paulo - SP, 04571-010, Brazil",
+    preco: 0,
+    precoFormatado: "Upon Request",
+    precoInfo: "66% Ownership · 15 Floors · Units starting at 1,032 m²",
+    areaTotal: "21,047 m²",
+    areaConstruida: "21,047 m² Leasable",
+    abl: "21,047 m²",
+    participacao: "66%",
+    configuracao: "15 floors. Floor plates with units starting at 1,032 m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Leasable Area: 21,047 m² · Ownership: 66% · Configuration: 15 floors with units starting at 1,032 m²",
+      "Spaces promoting comfort and balance featuring an outdoor area with restaurant and indoor café",
+      "Auditorium, bike racks for tenants and visitors, rotating food trucks, and exclusive services",
+      "Direct access to Luís Carlos Berrini and Bandeirantes Avenues (Brooklin)",
+      "Minutes from Congonhas Airport and surrounded by premier retail and service amenities"
+    ],
+    descricao: "Thera features an outdoor plaza with restaurant, indoor café, auditorium, bike racks for tenants and visitors, rotating food trucks, and exclusive services in spaces designed for comfort and balance. It offers 21,047 m² of leasable area across 15 floors (with units starting at 1,032 m²). With direct access to Luís Carlos Berrini (No. 105 - Brooklin) and Bandeirantes Avenues, it is just minutes from Congonhas Airport and surrounded by retail and service options.",
+    imagem: `${BASE}assets/images/imovel_18_thera.png`,
+    status: "Executive Portfolio · Triple A",
+    tags: ["Leasable 21,047 m²", "66% Ownership", "15 Floors", "1,032+ m² Units", "Berrini Corridor"]
   },
   {
     id: "KMY-001",
@@ -1136,8 +1202,8 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 17 },
-  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 7 },
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 18 },
+  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 8 },
   { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },
