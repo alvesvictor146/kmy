@@ -142,6 +142,40 @@ export const imoveis = [
     tags: ["ABL 95.730 m²", "Classificação AAA", "Pé-direito 12 m", "Piso 6 T/m²", "Built to Suit (BTS)"]
   },
   {
+    id: "KMY-015",
+    titulo: "Quantum — Edifício Corporativo Itaim Bibi",
+    subtitulo: "Eficiência com inovação: estrutura cúbica, lajes lineares de 950 m² e varandas 360°",
+    categoria: "galpoes",
+    categoriaNome: "Galpões Logísticos",
+    finalidade: "venda",
+    finalidadeNome: "Catálogo Executivo",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "R. Joaquim Floriano, 973 - Itaim Bibi, São Paulo - SP, Brasil",
+    preco: 0,
+    precoFormatado: "Sob Consulta",
+    precoInfo: "Entrega Prevista 2026 · Participação 100% · 9 andares + rooftop",
+    areaTotal: "10.230 m²",
+    areaConstruida: "10.230 m² Locável",
+    abl: "10.230 m²",
+    entregaPrevista: "2026",
+    participacao: "100%",
+    configuracao: "9 andares mais rooftop. Lajes de 950 m²",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Área Locável: 10.230 m² · Participação: 100% · Entrega Prevista: 2026",
+      "Configuração: 9 andares mais rooftop com lajes lineares de 950 m²",
+      "No 6º andar, onde há a união entre os blocos, conta com laje diferenciada e varandas 360°",
+      "Estrutura cúbica que oferece máxima flexibilidade de ocupação e layout",
+      "Localizado na esquina da Rua Joaquim Floriano com a Clodomiro Amazonas, a poucos passos da Avenida Faria Lima (Itaim Bibi)"
+    ],
+    descricao: "Une eficiência com inovação, propondo novas formas de ocupação. No 6º andar, onde há a união entre os blocos, contamos com uma laje diferenciada, com varandas 360°. Com estrutura cúbica e lajes lineares de 950 m², oferece máxima flexibilidade de layout. O edifício se localiza na esquina da Rua Joaquim Floriano com a Clodomiro Amazonas (R. Joaquim Floriano, 973 - Itaim Bibi), a poucos passos da Avenida Faria Lima, uma das regiões mais movimentadas de São Paulo.",
+    imagem: `${BASE}assets/images/imovel_15_quantum.png`,
+    status: "Catálogo Executivo · 2026",
+    tags: ["Área Locável 10.230 m²", "Entrega 2026", "9 Andares + Rooftop", "Lajes de 950 m²", "Itaim Bibi"]
+  },
+  {
     id: "KMY-001",
     titulo: "Hotel Boutique Frente ao Mar — 48 Suítes Luxo",
     subtitulo: "Operação hoteleira consolidada com alta rentabilidade",
@@ -440,8 +474,8 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 14 },
-  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 4 },
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 15 },
+  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 5 },
   { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
@@ -638,6 +672,40 @@ export const imoveisEn = [
     imagem: `${BASE}assets/images/imovel_14_betim.webp`,
     status: "Executive Portfolio · AAA",
     tags: ["GLA 95,730 m²", "AAA Rating", "12 m Height", "6 T/m² Floor", "Built to Suit (BTS)"]
+  },
+  {
+    id: "KMY-015",
+    titulo: "Quantum — Itaim Bibi Corporate Building",
+    subtitulo: "Efficiency meets innovation: cubic structure, 950 m² linear floor plates, and 360° terraces",
+    categoria: "galpoes",
+    categoriaNome: "Logistic Warehouses",
+    finalidade: "venda",
+    finalidadeNome: "Executive Portfolio",
+    cidade: "São Paulo",
+    uf: "SP",
+    localizacao: "R. Joaquim Floriano, 973 - Itaim Bibi, São Paulo - SP, Brazil",
+    preco: 0,
+    precoFormatado: "Upon Request",
+    precoInfo: "Expected Delivery 2026 · 100% Ownership · 9 Floors + Rooftop",
+    areaTotal: "10,230 m²",
+    areaConstruida: "10,230 m² Leasable",
+    abl: "10,230 m²",
+    entregaPrevista: "2026",
+    participacao: "100%",
+    configuracao: "9 floors plus rooftop. 950 m² floor plates",
+    suites: 0,
+    vagas: 0,
+    destaques: [
+      "Leasable Area: 10,230 m² · Ownership: 100% · Expected Delivery: 2026",
+      "Configuration: 9 floors plus rooftop with 950 m² linear floor plates",
+      "Distinctive 6th-floor connecting slab featuring 360° wraparound terraces",
+      "Cubic architectural structure offering maximum layout flexibility",
+      "Located at the corner of Rua Joaquim Floriano and Clodomiro Amazonas, steps from Faria Lima Ave. (Itaim Bibi)"
+    ],
+    descricao: "Combining efficiency with innovation to propose new ways of occupancy. On the 6th floor, where the blocks connect, a distinctive floor plate offers 360° wraparound terraces. With a cubic structure and 950 m² linear floor plates, it provides maximum layout flexibility. Located at the corner of Rua Joaquim Floriano and Clodomiro Amazonas (R. Joaquim Floriano, 973 - Itaim Bibi), just steps from Faria Lima Avenue in one of São Paulo's most vibrant districts.",
+    imagem: `${BASE}assets/images/imovel_15_quantum.png`,
+    status: "Executive Portfolio · 2026",
+    tags: ["Leasable 10,230 m²", "Delivery 2026", "9 Floors + Rooftop", "950 m² Floors", "Itaim Bibi"]
   },
   {
     id: "KMY-001",
@@ -938,8 +1006,8 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 14 },
-  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 4 },
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 15 },
+  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 5 },
   { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
   { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 2 },
   { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },

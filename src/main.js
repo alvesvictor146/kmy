@@ -25,8 +25,8 @@ const i18nStrings = {
     heroDesc: 'Intermediação qualificada, sigilosa e estratégica em Galpões Logísticos, Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.',
     heroSearchLabel: 'Segmento de Interesse',
     heroSearchBtn: 'Explorar Portfólio',
-    heroOptTodos: 'Todos os Ativos (14)',
-    heroOptGalpoes: 'Galpões Logísticos (4)',
+    heroOptTodos: 'Todos os Ativos (15)',
+    heroOptGalpoes: 'Galpões Logísticos (5)',
     heroOptHoteis: 'Hotéis & Resorts (2)',
     heroOptPousadas: 'Pousadas (2)',
     heroOptHospitais: 'Hospitais & Clínicas (1)',
@@ -66,6 +66,8 @@ const i18nStrings = {
     cardClassLabel: 'Classificação',
     cardHeightLabel: 'Pé-direito',
     cardFloorLabel: 'Piso',
+    cardDeliveryLabel: 'Entrega',
+    cardPartLabel: 'Participação',
     btnDetail: 'Ficha Técnica',
     waCardTitle: 'Conversar no WhatsApp',
     modalCloseAria: 'Fechar modal',
@@ -76,6 +78,9 @@ const i18nStrings = {
     modalClass: 'Classificação:',
     modalHeight: 'Pé-direito:',
     modalFloor: 'Capacidade do Piso:',
+    modalDelivery: 'Entrega Prevista:',
+    modalPart: 'Participação:',
+    modalConfig: 'Configuração:',
     modalSuites: 'Suítes:',
     modalParking: 'Vagas:',
     modalDescHeading: 'Descrição do Empreendimento',
@@ -157,8 +162,8 @@ const i18nStrings = {
     heroDesc: 'Qualified, confidential, and strategic intermediation in Logistic Warehouses, Hotels, Boutique Inns, Hospitals, Corporate Floors, Retail Stores, Residential Lots, and Shopping Malls with national and international reach.',
     heroSearchLabel: 'Segment of Interest',
     heroSearchBtn: 'Explore Portfolio',
-    heroOptTodos: 'All Assets (14)',
-    heroOptGalpoes: 'Logistic Warehouses (4)',
+    heroOptTodos: 'All Assets (15)',
+    heroOptGalpoes: 'Logistic Warehouses (5)',
     heroOptHoteis: 'Hotels & Resorts (2)',
     heroOptPousadas: 'Boutique Inns (2)',
     heroOptHospitais: 'Hospitals & Clinics (1)',
@@ -198,6 +203,8 @@ const i18nStrings = {
     cardClassLabel: 'Class',
     cardHeightLabel: 'Clear Height',
     cardFloorLabel: 'Floor Load',
+    cardDeliveryLabel: 'Delivery',
+    cardPartLabel: 'Ownership',
     btnDetail: 'Fact Sheet',
     waCardTitle: 'Chat on WhatsApp',
     modalCloseAria: 'Close modal',
@@ -208,6 +215,9 @@ const i18nStrings = {
     modalClass: 'Classification:',
     modalHeight: 'Clear Height:',
     modalFloor: 'Floor Load Capacity:',
+    modalDelivery: 'Expected Delivery:',
+    modalPart: 'Ownership:',
+    modalConfig: 'Configuration:',
     modalSuites: 'Suites:',
     modalParking: 'Parking Spaces:',
     modalDescHeading: 'Property Description',
@@ -521,6 +531,9 @@ function renderProperties(filter = 'todos') {
             ${item.classificacao ? `<div class="feature-item">🏅 <span>${t('cardClassLabel')} ${item.classificacao}</span></div>` : ''}
             ${item.peDireito ? `<div class="feature-item">⬆️ <span>${t('cardHeightLabel')} ${item.peDireito}</span></div>` : ''}
             ${item.capacidadePiso ? `<div class="feature-item">🏗️ <span>${t('cardFloorLabel')} ${item.capacidadePiso}</span></div>` : ''}
+            ${item.entregaPrevista ? `<div class="feature-item">📅 <span>${t('cardDeliveryLabel')} ${item.entregaPrevista}</span></div>` : ''}
+            ${item.participacao ? `<div class="feature-item">📊 <span>${t('cardPartLabel')} ${item.participacao}</span></div>` : ''}
+            ${item.configuracao ? `<div class="feature-item">🏢 <span>${item.configuracao}</span></div>` : ''}
             ${item.suites ? `<div class="feature-item">🛏️ <span>${item.suites} ${t('suitesLabel')}</span></div>` : ''}
             ${item.vagas ? `<div class="feature-item">🚗 <span>${item.vagas} ${t('vagasLabel')}</span></div>` : ''}
           </div>
@@ -588,9 +601,12 @@ function openPropertyModal(id) {
 
       <div style="display: flex; flex-wrap: wrap; gap: 20px; padding: 18px 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); margin-bottom: 24px; font-weight: 600;">
         ${imovel.abl ? `<div>${t('modalAbl')} <span style="color: var(--gold-700);">${imovel.abl}</span></div>` : `<div>${t('modalTotalArea')} <span style="color: var(--gold-700);">${imovel.areaTotal}</span></div>`}
-        ${imovel.classificacao ? `<div>${t('modalClass')} <span style="color: var(--gold-700);">${imovel.classificacao}</span></div>` : `<div>${t('modalBuiltArea')} <span style="color: var(--gold-700);">${imovel.areaConstruida}</span></div>`}
+        ${imovel.classificacao ? `<div>${t('modalClass')} <span style="color: var(--gold-700);">${imovel.classificacao}</span></div>` : (!imovel.abl ? `<div>${t('modalBuiltArea')} <span style="color: var(--gold-700);">${imovel.areaConstruida}</span></div>` : '')}
         ${imovel.peDireito ? `<div>${t('modalHeight')} <span style="color: var(--gold-700);">${imovel.peDireito}</span></div>` : ''}
         ${imovel.capacidadePiso ? `<div>${t('modalFloor')} <span style="color: var(--gold-700);">${imovel.capacidadePiso}</span></div>` : ''}
+        ${imovel.entregaPrevista ? `<div>${t('modalDelivery')} <span style="color: var(--gold-700);">${imovel.entregaPrevista}</span></div>` : ''}
+        ${imovel.participacao ? `<div>${t('modalPart')} <span style="color: var(--gold-700);">${imovel.participacao}</span></div>` : ''}
+        ${imovel.configuracao ? `<div>${t('modalConfig')} <span style="color: var(--gold-700);">${imovel.configuracao}</span></div>` : ''}
         ${imovel.suites ? `<div>${t('modalSuites')} <span style="color: var(--gold-700);">${imovel.suites}</span></div>` : ''}
         ${imovel.vagas ? `<div>${t('modalParking')} <span style="color: var(--gold-700);">${imovel.vagas}</span></div>` : ''}
       </div>
