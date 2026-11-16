@@ -413,6 +413,23 @@ h1, h2, h3, h4, .font-serif {
   margin-top: 4px;
 }
 
+.hero-banking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, rgba(249, 243, 224, 0.94), rgba(255, 255, 255, 0.96));
+  border: 1.5px solid var(--border-gold);
+  box-shadow: 0 8px 24px rgba(168, 125, 32, 0.14);
+  color: var(--gold-700);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 /* Quick Search Bar */
 .search-bar-luxury {
   background: var(--bg-secondary);
