@@ -5,13 +5,7 @@ import {
   institucionalDados,
   imoveisEn,
   categoriasListEn,
-  decoracaoEtapasEn,
-  imoveisZh,
-  categoriasListZh,
-  decoracaoEtapasZh,
-  imoveisAr,
-  categoriasListAr,
-  decoracaoEtapasAr
+  decoracaoEtapasEn
 } from './data/imoveis.js';
 import { initScrollScrubbing } from './gl/scrollScrubbing.js';
 import Lenis from 'lenis';
@@ -47,7 +41,6 @@ const i18nStrings = {
     metricLbl2: 'Atuação Nacional e Internacional',
     metricVal3: 'Executivo',
     metricLbl3: 'Head de Novos Negócios',
-    heroBankingBadge: '✦ Aceitamos SBCL e DLC · LOI Bancarizada',
     corpVideoBadge: 'Apresentação Institucional',
     corpVideoTitle: 'Vídeo Corporativo KMY Prime',
     corpVideoSub: 'Conheça nossa estrutura, governança e atuação estratégica em ativos imobiliários de alto valor no Brasil e no exterior.',
@@ -64,7 +57,7 @@ const i18nStrings = {
     scrubText2: 'Análise minuciosa de certidões, regularidade fundiária, laudos de engenharia, capacidade de cap rate e mitigação integral de riscos.',
     scrubBadge3: 'Fase 03 · Estruturação',
     scrubTitle3: 'Engenharia Financeira & Contratual',
-    scrubText3: 'Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB). Aceitamos SBCL e DLC · LOI Bancarizada.',
+    scrubText3: 'Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).',
     scrubBadge4: 'Fase 04 · Concretização',
     scrubTitle4: 'Governança, Entrega & Sucesso',
     scrubText4: 'Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.',
@@ -119,8 +112,6 @@ const i18nStrings = {
     aboutCard2Text: 'Expertise comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.',
     aboutCard3Title: 'Segurança & Confidencialidade',
     aboutCard3Text: 'Termos de sigilo (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.',
-    aboutCard4Title: 'Garantias & Operações Bancarizadas',
-    aboutCard4Text: 'Aceitamos SBCL e DLC · LOI Bancarizada para operações estruturadas nacionais e internacionais.',
     contactBadge: 'Atendimento Personalizado',
     contactTitle: 'Inicie Sua Próxima Operação',
     contactDesc: 'Deseja adquirir um ativo, colocar seu hotel/imóvel à venda com discrição, ou solicitar um projeto de interiores? Envie sua mensagem e receba retorno direto da nossa diretoria.',
@@ -195,7 +186,6 @@ const i18nStrings = {
     metricLbl2: 'National & International Reach',
     metricVal3: 'Executive',
     metricLbl3: 'Head of New Business',
-    heroBankingBadge: '✦ We Accept SBCL / SBLC & DLC · Bank-Endorsed LOI',
     corpVideoBadge: 'Corporate Presentation',
     corpVideoTitle: 'KMY Prime Corporate Video',
     corpVideoSub: 'Discover our structure, governance, and strategic operations in high-value real estate assets across Brazil and internationally.',
@@ -212,7 +202,7 @@ const i18nStrings = {
     scrubText2: 'Thorough analysis of certificates, land compliance, engineering reports, cap rate capacity, and comprehensive risk mitigation.',
     scrubBadge3: 'Phase 03 · Structuring',
     scrubTitle3: 'Financial & Contractual Engineering',
-    scrubText3: 'Modeling of atypical contracts, long-term commercial leases, Built to Suit (BTS), and Sale & Leaseback (SLB). We accept SBCL / SBLC & DLC · Bank-Endorsed LOI.',
+    scrubText3: 'Modeling of atypical contracts, long-term commercial leases, Built to Suit (BTS), and Sale & Leaseback (SLB).',
     scrubBadge4: 'Phase 04 · Closing',
     scrubTitle4: 'Governance, Delivery & Success',
     scrubText4: 'Closing under specialized executive advisory, ensuring legal security, satisfaction, and long-term asset preservation in every transaction.',
@@ -267,8 +257,6 @@ const i18nStrings = {
     aboutCard2Text: 'Proven track record in valuation, brokerage, and commercial leasing of Hotels, Boutique Inns, and Shopping Centers.',
     aboutCard3Title: 'Security & Confidentiality',
     aboutCard3Text: 'Non-disclosure agreements (NDA) and dedicated executive oversight throughout every stage of the real estate transaction.',
-    aboutCard4Title: 'Bank Guarantees & Structured Finance',
-    aboutCard4Text: 'We accept SBCL / SBLC and DLC · Bank-Endorsed LOI for domestic and international structured transactions.',
     contactBadge: 'Personalized Advisory',
     contactTitle: 'Start Your Next Transaction',
     contactDesc: 'Looking to acquire an asset, list your hotel or property confidentially, or request an interior design project? Send your message and receive direct feedback from our board.',
@@ -313,331 +301,25 @@ const i18nStrings = {
     footerCorpHeading: 'CORPORATE INFORMATION',
     footerRights: '© 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. All rights reserved.',
     footerDevBy: 'Developed by'
-  },
-  zh: {
-    pageTitle: 'KMY Prime | 高端商业与机构级房地产资产',
-    navSegmentos: '业务板块',
-    navJornada: '往绩记录',
-    navCatalogo: '资产目录',
-    navDecoracao: '室内设计',
-    navSobre: '关于我们',
-    navContato: '联系我们',
-    heroBadge: '房地产规划与高价值资产管理',
-    heroTitleHtml: '高价值商业地产的 <span class="text-gold-gradient">收购与资产管理</span>',
-    heroDesc: '专注于物流仓储、企业写字楼、酒店度假村、精品旅馆、综合医院、企业整层办公、商业名店、住宅批次 (MCMV) 及购物中心的专业、保密与战略性投资中介服务，业务覆盖巴西全国及国际市场。',
-    heroSearchLabel: '投资意向板块',
-    heroSearchBtn: '浏览资产组合',
-    heroOptTodos: '全部资产 (19)',
-    heroOptGalpoes: '物流仓储 (4)',
-    heroOptPredios: '企业写字楼 (4)',
-    heroOptHoteis: '酒店与度假村 (2)',
-    heroOptPousadas: '精品旅馆 (2)',
-    heroOptHospitais: '医院与诊所 (2)',
-    heroOptLajes: '企业整层办公 (2)',
-    heroOptLojas: '商业商铺 (1)',
-    heroOptMcmv: '住宅批次 MCMV (1)',
-    heroOptShopping: '购物中心 (1)',
-    metricVal1: 'Prime',
-    metricLbl1: '稳健企业治理',
-    metricVal2: 'Global',
-    metricLbl2: '巴西及国际业务布局',
-    metricVal3: 'Executive',
-    metricLbl3: '新业务拓展总监',
-    heroBankingBadge: '✦ 接受 SBCL / SBLC 与 DLC 信用证 · 银行背书意向书 (LOI)',
-    corpVideoBadge: '企业形象展示',
-    corpVideoTitle: 'KMY Prime 企业宣传片',
-    corpVideoSub: '了解我们在巴西及国际高价值房地产资产领域的组织架构、企业治理与战略运营。',
-    catBadge: '专业领域与投资组合',
-    catTitle: '专业化细分市场板块',
-    catSub: '为机构投资者、国际酒店集团及家族办公室量身定制房地产投资解决方案。',
-    assetSingle: '项可用资产',
-    assetPlural: '项可用资产',
-    scrubBadge1: '第一阶段 · 资产甄选',
-    scrubTitle1: '严格甄选与场外保密资产 (Off-Market)',
-    scrubText1: '直达未在公开市场挂牌的战略性核心资产，在高度商业保密前提下锁定高回报投资机会。',
-    scrubBadge2: '第二阶段 · 尽职调查',
-    scrubTitle2: '法律审计与资产估值',
-    scrubText2: '全面审查产权证明、土地合规性、工程评估报告、资本化率 (Cap Rate) 潜力并进行全方位风险控制。',
-    scrubBadge3: '第三阶段 · 交易架构',
-    scrubTitle3: '金融与合同工程设计',
-    scrubText3: '定制非典型租赁合同、长期商业租约、定制开发 (BTS) 及售后回租 (SLB)。接受 SBCL / SBLC 与 DLC · 银行背书意向书 (LOI)。',
-    scrubBadge4: '第四阶段 · 交易交割',
-    scrubTitle4: '企业治理、交付与圆满成功',
-    scrubText4: '在专业高管团队护航下完成交割，确保每一笔交易的法律安全、客户满意与家族财富长久增值。',
-    catalogBadge: '高管专属目录',
-    catalogTitle: '可投资房地产资产组合',
-    catalogSub: '查阅各项投资机会的技术参数表，并通过绑定房源的 WhatsApp 直接与我们取得联系。',
-    noAssetsFound: '当前分类暂无可用资产。',
-    suitesLabel: '间套房',
-    leitosLabel: '张床位',
-    vagasLabel: '个车位',
-    cardClassLabel: '评级',
-    cardHeightLabel: '净高',
-    cardFloorLabel: '地面承重',
-    cardDeliveryLabel: '预计交付',
-    cardPartLabel: '产权比例',
-    btnDetail: '技术参数表',
-    waCardTitle: '通过 WhatsApp 咨询',
-    modalCloseAria: '关闭窗口',
-    modalInvestLabel: '投资价值',
-    modalTotalArea: '总面积：',
-    modalBuiltArea: '建筑面积：',
-    modalAbl: '总可租面积 (ABL)：',
-    modalClass: '资产评级：',
-    modalHeight: '室内净高：',
-    modalFloor: '地面承重：',
-    modalDelivery: '预计交付：',
-    modalPart: '产权比例：',
-    modalConfig: '建筑配置：',
-    modalBeds: '运营容量：',
-    modalSuites: '套房数量：',
-    modalParking: '停车位：',
-    modalDescHeading: '项目详细介绍',
-    modalHighlightsHeading: 'KMY 核心亮点与优势',
-    modalCeoRole: 'Marta A. Soriano — 室内设计师兼新业务首席执行官 (CEO)',
-    modalCeoSub: 'KMY Prime 专属高管级投资顾问服务',
-    modalWaBtn: '通过 WhatsApp 索取完整投资备忘录',
-    decorBadge: '设计与奢华美学',
-    decorTitle: 'KMY Prime 高端室内设计',
-    decorP1: '除大宗资产收购与出售外，KMY Prime 还为巴西及海外的酒店、精品旅馆、行政办公楼层及奢华私宅开发全方位室内建筑设计项目。',
-    decorP2: '从初次需求沟通到售后交付，我们以严苛的美学标准、顶级供应商资源及全周期进度管理协调每一个细节。',
-    decorCta: '预约室内设计简报会议',
-    decorMethodTitle: '七步法标准流程',
-    decorMethodSub: '结构化流程管理，确保进度可预期、预算严格受控及极致工艺品质。',
-    aboutBadge: '发展历程与使命',
-    aboutTitle: 'KMY Prime 房地产投资规划',
-    aboutP1Html: '<strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> 致力于高价值房地产资产的架构设计、收购与出售、战略性租赁及商业运营，业务遍及巴西全国与国际市场。',
-    aboutP2: '凭借高标准的企业治理，KMY 建立了深厚的关系网络，涵盖大型资产业主、国际酒店集团、开发商及房地产投资基金，确保交易敏捷、保密且具备完备的法律保障。',
-    aboutRole: '室内设计师兼新业务首席执行官 (CEO)',
-    aboutCard1Title: '巴西全国及国际业务布局',
-    aboutCard1Text: '敏捷的交易架构，覆盖金融首府、海滨旅游胜地、农业综合企业走廊及全球国际市场。',
-    aboutCard2Title: '酒店与商业零售领域专长',
-    aboutCard2Text: '在酒店、精品旅馆及大型购物中心的估值、经纪与商业租赁方面拥有丰富成功经验。',
-    aboutCard3Title: '安全保障与高度保密',
-    aboutCard3Text: '签署保密协议 (NDA)，并在房地产交易的每一个阶段提供高管团队贴身督导。',
-    aboutCard4Title: '国际银行担保与结构化金融',
-    aboutCard4Text: '接受 SBCL / SBLC 备用信用证与 DLC 跟单信用证 · 接受银行背书购买意向书 (LOI Bancarizada)。',
-    contactBadge: '专属定制顾问服务',
-    contactTitle: '开启您的下一笔资产交易',
-    contactDesc: '希望收购优质资产、以保密方式出售您的酒店/物业，或委托高端室内设计项目？请发送您的信息，我们的董事会将直接与您联系。',
-    contactWaLabel: '官方 WhatsApp 专线',
-    contactEmailLabel: '官方电子邮箱',
-    contactPortalLabel: '官方网站与社交媒体',
-    formNameLabel: '您的姓名 / 公司名称 *',
-    formNamePlaceholder: '例如：王先生 / 国际投资集团',
-    formPhoneLabel: 'WhatsApp / 联系电话 *',
-    formPhonePlaceholder: '例如：+86 138 0000 0000 / +55 (11) 99999-9999',
-    formInterestLabel: '主要投资意向 *',
-    formOptGalpoes: '物流仓储（收购 / 租赁）',
-    formOptPredios: '企业写字楼（收购 / 租赁）',
-    formOpt1: '收购商业房地产资产',
-    formOpt2: '出售物业 / 酒店（场外保密交易 Off-Market）',
-    formOpt3: '精品旅馆或酒店商业租赁',
-    formOpt4: '企业整层办公或商业商铺租赁',
-    formOpt5: '投资住宅批次项目 (MCMV)',
-    formOpt6: '高端室内建筑设计项目',
-    formOpt7: '其他咨询事项',
-    formMsgLabel: '留言 / 备注信息',
-    formMsgPlaceholder: '请简要描述您的投资需求或感兴趣的资产编号...',
-    formSubmitBtn: '通过官方 WhatsApp 发送',
-    footerBrandDescHtml: 'KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>高价值房地产资产收购、出售、租赁与商业管理（覆盖巴西与国际市场）及顶奢室内设计。',
-    footerRole: '室内设计师兼新业务首席执行官 (CEO)',
-    footerColSegments: '核心板块',
-    footerSegGalpoes: '物流仓储',
-    footerSegPredios: '企业写字楼',
-    footerSeg1: '酒店与度假村',
-    footerSeg2: '精品旅馆',
-    footerSeg3: '医院与诊所',
-    footerSeg4: '企业整层办公',
-    footerSeg5: '商业商铺',
-    footerSeg6: '住宅批次 MCMV',
-    footerSeg7: '购物中心',
-    footerColInst: '关于企业',
-    footerInst1: '关于我们',
-    footerInst2: '往绩记录',
-    footerInst3: '室内设计',
-    footerInst4: '联系董事会',
-    footerColContact: '联系方式',
-    footerCorpHeading: '企业注册信息',
-    footerRights: '© 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. 保留所有权利。',
-    footerDevBy: '技术开发：'
-  },
-  ar: {
-    pageTitle: 'KMY Prime | أصول عقارية استثمارية رفيعة المستوى (دبي وأبوظبي)',
-    navSegmentos: 'القطاعات',
-    navJornada: 'سجل الإنجازات',
-    navCatalogo: 'المحفظة العقارية',
-    navDecoracao: 'التصميم الداخلي',
-    navSobre: 'من نحن',
-    navContato: 'اتصل بنا',
-    heroBadge: 'التخطيط العقاري وإدارة الأصول',
-    heroTitleHtml: 'الاستحواذ وإدارة <span class="text-gold-gradient">الأصول العقارية عالية القيمة</span>',
-    heroDesc: 'وساطة استراتيجية ومؤهلة وسرية للغاية في المستودعات اللوجستية، المباني المؤسسية، الفنادق والمنتجعات، المستشفيات، الطوابق المكتبية، المتاجر الفاخرة، المجمعات السكنية ومراكز التسوق بحضور وطني ودولي (البرازيل، دبي، أبوظبي والأسواق العالمية).',
-    heroSearchLabel: 'قطاع الاستثمار المطلوب',
-    heroSearchBtn: 'استكشاف المحفظة',
-    heroOptTodos: 'جميع الأصول (19)',
-    heroOptGalpoes: 'المستودعات اللوجستية (4)',
-    heroOptPredios: 'المباني المؤسسية (4)',
-    heroOptHoteis: 'الفنادق والمنتجعات (2)',
-    heroOptPousadas: 'النُزُل الفاخرة (2)',
-    heroOptHospitais: 'المستشفيات والعيادات (2)',
-    heroOptLajes: 'الطوابق المكتبية (2)',
-    heroOptLojas: 'المتاجر والمعارض (1)',
-    heroOptMcmv: 'المجمعات السكنية (1)',
-    heroOptShopping: 'مراكز التسوق (1)',
-    metricVal1: 'Prime',
-    metricLbl1: 'حوكمة مؤسسية راسخة',
-    metricVal2: 'Global',
-    metricLbl2: 'حضور وطني ودولي (دبي / أبوظبي)',
-    metricVal3: 'Executive',
-    metricLbl3: 'إدارة الأعمال الجديدة',
-    heroBankingBadge: '✦ نقبل اعتمادات SBCL / SBLC و DLC · خطاب نوايا بنكي (LOI Bancarizada)',
-    corpVideoBadge: 'العرض المؤسسي',
-    corpVideoTitle: 'الفيديو المؤسسي لشركة KMY Prime',
-    corpVideoSub: 'تعرف على هيكلتنا وحوكمتنا وعملياتنا الاستراتيجية في الأصول العقارية عالية القيمة في البرازيل ودولياً.',
-    catBadge: 'التخصصات والمحفظة الاستثمارية',
-    catTitle: 'قطاعات الاستثمار المتخصصة',
-    catSub: 'حلول عقارية مصممة خصيصاً للمستثمرين المؤسسيين، الصناديق السيادية، السلاسل الفندقية والمكاتب العائلية في الخليج والعالم.',
-    assetSingle: 'أصل متاح',
-    assetPlural: 'أصول متاحة',
-    scrubBadge1: 'المرحلة 01 · الاستقطاب',
-    scrubTitle1: 'انتقاء دقيق وفرص خارج السوق (Off-Market)',
-    scrubText1: 'الوصول إلى أصول استراتيجية لا تُعرض في السوق المفتوح، وتحديد فرص ذات عوائد مرتفعة بسرية تجارية تامة.',
-    scrubBadge2: 'المرحلة 02 · الفحص النافي للجهالة',
-    scrubTitle2: 'التدقيق القانوني وتقييم الأصول',
-    scrubText2: 'تحليل شامل للشهادات والامتثال العقاري والتقارير الهندسية وقدرة العائد الرأسمالي (Cap Rate) وتخفيف المخاطر.',
-    scrubBadge3: 'المرحلة 03 · الهيكلة المالية',
-    scrubTitle3: 'الهندسة المالية والتعاقدية',
-    scrubText3: 'صياغة العقود الاستثمارية طويلة الأجل، البناء حسب الطلب (BTS) والبيع وإعادة التأجير (SLB). نقبل SBCL / SBLC و DLC · خطاب نوايا بنكي (LOI).',
-    scrubBadge4: 'المرحلة 04 · الإغلاق والتسليم',
-    scrubTitle4: 'الحوكمة والتسليم والنجاح المستدام',
-    scrubText4: 'إتمام الصفقات تحت إشراف استشاري تنفيذي متخصص يضمن الأمان القانوني والحفاظ على الثروة العقارية.',
-    catalogBadge: 'المحفظة التنفيذية',
-    catalogTitle: 'الأصول العقارية المتاحة للاستثمار',
-    catalogSub: 'اطلع على البطاقة الفنية لكل فرصة استثمارية وتواصل معنا مباشرة عبر واتساب المرتبط بالإعلان.',
-    noAssetsFound: 'لا توجد أصول متاحة في هذه الفئة حالياً.',
-    suitesLabel: 'أجنحة',
-    leitosLabel: ' سرير',
-    vagasLabel: 'موقف سيارة',
-    cardClassLabel: 'التصنيف',
-    cardHeightLabel: 'الارتفاع',
-    cardFloorLabel: 'تحمل الأرضية',
-    cardDeliveryLabel: 'التسليم',
-    cardPartLabel: 'الملكية',
-    btnDetail: 'البطاقة الفنية',
-    waCardTitle: 'تحدث عبر واتساب',
-    modalCloseAria: 'إغلاق النافذة',
-    modalInvestLabel: 'قيمة الاستثمار',
-    modalTotalArea: 'المساحة الإجمالية:',
-    modalBuiltArea: 'المساحة المبنية:',
-    modalAbl: 'المساحة القابلة للتأجير (ABL):',
-    modalClass: 'التصنيف:',
-    modalHeight: 'ارتفاع السقف:',
-    modalFloor: 'قدرة تحمل الأرضية:',
-    modalDelivery: 'التسليم المتوقع:',
-    modalPart: 'نسبة الملكية:',
-    modalConfig: 'التكوين:',
-    modalBeds: 'السعة التشغيلية:',
-    modalSuites: 'الأجنحة:',
-    modalParking: 'مواقف السيارات:',
-    modalDescHeading: 'وصف المشروع العقاري',
-    modalHighlightsHeading: 'أبرز المزايا والمواصفات (KMY)',
-    modalCeoRole: 'مارتا سورينو (Marta A. Soriano) — مصممة ديكور والمديرة التنفيذية للأعمال الجديدة',
-    modalCeoSub: 'استشارات تنفيذية حصرية من KMY Prime',
-    modalWaBtn: 'طلب المذكرة الاستثمارية عبر واتساب',
-    decorBadge: 'التصميم والفخامة',
-    decorTitle: 'التصميم الداخلي الفاخر KMY Prime',
-    decorP1: 'إلى جانب بيع وشراء الأصول العقارية، تطور KMY Prime مشاريع متكاملة للهندسة المعمارية الداخلية للفنادق، النُزُل الفاخرة، المكاتب التنفيذية والقصور السكنية في البرازيل والخارج.',
-    decorP2: 'من الملخص الأولي وحتى ما بعد التسليم، ننسق كل التفاصيل بمعايير جمالية صارمة وأرقى الموردين.',
-    decorCta: 'حجز استشارة تصميم داخلي',
-    decorMethodTitle: 'منهجية العمل من 7 مراحل',
-    decorMethodSub: 'عملية منظمة تضمن الدقة والالتزام بالميزانية والتشطيبات المتقنة.',
-    aboutBadge: 'التاريخ والرسالة',
-    aboutTitle: 'KMY Prime للتخطيط العقاري',
-    aboutP1Html: 'تتميز شركة <strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> في هيكلة وشراء وبيع الأصول العقارية عالية القيمة، والتأجير الاستراتيجي والعمليات التجارية بحضور وطني ودولي.',
-    aboutP2: 'بفضل الحوكمة المؤسسية رفيعة المستوى، بنت KMY شبكة علاقات راسخة تضم كبار ملاك الأصول والمجموعات الفندقية والمطورين وصناديق الاستثمار العقاري.',
-    aboutRole: 'مصممة ديكور والمديرة التنفيذية للأعمال الجديدة (CEO)',
-    aboutCard1Title: 'حضور وطني ودولي (البرازيل، دبي وأبوظبي)',
-    aboutCard1Text: 'هيكل مرن للمفاوضات في العواصم المالية والمراكز السياحية الساحلية والأسواق الدولية في الشرق الأوسط وآسيا.',
-    aboutCard2Title: 'خبرة في الضيافة والتجزئة واللوجستيات',
-    aboutCard2Text: 'سجل حافل في تقييم وتسويق وتأجير الفنادق والمستودعات اللوجستية ومراكز التسوق.',
-    aboutCard3Title: 'الأمان والسرية التامة',
-    aboutCard3Text: 'اتفاقيات عدم إفصاح (NDA) ومتابعة تنفيذية دقيقة في جميع مراحل الصفقة العقارية.',
-    aboutCard4Title: 'الضمانات البنكية والعمليات المصرفية الدولية',
-    aboutCard4Text: 'نقبل اعتمادات SBCL / SBLC و DLC · خطاب نوايا بنكي موثق (LOI Bancarizada) للصفقات المهيكلة محلياً ودولياً.',
-    contactBadge: 'خدمة استشارية مخصصة',
-    contactTitle: 'ابدأ صفقتك الاستثمارية القادمة',
-    contactDesc: 'هل ترغب في الاستحواذ على أصل عقاري، أو عرض عقارك للبيع بسرية تامة، أو طلب مشروع تصميم داخلي؟ أرسل رسالتك وسيتواصل معك مجلس الإدارة مباشرة.',
-    contactWaLabel: 'واتساب مباشر',
-    contactEmailLabel: 'البريد الإلكتروني الرسمي',
-    contactPortalLabel: 'الموقع والشبكات',
-    formNameLabel: 'الاسم الكامل / اسم الشركة *',
-    formNamePlaceholder: 'مثال: مجموعة استثمارية / مكتب عائلي',
-    formPhoneLabel: 'رقم واتساب / الهاتف الدولي *',
-    formPhonePlaceholder: 'مثال: +971 50 000 0000 / +55 (11) 99999-9999',
-    formInterestLabel: 'الاهتمام الرئيسي *',
-    formOptGalpoes: 'المستودعات اللوجستية (شراء / إيجار)',
-    formOptPredios: 'المباني المؤسسية (شراء / إيجار)',
-    formOpt1: 'شراء أصل عقاري استثماري',
-    formOpt2: 'بيع عقار / فندق (خارج السوق Off-Market)',
-    formOpt3: 'استئجار فندق أو نُزُل سياحي',
-    formOpt4: 'إيجار طابق مكتبي أو متجر تجاري',
-    formOpt5: 'الاستثمار في مجمعات سكنية (MCMV)',
-    formOpt6: 'مشروع تصميم داخلي فاخر',
-    formOpt7: 'استفسار آخر',
-    formMsgLabel: 'الرسالة / الملاحظات',
-    formMsgPlaceholder: 'يرجى وصف طلبك باختصار أو ذكر رمز العقار المطلوب...',
-    formSubmitBtn: 'إرسال عبر واتساب الرسمي',
-    footerBrandDescHtml: 'KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>وساطة في شراء وبيع وتأجير وإدارة الأصول العقارية عالية القيمة محلياً ودولياً، والتصميم الداخلي الفاخر.',
-    footerRole: 'مصممة ديكور والمديرة التنفيذية للأعمال الجديدة (CEO)',
-    footerColSegments: 'القطاعات',
-    footerSegGalpoes: 'المستودعات اللوجستية',
-    footerSegPredios: 'المباني المؤسسية',
-    footerSeg1: 'الفنادق والمنتجعات',
-    footerSeg2: 'النُزُل الفاخرة',
-    footerSeg3: 'المستشفيات والعيادات',
-    footerSeg4: 'الطوابق المكتبية',
-    footerSeg5: 'المتاجر والمعارض',
-    footerSeg6: 'المجمعات السكنية',
-    footerSeg7: 'مراكز التسوق',
-    footerColInst: 'المؤسسة',
-    footerInst1: 'من نحن',
-    footerInst2: 'سجل الإنجازات',
-    footerInst3: 'التصميم الداخلي',
-    footerInst4: 'تحدث مع الإدارة',
-    footerColContact: 'التواصل',
-    footerCorpHeading: 'المعلومات المؤسسية',
-    footerRights: '© 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. جميع الحقوق محفوظة.',
-    footerDevBy: 'تطوير:'
   }
 };
 
-const SUPPORTED_LANGS = ['pt', 'en', 'zh', 'ar'];
 let currentLang = 'pt';
 try {
   const saved = localStorage.getItem('kmy_lang');
-  if (SUPPORTED_LANGS.includes(saved)) currentLang = saved;
+  if (saved === 'en' || saved === 'pt') currentLang = saved;
 } catch (e) {}
 
 function getActiveImoveis() {
-  if (currentLang === 'en') return imoveisEn;
-  if (currentLang === 'zh') return imoveisZh;
-  if (currentLang === 'ar') return imoveisAr;
-  return imoveis;
+  return currentLang === 'en' ? imoveisEn : imoveis;
 }
 
 function getActiveCategorias() {
-  if (currentLang === 'en') return categoriasListEn;
-  if (currentLang === 'zh') return categoriasListZh;
-  if (currentLang === 'ar') return categoriasListAr;
-  return categoriasList;
+  return currentLang === 'en' ? categoriasListEn : categoriasList;
 }
 
 function getActiveDecoracao() {
-  if (currentLang === 'en') return decoracaoEtapasEn;
-  if (currentLang === 'zh') return decoracaoEtapasZh;
-  if (currentLang === 'ar') return decoracaoEtapasAr;
-  return decoracaoEtapas;
+  return currentLang === 'en' ? decoracaoEtapasEn : decoracaoEtapas;
 }
 
 function t(key) {
@@ -931,7 +613,6 @@ function openPropertyModal(id) {
           <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">${t('modalInvestLabel')}</div>
           <div style="font-family: var(--font-serif); font-size: 2.2rem; font-weight: 700; color: var(--gold-700);">${imovel.precoFormatado}</div>
           ${imovel.precoInfo ? `<div style="font-size: 0.82rem; color: var(--text-gold);">${imovel.precoInfo}</div>` : ''}
-          <div style="margin-top: 8px; display: inline-block; padding: 5px 14px; border-radius: 999px; background: var(--gold-100); border: 1px solid var(--border-gold); font-size: 0.76rem; font-weight: 700; color: var(--gold-700);">${t('heroBankingBadge')}</div>
         </div>
       </div>
 
@@ -1086,14 +767,12 @@ function setupHeaderScroll() {
 
 // 12. Aplicar idioma em todos os elementos da página
 function applyLanguage(lang) {
-  currentLang = SUPPORTED_LANGS.includes(lang) ? lang : 'pt';
+  currentLang = lang === 'en' ? 'en' : 'pt';
   try {
     localStorage.setItem('kmy_lang', currentLang);
   } catch (e) {}
 
-  const langMap = { pt: 'pt-BR', en: 'en', zh: 'zh-CN', ar: 'ar-AE' };
-  document.documentElement.lang = langMap[currentLang] || 'pt-BR';
-  document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'pt-BR';
   document.title = t('pageTitle');
 
   // Atualizar estado visual do botão de idioma
@@ -1146,8 +825,7 @@ function setupLanguageSwitcher() {
         return;
       }
     }
-    const nextIdx = (SUPPORTED_LANGS.indexOf(currentLang) + 1) % SUPPORTED_LANGS.length;
-    applyLanguage(SUPPORTED_LANGS[nextIdx]);
+    applyLanguage(currentLang === 'pt' ? 'en' : 'pt');
   });
 }
 
