@@ -453,7 +453,7 @@ export const imoveis = [
       "Administrado pelo Instituto Madre de Dio (IMADI), com localização estratégica às margens da BR-277 em São Miguel do Iguaçu (PR)"
     ],
     descricao: "O Hospital Madre de Dio (HMD) é um complexo hospitalar moderno localizado em São Miguel do Iguaçu (PR), às margens da BR-277. Construído em uma área de 16.000 m², possui infraestrutura completa com capacidade operacional para até 304 leitos. Conta com Centro Médico e Odontológico (22 consultórios), pronto-socorro 24 horas, salas cirúrgicas, UTI pediátrica, laboratório próprio de análises clínicas e parque de diagnóstico por imagem (incluindo ressonância magnética e raio-X). Administrado pelo Instituto Madre de Dio (IMADI), atende pacientes particulares, convênios e usuários do SUS de dezenas de municípios do Oeste e Sudoeste do Paraná, além de Santa Catarina, Mato Grosso do Sul e áreas de fronteira (Paraguai e Argentina).",
-    imagem: `${BASE}assets/images/imovel_19_hospital_madre_de_dio.jpg`,
+    imagem: `${BASE}assets/images/imovel_19_hospitais.jpg`,
     status: "Catálogo Executivo · 304 Leitos",
     tags: ["304 Leitos", "16.000 m²", "Pronto-Socorro 24h", "Centro Cirúrgico & UTI", "BR-277 / PR"]
   },
@@ -1124,7 +1124,7 @@ export const imoveisEn = [
       "Managed by Instituto Madre de Dio (IMADI), strategically located along Highway BR-277 in São Miguel do Iguaçu (PR)"
     ],
     descricao: "Hospital Madre de Dio (HMD) is a modern hospital complex located in São Miguel do Iguaçu (PR), along Highway BR-277. Built across 16,000 m², it features modern infrastructure with an operational capacity of up to 304 beds. It includes a Medical & Dental Center (22 offices), 24-hour emergency room, operating rooms, pediatric ICU, in-house clinical laboratory, and diagnostic imaging center (MRI and X-ray). Managed by Instituto Madre de Dio (IMADI), it serves private, insured, and public healthcare (SUS) patients across dozens of municipalities in Paraná, Santa Catarina, Mato Grosso do Sul, and the Tri-Border region (Paraguay and Argentina).",
-    imagem: `${BASE}assets/images/imovel_19_hospital_madre_de_dio.jpg`,
+    imagem: `${BASE}assets/images/imovel_19_hospitais.jpg`,
     status: "Executive Portfolio · 304 Beds",
     tags: ["304 Beds", "16,000 m²", "24/7 Emergency", "Surgical Center & ICU", "BR-277 / PR"]
   },
