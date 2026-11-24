@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KMY Prime | Ativos Imobiliários de Alto Padrão</title>
-  <meta name="description"
-    content="KMY Prime Planejamento Imobiliário — Especialista em compra, venda e arrendamento de Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas, Aptos MCMV e Shoppings com atuação nacional e internacional. Decoração de Interiores exclusiva.">
-  <meta name="keywords"
-    content="KMY Prime, Ativos Imobiliários, Hotéis para Venda, Pousadas Arrendamento, Lajes Corporativas Faria Lima, Hospitais, Shoppings, Marta A. Soriano, Decoradora & CEO Novos Negócios">
-  <link rel="icon" type="image/png" sizes="128x128" href="./assets/favicon-CaUc9E9D.png?v=2" id="site-favicon">
-  <link rel="shortcut icon" type="image/png" href="./assets/favicon-CaUc9E9D.png?v=2">
+  <meta name="description" content="KMY Prime Planejamento Imobiliário — Especialista em compra, venda e arrendamento de Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas, Aptos MCMV e Shoppings com atuação nacional e internacional. Decoração de Interiores exclusiva.">
+  <meta name="keywords" content="KMY Prime, Ativos Imobiliários, Hotéis para Venda, Pousadas Arrendamento, Lajes Corporativas Faria Lima, Hospitais, Shoppings, Marta A. Soriano, Decoradora & CEO Novos Negócios">
+  <link rel="icon" type="image/png" sizes="128x128" href="/kmy/assets/favicon-CaUc9E9D.png?v=2" id="site-favicon">
+  <link rel="shortcut icon" type="image/png" href="/kmy/assets/favicon-CaUc9E9D.png?v=2">
 
   <!-- Open Graph -->
   <meta property="og:title" content="KMY Prime | Ativos Imobiliários de Alto Padrão">
-  <meta property="og:description"
-    content="Portfólio exclusivo de ativos imobiliários comerciais e corporativos com atuação nacional e internacional.">
+  <meta property="og:description" content="Portfólio exclusivo de ativos imobiliários comerciais e corporativos com atuação nacional e internacional.">
   <meta property="og:image" content="./public/assets/images/logo_clean.png">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 
   <!-- Import Map para funcionamento direto via index.html / Live Server sem necessidade de bundler -->
@@ -32,13 +26,13 @@
 
   <!-- Resolução automática de imagens para abertura direta do index.html na raiz ou via GitHub Pages -->
   <script>
-    (function () {
+    (function() {
       var isRawRoot = !!document.querySelector('link[href*="src/styles/main.css"]') && !document.querySelector('script[src*="@vite"]');
       if (isRawRoot) {
         var fav = document.getElementById('site-favicon');
         if (fav) fav.href = './public/assets/images/favicon_kmy.png?v=2';
       }
-      window.addEventListener('error', function (e) {
+      window.addEventListener('error', function(e) {
         var t = e.target;
         if (t && t.tagName === 'IMG') {
           var src = t.getAttribute('src') || '';
@@ -76,17 +70,16 @@
     }
   }
   </script>
-  <script type="module" crossorigin src="./assets/index-Vgzx7YyS.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DTgC7fMj.css">
+  <script type="module" crossorigin src="/kmy/assets/index-BFvTTiYE.js"></script>
+  <link rel="stylesheet" crossorigin href="/kmy/assets/index-DCW_Nfxo.css">
 </head>
-
 <body>
 
   <!-- HEADER NAVEGAÇÃO -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
       <a href="#" class="logo-wrapper" title="KMY Prime - Página Inicial">
-        <img src="./assets/logo_clean-xVkwqn72.png?v=2" alt="KMY Prime Logotipo" class="logo-img" />
+        <img src="/kmy/assets/logo_clean-xVkwqn72.png?v=2" alt="KMY Prime Logotipo" class="logo-img" />
       </a>
 
       <nav aria-label="Navegação Principal">
@@ -101,15 +94,13 @@
       </nav>
 
       <div class="header-actions">
-        <button type="button" class="lang-switch-btn" id="lang-switch-btn"
-          aria-label="Alternar idioma / Switch language" title="Português (BR) / English">
+        <button type="button" class="lang-switch-btn" id="lang-switch-btn" aria-label="Alternar idioma / Switch language" title="Português (BR) / English">
           <span class="lang-opt active" data-lang="pt">PT-BR</span>
           <span class="lang-sep">|</span>
           <span class="lang-opt" data-lang="en">EN</span>
         </button>
 
-        <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20oportunidades%20de%20investimento%20na%20KMY%20Prime."
-          target="_blank" rel="noopener noreferrer" class="btn btn-gold" id="header-cta-whatsapp">
+        <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20oportunidades%20de%20investimento%20na%20KMY%20Prime." target="_blank" rel="noopener noreferrer" class="btn btn-gold" id="header-cta-whatsapp">
           <span>(11) 94197-8333</span>
         </a>
       </div>
@@ -121,8 +112,8 @@
     <section class="hero-section" id="hero">
       <div class="hero-video-wrapper" aria-hidden="true">
         <video class="hero-bg-video" id="hero-bg-video" autoplay loop muted playsinline preload="auto">
-          <source src="./assets/Asset_acquisition_and_management_5008b400_t0-7.1_1080p-DQT-dnQx.mp4" type="video/mp4" />
-          <source src="./assets/hero_bg-D3MuE_sC.mp4" type="video/mp4" />
+          <source src="/kmy/assets/Asset_acquisition_and_management_5008b400_t0-7.1_1080p-DQT-dnQx.mp4" type="video/mp4" />
+          <source src="/kmy/assets/hero_bg-D3MuE_sC.mp4" type="video/mp4" />
         </video>
         <div class="hero-video-overlay"></div>
       </div>
@@ -134,8 +125,7 @@
             Aquisição & Gestão de <span class="text-gold-gradient">Ativos de Alto Valor</span>
           </h1>
           <p class="hero-desc" data-i18n="heroDesc">
-            Intermediação qualificada, sigilosa e estratégica em Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas
-            Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.
+            Intermediação qualificada, sigilosa e estratégica em Galpões Logísticos, Prédios Corporativos, Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.
           </p>
 
           <!-- Barra de Busca Rápida Estilo Private Banking -->
@@ -143,10 +133,12 @@
             <div class="search-input-group">
               <label for="hero-search-category" data-i18n="heroSearchLabel">Segmento de Interesse</label>
               <select id="hero-search-category" aria-label="Selecione o segmento">
-                <option value="todos" data-i18n="heroOptTodos">Todos os Ativos (10)</option>
+                <option value="todos" data-i18n="heroOptTodos">Todos os Ativos (19)</option>
+                <option value="galpoes" data-i18n="heroOptGalpoes">Galpões Logísticos (4)</option>
+                <option value="predios" data-i18n="heroOptPredios">Prédios Corporativos (4)</option>
                 <option value="hoteis" data-i18n="heroOptHoteis">Hotéis & Resorts (2)</option>
                 <option value="pousadas" data-i18n="heroOptPousadas">Pousadas (2)</option>
-                <option value="hospitais" data-i18n="heroOptHospitais">Hospitais & Clínicas (1)</option>
+                <option value="hospitais" data-i18n="heroOptHospitais">Hospitais & Clínicas (2)</option>
                 <option value="lajes" data-i18n="heroOptLajes">Lajes Corporativas (2)</option>
                 <option value="lojas" data-i18n="heroOptLojas">Lojas & Varejo (1)</option>
                 <option value="mcmv" data-i18n="heroOptMcmv">Aptos MCMV (1)</option>
@@ -177,14 +169,31 @@
       </div>
     </section>
 
+    <!-- VÍDEO CORPORATIVO KMY PRIME -->
+    <section class="corporate-video-section" id="video-corporativo">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 40px;">
+          <div class="subtitle-badge" data-i18n="corpVideoBadge">Apresentação Institucional</div>
+          <h2 class="section-title" data-i18n="corpVideoTitle">Vídeo Corporativo KMY Prime</h2>
+          <p class="section-sub" data-i18n="corpVideoSub">Conheça nossa estrutura, governança e atuação estratégica em ativos imobiliários de alto valor no Brasil e no exterior.</p>
+        </div>
+
+        <div class="corporate-video-frame">
+          <video class="corporate-video-player" id="corporate-video-player" controls playsinline preload="metadata">
+            <source src="/kmy/assets/kmy_corporativo-CGloyyd9.mp4" type="video/mp4" />
+            <source src="/kmy/assets/kmy_corporativo-CGloyyd9.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
     <!-- CATEGORIAS EM GRID ELEGANTE -->
     <section class="categories-section" id="imoveis">
       <div class="container">
         <div class="section-head">
           <div class="subtitle-badge" data-i18n="catBadge">Especialidades & Portfólio</div>
           <h2 class="section-title" data-i18n="catTitle">Segmentos de Atuação Especializada</h2>
-          <p class="section-sub" data-i18n="catSub">Soluções imobiliárias sob medida para investidores institucionais,
-            redes hoteleiras e family offices.</p>
+          <p class="section-sub" data-i18n="catSub">Soluções imobiliárias sob medida para investidores institucionais, redes hoteleiras e family offices.</p>
         </div>
 
         <div class="categories-carousel" id="categories-container">
@@ -204,8 +213,7 @@
           <div class="scrub-card">
             <div class="scrub-badge" data-i18n="scrubBadge1">Fase 01 · Prospecção</div>
             <h3 class="scrub-title" data-i18n="scrubTitle1">Curadoria Rigorosa & Off-Market</h3>
-            <p class="scrub-text" data-i18n="scrubText1">Acesso a ativos estratégicos que não chegam ao mercado aberto.
-              Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.</p>
+            <p class="scrub-text" data-i18n="scrubText1">Acesso a ativos estratégicos que não chegam ao mercado aberto. Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.</p>
           </div>
         </div>
 
@@ -213,8 +221,7 @@
           <div class="scrub-card">
             <div class="scrub-badge" data-i18n="scrubBadge2">Fase 02 · Due Diligence</div>
             <h3 class="scrub-title" data-i18n="scrubTitle2">Auditoria Jurídica & Valoração</h3>
-            <p class="scrub-text" data-i18n="scrubText2">Análise minuciosa de certidões, regularidade fundiária, laudos
-              de engenharia, capacidade de cap rate e mitigação integral de riscos.</p>
+            <p class="scrub-text" data-i18n="scrubText2">Análise minuciosa de certidões, regularidade fundiária, laudos de engenharia, capacidade de cap rate e mitigação integral de riscos.</p>
           </div>
         </div>
 
@@ -222,8 +229,7 @@
           <div class="scrub-card">
             <div class="scrub-badge" data-i18n="scrubBadge3">Fase 03 · Estruturação</div>
             <h3 class="scrub-title" data-i18n="scrubTitle3">Engenharia Financeira & Contratual</h3>
-            <p class="scrub-text" data-i18n="scrubText3">Modelagem de contratos atípicos, arrendamentos comerciais de
-              longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).</p>
+            <p class="scrub-text" data-i18n="scrubText3">Modelagem de contratos atípicos, arrendamentos comerciais de longo prazo, Built to Suit (BTS) e Sale & Leaseback (SLB).</p>
           </div>
         </div>
 
@@ -231,21 +237,19 @@
           <div class="scrub-card">
             <div class="scrub-badge" data-i18n="scrubBadge4">Fase 04 · Concretização</div>
             <h3 class="scrub-title" data-i18n="scrubTitle4">Governança, Entrega & Sucesso</h3>
-            <p class="scrub-text" data-i18n="scrubText4">Fechamento sob assessoria executiva especializada, assegurando
-              segurança jurídica, satisfação e perenidade patrimonial a cada transação.</p>
+            <p class="scrub-text" data-i18n="scrubText4">Fechamento sob assessoria executiva especializada, assegurando segurança jurídica, satisfação e perenidade patrimonial a cada transação.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CATÁLOGO DE ATIVOS COM FILTROS FLIP & 10 ANÚNCIOS -->
+    <!-- CATÁLOGO DE ATIVOS COM FILTROS FLIP & 19 ANÚNCIOS -->
     <section class="catalog-section" id="catalogo">
       <div class="container">
         <div class="section-head">
-          <div class="subtitle-badge" data-i18n="catalogBadge">Catálogo Exclusivo</div>
+          <div class="subtitle-badge" data-i18n="catalogBadge">Catálogo Executivo</div>
           <h2 class="section-title" data-i18n="catalogTitle">Ativos Imobiliários Disponíveis</h2>
-          <p class="section-sub" data-i18n="catalogSub">Consulte a ficha técnica de cada oportunidade e entre em contato
-            direto pelo WhatsApp com o anúncio vinculado.</p>
+          <p class="section-sub" data-i18n="catalogSub">Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.</p>
         </div>
 
         <!-- Filtros do Catálogo -->
@@ -272,18 +276,13 @@
           <div>
             <div class="subtitle-badge" data-i18n="decorBadge">Design & Sofisticação</div>
             <h2 class="section-title" data-i18n="decorTitle">Decoração de Interiores KMY Prime</h2>
-            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1.05rem;"
-              data-i18n="decorP1">
-              Além da compra e venda de ativos, a KMY Prime desenvolve projetos completos de arquitetura de interiores
-              para hotéis, pousadas de charme, lajes executivas e residências de alto padrão em todo o Brasil e no
-              exterior.
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px; font-size: 1.05rem;" data-i18n="decorP1">
+              Além da compra e venda de ativos, a KMY Prime desenvolve projetos completos de arquitetura de interiores para hotéis, pousadas de charme, lajes executivas e residências de alto padrão em todo o Brasil e no exterior.
             </p>
             <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;" data-i18n="decorP2">
-              Do primeiro briefing à pós-entrega, coordenamos cada detalhe com rigor estético, fornecedores nobres e
-              gestão técnica total do cronograma.
+              Do primeiro briefing à pós-entrega, coordenamos cada detalhe com rigor estético, fornecedores nobres e gestão técnica total do cronograma.
             </p>
-            <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20briefing%20de%20decora%C3%A7%C3%A3o%20de%20interiores%20para%20meu%20im%C3%B3vel."
-              target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+            <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20briefing%20de%20decora%C3%A7%C3%A3o%20de%20interiores%20para%20meu%20im%C3%B3vel." target="_blank" rel="noopener noreferrer" class="btn btn-gold">
               <span data-i18n="decorCta">Agendar Briefing de Decoração</span>
             </a>
           </div>
@@ -291,8 +290,7 @@
 
         <div class="section-head" style="margin-bottom: 40px;">
           <h3 style="font-size: 2rem;" data-i18n="decorMethodTitle">Metodologia em 7 Etapas</h3>
-          <p class="section-sub" data-i18n="decorMethodSub">Processo estruturado que garante previsibilidade,
-            conformidade orçamentária e acabamento impecável.</p>
+          <p class="section-sub" data-i18n="decorMethodSub">Processo estruturado que garante previsibilidade, conformidade orçamentária e acabamento impecável.</p>
         </div>
 
         <div class="decor-steps-grid" id="decor-steps-container">
@@ -308,47 +306,34 @@
           <div>
             <div class="subtitle-badge" data-i18n="aboutBadge">História & Propósito</div>
             <h2 class="section-title" data-i18n="aboutTitle">KMY Prime Planejamento Imobiliário</h2>
-            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;"
-              data-i18n-html="aboutP1Html">
-              A <strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> atua com excelência na estruturação, compra e
-              venda de Ativos de alto valor no mercado imobiliário, locação estratégica e arrendamento comercial com
-              presença nacional e internacional.
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;" data-i18n-html="aboutP1Html">
+              A <strong>KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA</strong> atua com excelência na estruturação, compra e venda de Ativos de alto valor no mercado imobiliário, locação estratégica e arrendamento comercial com presença nacional e internacional.
             </p>
             <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;" data-i18n="aboutP2">
-              Com governança corporativa de alto padrão, a KMY consolidou uma sólida rede de relacionamento que inclui
-              proprietários de grandes ativos, grupos de hospitalidade, incorporadores e fundos imobiliários,
-              assegurando transações ágeis, sigilosas e respaldadas juridicamente.
+              Com governança corporativa de alto padrão, a KMY consolidou uma sólida rede de relacionamento que inclui proprietários de grandes ativos, grupos de hospitalidade, incorporadores e fundos imobiliários, assegurando transações ágeis, sigilosas e respaldadas juridicamente.
             </p>
 
             <div class="about-badge-creci">
               <div class="creci-icon">✓</div>
               <div>
                 <strong style="color: var(--text-primary); display: block;">Marta A. Soriano</strong>
-                <span style="font-size: 0.85rem; color: var(--gold-700); font-weight: 700;"
-                  data-i18n="aboutRole">Decoradora &amp; CEO Novos Negócios</span>
+                <span style="font-size: 0.85rem; color: var(--gold-700); font-weight: 700;" data-i18n="aboutRole">Decoradora &amp; CEO Novos Negócios</span>
               </div>
             </div>
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 20px;">
             <div class="step-card">
-              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard1Title">
-                Atuação Nacional e Internacional</h4>
-              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard1Text">Estrutura ágil
-                para negociações em capitais financeiras, polos litorâneos turísticos, eixos de agronegócio e mercados
-                internacionais.</p>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard1Title">Atuação Nacional e Internacional</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard1Text">Estrutura ágil para negociações em capitais financeiras, polos litorâneos turísticos, eixos de agronegócio e mercados internacionais.</p>
             </div>
             <div class="step-card">
-              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard2Title">
-                Especialização em Hospitalidade & Varejo</h4>
-              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard2Text">Expertise
-                comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.</p>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard2Title">Especialização em Hospitalidade & Varejo</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard2Text">Expertise comprovada na avaliação, comercialização e arrendamento de Hotéis, Pousadas e Shoppings Centers.</p>
             </div>
             <div class="step-card">
-              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard3Title">
-                Segurança & Confidencialidade</h4>
-              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard3Text">Termos de sigilo
-                (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.</p>
+              <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: var(--gold-700);" data-i18n="aboutCard3Title">Segurança & Confidencialidade</h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);" data-i18n="aboutCard3Text">Termos de sigilo (NDA) e acompanhamento próximo em todas as fases da transação imobiliária.</p>
             </div>
           </div>
         </div>
@@ -363,41 +348,31 @@
             <div class="subtitle-badge" data-i18n="contactBadge">Atendimento Personalizado</div>
             <h2 class="section-title" data-i18n="contactTitle">Inicie Sua Próxima Operação</h2>
             <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px;" data-i18n="contactDesc">
-              Deseja adquirir um ativo, colocar seu hotel/imóvel à venda com discrição, ou solicitar um projeto de
-              interiores? Envie sua mensagem e receba retorno direto da nossa diretoria.
+              Deseja adquirir um ativo, colocar seu hotel/imóvel à venda com discrição, ou solicitar um projeto de interiores? Envie sua mensagem e receba retorno direto da nossa diretoria.
             </p>
 
             <div style="display: flex; flex-direction: column; gap: 16px;">
               <div style="display: flex; align-items: center; gap: 14px;">
-                <div
-                  style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">
-                  📞</div>
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">📞</div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;"
-                    data-i18n="contactWaLabel">WhatsApp Direto</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contactWaLabel">WhatsApp Direto</div>
                   <strong style="font-size: 1.05rem;">(11) 94197-8333</strong>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <div
-                  style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">
-                  ✉️</div>
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">✉️</div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;"
-                    data-i18n="contactEmailLabel">E-mails Oficiais</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contactEmailLabel">E-mails Oficiais</div>
                   <strong style="font-size: 0.95rem;">kmyprime@kmyprime.com.br</strong><br>
                   <span style="font-size: 0.85rem; color: var(--text-secondary);">marta.kmyprime@gmail.com</span>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <div
-                  style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">
-                  🌐</div>
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--gold-100); display: flex; align-items: center; justify-content: center; color: var(--gold-700);">🌐</div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;"
-                    data-i18n="contactPortalLabel">Portal & Redes</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;" data-i18n="contactPortalLabel">Portal & Redes</div>
                   <strong style="font-size: 0.95rem;">www.kmyprime.com.br</strong> · Instagram @kmyprime
                 </div>
               </div>
@@ -408,23 +383,22 @@
           <form id="lead-contact-form">
             <div class="form-group">
               <label for="lead-nome" data-i18n="formNameLabel">Seu Nome / Razão Social *</label>
-              <input type="text" id="lead-nome" class="form-control" placeholder="Ex: Roberto Silveira / Grupo Hotelier"
-                data-i18n-placeholder="formNamePlaceholder" required />
+              <input type="text" id="lead-nome" class="form-control" placeholder="Ex: Roberto Silveira / Grupo Hotelier" data-i18n-placeholder="formNamePlaceholder" required />
             </div>
 
             <div class="form-group">
               <label for="lead-telefone" data-i18n="formPhoneLabel">WhatsApp com DDD *</label>
-              <input type="tel" id="lead-telefone" class="form-control" placeholder="Ex: (11) 99999-9999"
-                data-i18n-placeholder="formPhonePlaceholder" required />
+              <input type="tel" id="lead-telefone" class="form-control" placeholder="Ex: (11) 99999-9999" data-i18n-placeholder="formPhonePlaceholder" required />
             </div>
 
             <div class="form-group">
               <label for="lead-interesse" data-i18n="formInterestLabel">Principal Interesse *</label>
               <select id="lead-interesse" class="form-control" required>
+                <option value="Galpões Logísticos" data-i18n="formOptGalpoes">Galpões Logísticos (Venda / Locação)</option>
+                <option value="Prédios Corporativos" data-i18n="formOptPredios">Prédios Corporativos (Venda / Locação)</option>
                 <option value="Comprar Ativo Imobiliário" data-i18n="formOpt1">Comprar Ativo Imobiliário</option>
                 <option value="Vender Imóvel / Hotel" data-i18n="formOpt2">Vender Imóvel / Hotel (Off-Market)</option>
-                <option value="Arrendamento de Pousada / Hotel" data-i18n="formOpt3">Arrendamento de Pousada ou Hotel
-                </option>
+                <option value="Arrendamento de Pousada / Hotel" data-i18n="formOpt3">Arrendamento de Pousada ou Hotel</option>
                 <option value="Locação de Laje / Loja" data-i18n="formOpt4">Locação de Laje Corporativa ou Loja</option>
                 <option value="Lote Residencial MCMV" data-i18n="formOpt5">Investir em Lote MCMV</option>
                 <option value="Decoração de Interiores" data-i18n="formOpt6">Projeto de Decoração de Interiores</option>
@@ -434,9 +408,7 @@
 
             <div class="form-group">
               <label for="lead-mensagem" data-i18n="formMsgLabel">Mensagem / Observações</label>
-              <textarea id="lead-mensagem" rows="3" class="form-control"
-                placeholder="Descreva brevemente sua demanda ou o código do imóvel de interesse..."
-                data-i18n-placeholder="formMsgPlaceholder"></textarea>
+              <textarea id="lead-mensagem" rows="3" class="form-control" placeholder="Descreva brevemente sua demanda ou o código do imóvel de interesse..." data-i18n-placeholder="formMsgPlaceholder"></textarea>
             </div>
 
             <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px;">
@@ -456,13 +428,8 @@
   </div>
 
   <!-- BOTÃO FLUTUANTE DO WHATSAPP COM ANEL DE PULSO DOURADO -->
-  <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20KMY%20Prime%20e%20gostaria%20de%20informa%C3%A7%C3%B5es."
-    target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Fale conosco no WhatsApp">
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-      stroke-linecap="round" stroke-linejoin="round">
-      <path
-        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-    </svg>
+  <a href="https://wa.me/5511941978333?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20KMY%20Prime%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Fale conosco no WhatsApp">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
   </a>
 
   <!-- FOOTER -->
@@ -475,19 +442,19 @@
           </a>
           <p data-i18n-html="footerBrandDescHtml">
             KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA<br>
-            Intermediação de compra, venda, locação e arrendamento de Ativos Imobiliários com atuação nacional e
-            internacional e Decoração de Interiores de alto luxo.
+            Intermediação de compra, venda, locação e arrendamento de Ativos Imobiliários com atuação nacional e internacional e Decoração de Interiores de alto luxo.
           </p>
           <div style="margin-top: 14px; font-weight: 700; color: var(--gold-300); line-height: 1.5;">
             Marta A. Soriano<br>
-            <span style="font-size: 0.9rem; font-weight: 600;" data-i18n="footerRole">Decoradora &amp; CEO Novos
-              Negócios</span>
+            <span style="font-size: 0.9rem; font-weight: 600;" data-i18n="footerRole">Decoradora &amp; CEO Novos Negócios</span>
           </div>
         </div>
 
         <div>
           <h4 class="footer-title" data-i18n="footerColSegments">Segmentos</h4>
           <ul class="footer-links">
+            <li><a href="#catalogo" data-i18n="footerSegGalpoes">Galpões Logísticos</a></li>
+            <li><a href="#catalogo" data-i18n="footerSegPredios">Prédios Corporativos</a></li>
             <li><a href="#catalogo" data-i18n="footerSeg1">Hotéis & Resorts</a></li>
             <li><a href="#catalogo" data-i18n="footerSeg2">Pousadas</a></li>
             <li><a href="#catalogo" data-i18n="footerSeg3">Hospitais & Clínicas</a></li>
@@ -514,8 +481,7 @@
             <li><a href="tel:5511941978333">(11) 94197-8333</a></li>
             <li><a href="mailto:kmyprime@kmyprime.com.br">kmyprime@kmyprime.com.br</a></li>
             <li><a href="mailto:marta.kmyprime@gmail.com">marta.kmyprime@gmail.com</a></li>
-            <li><a href="https://instagram.com/kmyprime" target="_blank" rel="noopener noreferrer">Instagram
-                @kmyprime</a></li>
+            <li><a href="https://instagram.com/kmyprime" target="_blank" rel="noopener noreferrer">Instagram @kmyprime</a></li>
           </ul>
         </div>
 
@@ -534,21 +500,20 @@
           © 2026 KMY PRIME PLANEJAMENTO IMOBILIÁRIO LTDA. Todos os direitos reservados.
         </div>
         <div>
-          <span data-i18n="footerDevBy">Desenvolvido por</span> <a href="https://www.zionsite.com.br" target="_blank"
-            rel="noopener noreferrer" class="zion-credit">Zion Sites</a>
+          <span data-i18n="footerDevBy">Desenvolvido por</span> <a href="https://www.zionsite.com.br" target="_blank" rel="noopener noreferrer" class="zion-credit">Zion Site</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script>
-    (function () {
+    (function() {
       function loadStandaloneFallback() {
         if (window.__KMY_INITIALIZED__ || window.__KMY_FALLBACK_LOADING__) return;
         window.__KMY_FALLBACK_LOADING__ = true;
         var s = document.createElement('script');
         s.src = './public/assets/kmy-standalone.js';
-        s.onerror = function () {
+        s.onerror = function() {
           var s2 = document.createElement('script');
           s2.src = './assets/kmy-standalone.js';
           document.body.appendChild(s2);
@@ -563,8 +528,8 @@
           loadStandaloneFallback();
         }
       } else {
-        window.addEventListener('load', function () {
-          setTimeout(function () {
+        window.addEventListener('load', function() {
+          setTimeout(function() {
             if (!window.__KMY_INITIALIZED__) loadStandaloneFallback();
           }, 400);
         });
@@ -572,5 +537,4 @@
     })();
   </script>
 </body>
-
 </html>
