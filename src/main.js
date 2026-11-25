@@ -25,15 +25,15 @@ const i18nStrings = {
     heroDesc: 'Intermediação qualificada, sigilosa e estratégica em Galpões Logísticos, Prédios Corporativos, Hotéis, Pousadas, Hospitais, Lajes Corporativas, Lojas Comerciais, Lotes MCMV e Shoppings com atuação nacional e internacional.',
     heroSearchLabel: 'Segmento de Interesse',
     heroSearchBtn: 'Explorar Portfólio',
-    heroOptTodos: 'Todos os Ativos (19)',
+    heroOptTodos: 'Todos os Ativos (12)',
     heroOptGalpoes: 'Galpões Logísticos (4)',
     heroOptPredios: 'Prédios Corporativos (4)',
-    heroOptHoteis: 'Hotéis & Resorts (4)',
-    heroOptPousadas: 'Pousadas (1)',
+    heroOptHoteis: 'Hotéis & Resorts (2)',
+    heroOptPousadas: 'Pousadas (Off-Market)',
     heroOptHospitais: 'Hospitais & Clínicas (1)',
-    heroOptLajes: 'Lajes Corporativas (2)',
-    heroOptLojas: 'Lojas & Varejo (1)',
-    heroOptMcmv: 'Aptos MCMV (1)',
+    heroOptLajes: 'Lajes Corporativas (Off-Market)',
+    heroOptLojas: 'Lojas & Varejo (Off-Market)',
+    heroOptMcmv: 'Aptos MCMV (Off-Market)',
     heroOptShopping: 'Shoppings & Malls (1)',
     metricVal1: 'Prime',
     metricLbl1: 'Governança Sólida',
@@ -49,6 +49,7 @@ const i18nStrings = {
     catSub: 'Soluções imobiliárias sob medida para investidores institucionais, redes hoteleiras e family offices.',
     assetSingle: 'ativo disponível',
     assetPlural: 'ativos disponíveis',
+    assetOffMarket: 'sob consulta · off-market',
     scrubBadge1: 'Fase 01 · Prospecção',
     scrubTitle1: 'Curadoria Rigorosa & Off-Market',
     scrubText1: 'Acesso a ativos estratégicos que não chegam ao mercado aberto. Mapeamento de oportunidades de alta rentabilidade com total sigilo comercial.',
@@ -64,7 +65,7 @@ const i18nStrings = {
     catalogBadge: 'Catálogo Executivo',
     catalogTitle: 'Ativos Imobiliários Disponíveis',
     catalogSub: 'Consulte a ficha técnica de cada oportunidade e entre em contato direto pelo WhatsApp com o anúncio vinculado.',
-    noAssetsFound: 'Nenhum ativo encontrado nesta categoria no momento.',
+    noAssetsFound: 'Ativos desta categoria são negociados sob sigilo (Off-Market). Solicite apresentação exclusiva pelo WhatsApp.',
     suitesLabel: 'suítes',
     leitosLabel: 'leitos',
     vagasLabel: 'vagas',
@@ -170,15 +171,15 @@ const i18nStrings = {
     heroDesc: 'Qualified, confidential, and strategic intermediation in Logistic Warehouses, Corporate Buildings, Hotels, Boutique Inns, Hospitals, Corporate Floors, Retail Stores, Residential Lots, and Shopping Malls with national and international reach.',
     heroSearchLabel: 'Segment of Interest',
     heroSearchBtn: 'Explore Portfolio',
-    heroOptTodos: 'All Assets (19)',
+    heroOptTodos: 'All Assets (12)',
     heroOptGalpoes: 'Logistic Warehouses (4)',
     heroOptPredios: 'Corporate Buildings (4)',
-    heroOptHoteis: 'Hotels & Resorts (4)',
-    heroOptPousadas: 'Boutique Inns (1)',
+    heroOptHoteis: 'Hotels & Resorts (2)',
+    heroOptPousadas: 'Boutique Inns (Off-Market)',
     heroOptHospitais: 'Hospitals & Clinics (1)',
-    heroOptLajes: 'Corporate Floors (2)',
-    heroOptLojas: 'Retail Stores (1)',
-    heroOptMcmv: 'Residential Lots (1)',
+    heroOptLajes: 'Corporate Floors (Off-Market)',
+    heroOptLojas: 'Retail Stores (Off-Market)',
+    heroOptMcmv: 'Residential Lots (Off-Market)',
     heroOptShopping: 'Shopping Malls (1)',
     metricVal1: 'Prime',
     metricLbl1: 'Solid Governance',
@@ -194,6 +195,7 @@ const i18nStrings = {
     catSub: 'Tailor-made real estate solutions for institutional investors, hotel chains, and family offices.',
     assetSingle: 'available asset',
     assetPlural: 'available assets',
+    assetOffMarket: 'upon request · off-market',
     scrubBadge1: 'Phase 01 · Sourcing',
     scrubTitle1: 'Rigorous & Off-Market Curation',
     scrubText1: 'Access to strategic assets that never reach the open market. Mapping high-yield opportunities under strict commercial confidentiality.',
@@ -209,7 +211,7 @@ const i18nStrings = {
     catalogBadge: 'Executive Portfolio',
     catalogTitle: 'Available Real Estate Assets',
     catalogSub: 'Review the technical fact sheet of each opportunity and contact us directly via WhatsApp with the linked listing.',
-    noAssetsFound: 'No assets found in this category at the moment.',
+    noAssetsFound: 'Assets in this segment are negotiated confidentially (Off-Market). Request a private presentation via WhatsApp.',
     suitesLabel: 'suites',
     leitosLabel: 'beds',
     vagasLabel: 'parking spaces',
@@ -373,14 +375,14 @@ function renderCategories() {
   const container = document.getElementById('categories-container');
   if (!container) return;
 
-  const list = getActiveCategorias();
+  const list = getActiveCategorias().filter(cat => cat.id === 'todos' || cat.total > 0);
   container.innerHTML = list.map(cat => `
     <div class="category-card ${cat.id === currentFilter ? 'active' : ''}" data-cat-id="${cat.id}">
       <div class="category-icon">
         <i class="icon-${cat.icone}">✦</i>
       </div>
       <div class="category-title">${cat.nome}</div>
-      <div class="category-count">${cat.total} ${cat.total === 1 ? t('assetSingle') : t('assetPlural')}</div>
+      <div class="category-count">${cat.total === 0 ? t('assetOffMarket') : `${cat.total} ${cat.total === 1 ? t('assetSingle') : t('assetPlural')}`}</div>
     </div>
   `).join('');
 
@@ -399,7 +401,7 @@ function renderCatalogFilters() {
   const container = document.getElementById('catalog-filter-pills');
   if (!container) return;
 
-  const list = getActiveCategorias();
+  const list = getActiveCategorias().filter(cat => cat.id === 'todos' || cat.total > 0);
   container.innerHTML = list.map(cat => `
     <button class="filter-pill ${cat.id === currentFilter ? 'active' : ''}" data-filter="${cat.id}">
       ${cat.nome} (${cat.total})
