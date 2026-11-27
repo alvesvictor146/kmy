@@ -378,13 +378,16 @@ function renderCategories() {
   const list = getActiveCategorias().filter(cat => cat.id === 'todos' || cat.total > 0);
   container.innerHTML = list.map(cat => `
     <div class="category-card ${cat.id === currentFilter ? 'active' : ''}" data-cat-id="${cat.id}">
-      <div class="category-icon">
-        <i class="icon-${cat.icone}">✦</i>
+      ${cat.imagem ? `<img src="${cat.imagem}" alt="${cat.nome}" class="category-bg-img" loading="lazy" />` : ''}
+      <div class="category-bg-overlay"></div>
+      <div class="category-content">
+        <div class="category-title">${cat.nome}</div>
+        <div class="category-count">${cat.total === 0 ? t('assetOffMarket') : `${cat.total} ${cat.total === 1 ? t('assetSingle') : t('assetPlural')}`}</div>
       </div>
-      <div class="category-title">${cat.nome}</div>
-      <div class="category-count">${cat.total === 0 ? t('assetOffMarket') : `${cat.total} ${cat.total === 1 ? t('assetSingle') : t('assetPlural')}`}</div>
     </div>
   `).join('');
+
+  attachImageFallback(container);
 
   container.querySelectorAll('.category-card').forEach(card => {
     card.addEventListener('click', () => {

@@ -403,16 +403,16 @@ export const imoveis = [
 ];
 
 export const categoriasList = [
-  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 12 },
-  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 4 },
-  { id: "predios", nome: "Prédios Corporativos", icone: "building", total: 4 },
-  { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2 },
-  { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1 },
-  { id: "shopping", nome: "Shoppings & Malls", icone: "shopping-bag", total: 1 },
-  { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 0 },
-  { id: "lajes", nome: "Lajes Corporativas", icone: "building-2", total: 0 },
-  { id: "lojas", nome: "Lojas & Varejo", icone: "store", total: 0 },
-  { id: "mcmv", nome: "Aptos MCMV", icone: "home", total: 0 }
+  { id: "todos", nome: "Todos os Ativos", icone: "layout-grid", total: 12, imagem: `${BASE}assets/images/imovel_6_laje.jpg` },
+  { id: "galpoes", nome: "Galpões Logísticos", icone: "warehouse", total: 4, imagem: `${BASE}assets/images/imovel_11_aratu.webp` },
+  { id: "predios", nome: "Prédios Corporativos", icone: "building", total: 4, imagem: `${BASE}assets/images/imovel_15_quantum.png` },
+  { id: "hoteis", nome: "Hotéis & Resorts", icone: "hotel", total: 2, imagem: `${BASE}assets/images/imovel_2_resort.jpg` },
+  { id: "hospitais", nome: "Hospitais & Clínicas", icone: "stethoscope", total: 1, imagem: `${BASE}assets/images/imovel_19_hospitais.jpg` },
+  { id: "shopping", nome: "Shoppings & Malls", icone: "shopping-bag", total: 1, imagem: `${BASE}assets/images/imovel_10_shopping.jpg` },
+  { id: "pousadas", nome: "Pousadas", icone: "palmtree", total: 0, imagem: `${BASE}assets/images/imovel_3_pousada.jpg` },
+  { id: "lajes", nome: "Lajes Corporativas", icone: "building-2", total: 0, imagem: `${BASE}assets/images/imovel_7_laje.jpg` },
+  { id: "lojas", nome: "Lojas & Varejo", icone: "store", total: 0, imagem: `${BASE}assets/images/imovel_8_loja.jpg` },
+  { id: "mcmv", nome: "Aptos MCMV", icone: "home", total: 0, imagem: `${BASE}assets/images/imovel_9_mcmv.jpg` }
 ];
 
 export const decoracaoEtapas = [
@@ -865,16 +865,16 @@ export const imoveisEn = [
 ];
 
 export const categoriasListEn = [
-  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 12 },
-  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 4 },
-  { id: "predios", nome: "Corporate Buildings", icone: "building", total: 4 },
-  { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2 },
-  { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1 },
-  { id: "shopping", nome: "Shopping Malls", icone: "shopping-bag", total: 1 },
-  { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 0 },
-  { id: "lajes", nome: "Corporate Floors", icone: "building-2", total: 0 },
-  { id: "lojas", nome: "Retail Stores", icone: "store", total: 0 },
-  { id: "mcmv", nome: "Residential Lots", icone: "home", total: 0 }
+  { id: "todos", nome: "All Assets", icone: "layout-grid", total: 12, imagem: `${BASE}assets/images/imovel_6_laje.jpg` },
+  { id: "galpoes", nome: "Logistic Warehouses", icone: "warehouse", total: 4, imagem: `${BASE}assets/images/imovel_11_aratu.webp` },
+  { id: "predios", nome: "Corporate Buildings", icone: "building", total: 4, imagem: `${BASE}assets/images/imovel_15_quantum.png` },
+  { id: "hoteis", nome: "Hotels & Resorts", icone: "hotel", total: 2, imagem: `${BASE}assets/images/imovel_2_resort.jpg` },
+  { id: "hospitais", nome: "Hospitals & Clinics", icone: "stethoscope", total: 1, imagem: `${BASE}assets/images/imovel_19_hospitais.jpg` },
+  { id: "shopping", nome: "Shopping Malls", icone: "shopping-bag", total: 1, imagem: `${BASE}assets/images/imovel_10_shopping.jpg` },
+  { id: "pousadas", nome: "Boutique Inns", icone: "palmtree", total: 0, imagem: `${BASE}assets/images/imovel_3_pousada.jpg` },
+  { id: "lajes", nome: "Corporate Floors", icone: "building-2", total: 0, imagem: `${BASE}assets/images/imovel_7_laje.jpg` },
+  { id: "lojas", nome: "Retail Stores", icone: "store", total: 0, imagem: `${BASE}assets/images/imovel_8_loja.jpg` },
+  { id: "mcmv", nome: "Residential Lots", icone: "home", total: 0, imagem: `${BASE}assets/images/imovel_9_mcmv.jpg` }
 ];
 
 export const decoracaoEtapasEn = [
